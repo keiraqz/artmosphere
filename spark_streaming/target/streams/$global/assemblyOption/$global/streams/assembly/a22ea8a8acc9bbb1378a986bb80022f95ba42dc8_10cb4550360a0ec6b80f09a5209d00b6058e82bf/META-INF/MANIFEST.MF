@@ -1,0 +1,31 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1368754503224
+Build-Jdk: 1.7.0_05
+Built-By: leo
+Bundle-ActivationPolicy: lazy
+Bundle-Activator: org.xerial.snappy.SnappyBundleActivator
+Bundle-Description: snappy-java: A fast compression/decompression librar
+ y
+Bundle-DocURL: http://www.xerial.org/
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Snappy for Java
+Bundle-NativeCode: org/xerial/snappy/native/Windows/amd64/snappyjava.dll
+ ;selection-filter="(&(osgi.arch=x86_64)(osgi.os=win32))",org/xerial/sna
+ ppy/native/Windows/x86/snappyjava.dll;selection-filter="(&(osgi.arch=x8
+ 6)(osgi.os=win32))",org/xerial/snappy/native/Mac/i386/libsnappyjava.jni
+ lib;selection-filter="(&(osgi.arch=x86)(osgi.os=macosx))",org/xerial/sn
+ appy/native/Mac/x86_64/libsnappyjava.jnilib;selection-filter="(&(osgi.a
+ rch=x86_64)(osgi.os=macosx))",org/xerial/snappy/native/Linux/amd64/libs
+ nappyjava.so;selection-filter="(&(osgi.arch=x86_64)(osgi.os=linux))",or
+ g/xerial/snappy/native/Linux/i386/libsnappyjava.so;selection-filter="(&
+ (osgi.arch=x86)(osgi.os=linux))",org/xerial/snappy/native/Linux/arm/lib
+ snappyjava.so;selection-filter="(&(osgi.arch=arm)(osgi.os=linux))"
+Bundle-SymbolicName: org.xerial.snappy.snappy-java
+Bundle-Vendor: xerial.org
+Bundle-Version: 1.0.5
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.xerial.snappy;uses:="org.osgi.framework";version="1.
+ 0.5"
+Import-Package: org.osgi.framework;version="[1.5,2)"
+Tool: Bnd-1.50.0

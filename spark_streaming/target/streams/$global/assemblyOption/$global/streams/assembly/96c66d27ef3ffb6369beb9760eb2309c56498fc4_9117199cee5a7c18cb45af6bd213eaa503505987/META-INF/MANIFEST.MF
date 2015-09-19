@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Title: Spark Project External Kafka
+Implementation-Version: 1.3.0
+Implementation-Vendor-Id: org.apache.spark
+Built-By: ubuntu
+Build-Jdk: 1.6.0_30
+Specification-Vendor: The Apache Software Foundation
+Specification-Title: Spark Project External Kafka
+Created-By: Apache Maven 3.0.4
+Specification-Version: 1.3.0
+Archiver-Version: Plexus Archiver
+

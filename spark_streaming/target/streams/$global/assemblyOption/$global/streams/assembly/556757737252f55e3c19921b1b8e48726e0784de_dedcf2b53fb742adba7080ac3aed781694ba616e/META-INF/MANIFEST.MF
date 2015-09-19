@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Export-Package: org.I0Itec.zkclient;uses:="org.I0Itec.zkclient.excepti
+ on,org.apache.log4j,org.apache.zookeeper,org.apache.zookeeper.data,or
+ g.I0Itec.zkclient.util,org.I0Itec.zkclient.serialize,javax.annotation
+ ,org.apache.zookeeper.server";version="0.3",org.I0Itec.zkclient.excep
+ tion;uses:="org.apache.zookeeper";version="0.3",org.I0Itec.zkclient.u
+ til;uses:="org.I0Itec.zkclient";version="0.3",org.I0Itec.zkclient.ser
+ ialize;uses:="org.I0Itec.zkclient.exception";version="0.3"
+Implementation-Title: ZkClient
+Implementation-Version: 0.3
+Bundle-Version: 0.3
+Tool: Bnd-1.50.0
+Bundle-Name: zkclient
+Bnd-LastModified: 1369813166000
+Created-By: 1.6.0_31 (Apple Inc.)
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: com.101tec.zkclient
+Import-Package: javax.annotation,org.apache.log4j,org.apache.zookeeper
+ ;version="[3.3,4)",org.apache.zookeeper.data;version="[3.3,4)",org.ap
+ ache.zookeeper.server;version="[3.3,4)"
+
