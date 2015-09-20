@@ -1,4 +1,4 @@
-name := "pinterest_data"
+name := "artsy_data"
 
 version := "1.0"
 

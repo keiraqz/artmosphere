@@ -1,12 +1,12 @@
-[0m[[0minfo[0m] [0mIncluding from cache: scala-library.jar[0m
-[0m[[0minfo[0m] [0mIncluding from cache: spark-streaming-kafka_2.10-1.3.0.jar[0m
-[0m[[0minfo[0m] [0mIncluding from cache: kafka_2.10-0.8.1.1.jar[0m
-[0m[[0minfo[0m] [0mIncluding from cache: metrics-core-2.2.0.jar[0m
 [0m[[0minfo[0m] [0mIncluding from cache: slf4j-api-1.7.2.jar[0m
 [0m[[0minfo[0m] [0mIncluding from cache: snappy-java-1.0.5.jar[0m
 [0m[[0minfo[0m] [0mIncluding from cache: zkclient-0.3.jar[0m
 [0m[[0minfo[0m] [0mIncluding from cache: log4j-1.2.14.jar[0m
 [0m[[0minfo[0m] [0mIncluding from cache: unused-1.0.0.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: scala-library.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: spark-streaming-kafka_2.10-1.3.0.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: metrics-core-2.2.0.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: kafka_2.10-0.8.1.1.jar[0m
 [0m[[0mdebug[0m] [0mCalculate mappings...[0m
 [0m[[0minfo[0m] [0mChecking every *.class/*.jar file's SHA-1.[0m
 [0m[[0minfo[0m] [0mMerging files...[0m
@@ -18,8 +18,8 @@
 [0m[[33mwarn[0m] [0mMerging 'org/apache/spark/unused/UnusedStubClass.class' with strategy 'first'[0m
 [0m[[33mwarn[0m] [0mStrategy 'discard' was applied to a file[0m
 [0m[[33mwarn[0m] [0mStrategy 'first' was applied to 5 files[0m
-[0m[[0minfo[0m] [0mSHA-1: 774362770a3755c7d8d02da058fbff4becd0ed32[0m
-[0m[[0minfo[0m] [0mPackaging /home/ubuntu/Artmo/spark_streaming/target/scala-2.10/pinterest_data-assembly-1.0.jar ...[0m
+[0m[[0minfo[0m] [0mSHA-1: 4a2f652970ae0280c5a8623bd176424d7639e3e4[0m
+[0m[[0minfo[0m] [0mPackaging /home/ubuntu/Artmo/spark_streaming/target/scala-2.10/artsy_data-assembly-1.0.jar ...[0m
 [0m[[0mdebug[0m] [0mInput file mappings:[0m
 [0m[[0mdebug[0m] [0m	LICENSE[0m
 [0m[[0mdebug[0m] [0m	  /home/ubuntu/Artmo/spark_streaming/target/streams/$global/assemblyOption/$global/streams/assembly/6136ca6c79d67ecb6b397069b56912f034c9d97a_8e28e6594969b2f42eb8017416e9f7aa4921985f/LICENSE[0m
@@ -53,18 +53,6 @@
 [0m[[0mdebug[0m] [0m	  /home/ubuntu/Artmo/spark_streaming/target/streams/$global/assemblyOption/$global/streams/assembly/a22ea8a8acc9bbb1378a986bb80022f95ba42dc8_10cb4550360a0ec6b80f09a5209d00b6058e82bf/META-INF/maven/org.xerial.snappy/snappy-java/pom.xml[0m
 [0m[[0mdebug[0m] [0m	NOTICE[0m
 [0m[[0mdebug[0m] [0m	  /home/ubuntu/Artmo/spark_streaming/target/streams/$global/assemblyOption/$global/streams/assembly/6136ca6c79d67ecb6b397069b56912f034c9d97a_8e28e6594969b2f42eb8017416e9f7aa4921985f/NOTICE[0m
-[0m[[0mdebug[0m] [0m	PinterestDataStreaming$$anonfun$main$1$$anonfun$1.class[0m
-[0m[[0mdebug[0m] [0m	  /home/ubuntu/Artmo/spark_streaming/target/streams/$global/assemblyOption/$global/streams/assembly/a93a258d217570069732a6e1c37fe237f6abb010_dir/PinterestDataStreaming$$anonfun$main$1$$anonfun$1.class[0m
-[0m[[0mdebug[0m] [0m	PinterestDataStreaming$$anonfun$main$1$$anonfun$2.class[0m
-[0m[[0mdebug[0m] [0m	  /home/ubuntu/Artmo/spark_streaming/target/streams/$global/assemblyOption/$global/streams/assembly/a93a258d217570069732a6e1c37fe237f6abb010_dir/PinterestDataStreaming$$anonfun$main$1$$anonfun$2.class[0m
-[0m[[0mdebug[0m] [0m	PinterestDataStreaming$$anonfun$main$1$$typecreator1$1.class[0m
-[0m[[0mdebug[0m] [0m	  /home/ubuntu/Artmo/spark_streaming/target/streams/$global/assemblyOption/$global/streams/assembly/a93a258d217570069732a6e1c37fe237f6abb010_dir/PinterestDataStreaming$$anonfun$main$1$$typecreator1$1.class[0m
-[0m[[0mdebug[0m] [0m	PinterestDataStreaming$$anonfun$main$1.class[0m
-[0m[[0mdebug[0m] [0m	  /home/ubuntu/Artmo/spark_streaming/target/streams/$global/assemblyOption/$global/streams/assembly/a93a258d217570069732a6e1c37fe237f6abb010_dir/PinterestDataStreaming$$anonfun$main$1.class[0m
-[0m[[0mdebug[0m] [0m	PinterestDataStreaming$.class[0m
-[0m[[0mdebug[0m] [0m	  /home/ubuntu/Artmo/spark_streaming/target/streams/$global/assemblyOption/$global/streams/assembly/a93a258d217570069732a6e1c37fe237f6abb010_dir/PinterestDataStreaming$.class[0m
-[0m[[0mdebug[0m] [0m	PinterestDataStreaming.class[0m
-[0m[[0mdebug[0m] [0m	  /home/ubuntu/Artmo/spark_streaming/target/streams/$global/assemblyOption/$global/streams/assembly/a93a258d217570069732a6e1c37fe237f6abb010_dir/PinterestDataStreaming.class[0m
 [0m[[0mdebug[0m] [0m	SQLContextSingleton$.class[0m
 [0m[[0mdebug[0m] [0m	  /home/ubuntu/Artmo/spark_streaming/target/streams/$global/assemblyOption/$global/streams/assembly/a93a258d217570069732a6e1c37fe237f6abb010_dir/SQLContextSingleton$.class[0m
 [0m[[0mdebug[0m] [0m	SQLContextSingleton.class[0m
@@ -73,6 +61,18 @@
 [0m[[0mdebug[0m] [0m	  /home/ubuntu/Artmo/spark_streaming/target/streams/$global/assemblyOption/$global/streams/assembly/a93a258d217570069732a6e1c37fe237f6abb010_dir/Tick$.class[0m
 [0m[[0mdebug[0m] [0m	Tick.class[0m
 [0m[[0mdebug[0m] [0m	  /home/ubuntu/Artmo/spark_streaming/target/streams/$global/assemblyOption/$global/streams/assembly/a93a258d217570069732a6e1c37fe237f6abb010_dir/Tick.class[0m
+[0m[[0mdebug[0m] [0m	UserDataStreaming$$anonfun$main$1$$anonfun$1.class[0m
+[0m[[0mdebug[0m] [0m	  /home/ubuntu/Artmo/spark_streaming/target/streams/$global/assemblyOption/$global/streams/assembly/a93a258d217570069732a6e1c37fe237f6abb010_dir/UserDataStreaming$$anonfun$main$1$$anonfun$1.class[0m
+[0m[[0mdebug[0m] [0m	UserDataStreaming$$anonfun$main$1$$anonfun$2.class[0m
+[0m[[0mdebug[0m] [0m	  /home/ubuntu/Artmo/spark_streaming/target/streams/$global/assemblyOption/$global/streams/assembly/a93a258d217570069732a6e1c37fe237f6abb010_dir/UserDataStreaming$$anonfun$main$1$$anonfun$2.class[0m
+[0m[[0mdebug[0m] [0m	UserDataStreaming$$anonfun$main$1$$typecreator1$1.class[0m
+[0m[[0mdebug[0m] [0m	  /home/ubuntu/Artmo/spark_streaming/target/streams/$global/assemblyOption/$global/streams/assembly/a93a258d217570069732a6e1c37fe237f6abb010_dir/UserDataStreaming$$anonfun$main$1$$typecreator1$1.class[0m
+[0m[[0mdebug[0m] [0m	UserDataStreaming$$anonfun$main$1.class[0m
+[0m[[0mdebug[0m] [0m	  /home/ubuntu/Artmo/spark_streaming/target/streams/$global/assemblyOption/$global/streams/assembly/a93a258d217570069732a6e1c37fe237f6abb010_dir/UserDataStreaming$$anonfun$main$1.class[0m
+[0m[[0mdebug[0m] [0m	UserDataStreaming$.class[0m
+[0m[[0mdebug[0m] [0m	  /home/ubuntu/Artmo/spark_streaming/target/streams/$global/assemblyOption/$global/streams/assembly/a93a258d217570069732a6e1c37fe237f6abb010_dir/UserDataStreaming$.class[0m
+[0m[[0mdebug[0m] [0m	UserDataStreaming.class[0m
+[0m[[0mdebug[0m] [0m	  /home/ubuntu/Artmo/spark_streaming/target/streams/$global/assemblyOption/$global/streams/assembly/a93a258d217570069732a6e1c37fe237f6abb010_dir/UserDataStreaming.class[0m
 [0m[[0mdebug[0m] [0m	com/yammer/metrics/HealthChecks.class[0m
 [0m[[0mdebug[0m] [0m	  /home/ubuntu/Artmo/spark_streaming/target/streams/$global/assemblyOption/$global/streams/assembly/8bb62462d0af09f4f79379ad767471ae0e52e46c_f82c035cfa786d3cbec362c38c22a5f5b1bc8724/com/yammer/metrics/HealthChecks.class[0m
 [0m[[0mdebug[0m] [0m	com/yammer/metrics/Metrics$1.class[0m
