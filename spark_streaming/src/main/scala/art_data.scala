@@ -50,7 +50,7 @@ object UserDataStreaming {
         val ticks_per_source_DF = ticksDF.groupBy("art_id").count().collect()
         var ticks_with_time = ticks_per_source_DF.map(x => (x(0),current_time,x(1)))
 
-        rdd.sparkContext.parallelize(ticks_with_time).saveToCassandra("user_log", "artwork_count", SomeColumns("art_id","event_time", "pin_count")) //TODO
+        rdd.sparkContext.parallelize(ticks_with_time).saveToCassandra("art_pin_log", "artwork_count", SomeColumns("art_id","event_time", "pin_count")) //TODO
                                 // 
 
                                 // .agg("price" -> "avg", "volume" -> "sum")
