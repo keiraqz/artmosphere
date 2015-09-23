@@ -22,6 +22,7 @@ import urllib2
 import sys
 import random
 
+
 class LoadJson(object):
     def __init__(self):
         self.hdfs_path = "hdfs://ec2-54-183-55-185.us-west-1.compute.amazonaws.com:9000/insight/artsy/artworks"
@@ -30,9 +31,16 @@ if __name__ == '__main__':
     conf = SparkConf().setAppName("JSON Ingest")
     sc = SparkContext(conf=conf)
     sqlContext = SQLContext(sc)
-    schema = avro.schema.parse(open("/home/ubuntu/Artmo/populate_database/artwork_schema.avro").read())
     cf = LoadJson()
     df = sqlContext.read.json(cf.hdfs_path)
-    df_RDD = df.map(lambda x: {"artwork_id": x.id,"title":x.title, "collecting_institution":x.collecting_institution, "created_at":x.created_at, "image_link":x._links.thumbnail.href,"sold":str(x.sold),"pined_count":random.gauss(100, 5)})
+
+
+    def mapping(x):
+        try:
+            return [{"artwork_id": x.id,"title":x.title, "collecting_institution":x.collecting_institution, "created_at":x.created_at,"image_link":x._links.thumbnail.href, "sold":str(x.sold),"pined_count":random.gauss(100, 5)}]
+        except:
+            return [{"artwork_id": x.id,"title":x.title, "collecting_institution":x.collecting_institution, "created_at":x.created_at,"image_link":"none", "sold":str(x.sold),"pined_count":random.gauss(100, 5)}]
+
+    df_RDD = df.flatMap(mapping)
     df_RDD.saveToCassandra("art_pin_log","artworks")
 
