@@ -9,7 +9,6 @@ import csv
 import urllib2
 import sys
 import random
-# from pprint import pprint
 
 class LoadJson(object):
 
@@ -19,20 +18,6 @@ class LoadJson(object):
         self.TYPE_NAME = 'artworks'
         self.ID_FIELD = 'id'
         self.hdfs_path = "hdfs://ec2-54-183-55-185.us-west-1.compute.amazonaws.com:9000/insight/artsy/artworks/artwork_1.txt"
-
-
-    # def to_bulk(self,x):
-    #     tem = []
-    #     op_dict = {
-    #         "index": {
-    #             "_index": self.INDEX_NAME,
-    #             "_type": self.TYPE_NAME,
-    #             # "_id": data_dict[ID_FIELD]
-    #         }
-    #     }
-    #     tem.append(op_dict)
-    #     tem.append(x)
-    #     return tem
 
 if __name__ == '__main__':
     conf = SparkConf().setAppName("ES Ingest")
@@ -48,7 +33,6 @@ if __name__ == '__main__':
         "index": {
             "_index": cf.INDEX_NAME,
             "_type": cf.TYPE_NAME,
-            # "_id": data_dict[ID_FIELD]
         }
     }
     for idd in temp:
