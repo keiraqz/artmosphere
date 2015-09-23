@@ -26,10 +26,10 @@ class ComputeSimilarity(object):
 
     def compute_similarity(self,df):
         ''' 
-        parse [{g1,[a1,a2,a3]}, {g2,[a1,a3,a4]}, {g4,[a1,a2,a4]}...]
+        parse [{a1,[g1,g2,g3]}, {a2,[g1,g3,g4]}, {a4,[g1,g2,g4]}...]
         into [(g1,a1),(g1,a2),(g1,a3),(g2,a1),(g2,a2),(g2,a4)....]
         ''' 
-        df_RDD_1 = df.flatMap(lambda x: [(str(x.gene),str(y.strip("u'[ ]"))) for y in (x.artworks).split(",")])  
+        df_RDD_1 = df.flatMap(lambda x: [(str(y.strip("u'[ ]")),str(x.artworks)) for y in (x.gene).split(",")])  
 
         ''' 
         RDD join itself on Gene_id to get artwork pair
@@ -43,7 +43,6 @@ class ComputeSimilarity(object):
         RDD_1_save = RDD_1_map.map(lambda x: {"id_1":x[0],"id_2":x[1],"sim_count":str(x[2])})
 
         ''' save result '''
-        print("Spark finished processing: %s\n" % time.strftime('%Y%m%d%H%M%S'))
         self.save_to_cassandra(RDD_1_save)
         print("Spark saved to Cassandra: %s\n" % time.strftime('%Y%m%d%H%M%S'))
         self.save_to_hdfs(RDD_1_save)
@@ -51,7 +50,7 @@ class ComputeSimilarity(object):
 
     def save_to_cassandra(self,RDD_1_save):
         ''' save to Cassandra '''
-        RDD_1_save.saveToCassandra("art_pin_log","artwork_sim")
+        RDD_1_save.saveToCassandra("art_pin_log","art_sim_fake")
 
     def save_to_hdfs(self,RDD_1_save):
         ''' save to HDFS '''
@@ -60,13 +59,12 @@ class ComputeSimilarity(object):
         RDD_1_save.saveAsTextFile(path)
 
 
-
 if __name__ == '__main__':
     conf = SparkConf()
     sc = SparkContext(conf=conf)
     sqlContext = SQLContext(sc)
     cf = ComputeSimilarity()
-    cf.hdfs_path = "hdfs://ec2-54-183-55-185.us-west-1.compute.amazonaws.com:9000/insight/artsy/gene_info.json"
+    cf.hdfs_path = "hdfs://ec2-54-183-55-185.us-west-1.compute.amazonaws.com:9000/insight/artsy/engr_gene/a2000_g20.json"
     cf.temp_file_path = "hdfs://ec2-54-183-55-185.us-west-1.compute.amazonaws.com:9000/insight/artsy/temp"
     print("Spark loading data: %s\n" % time.strftime('%Y%m%d%H%M%S'))
     df = sqlContext.read.json(cf.hdfs_path)
