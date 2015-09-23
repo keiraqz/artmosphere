@@ -9,7 +9,7 @@ import urllib2
 import sys
 
 
-source_file = '/home/ubuntu/Artmo/Dataset/Pinterest/pinterest_small.csv'
+source_file = '/mnt/my-data/datasets/pinterest/pinterest_small.csv'
 
 ES_HOST = {"host" : "localhost", "port" : 9200}
 

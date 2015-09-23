@@ -8,6 +8,7 @@ import json
 import csv
 import urllib2
 import sys
+import random
 # from pprint import pprint
 
 class LoadJson(object):
@@ -42,9 +43,19 @@ if __name__ == '__main__':
     df = sqlContext.read.json(cf.hdfs_path)
 
     # print df.toJSON().first()
+    temp = df.map(lambda x: {"artwork_id": x.id,"title":x.title, "image_link":x._links.thumbnail.href,"collecting_institution":x.collecting_institution, "created_at":x.created_at, "sold":str(x.sold),"pined_count":random.gauss(100, 5)}).collect()
+    op_dict = {
+        "index": {
+            "_index": cf.INDEX_NAME,
+            "_type": cf.TYPE_NAME,
+            # "_id": data_dict[ID_FIELD]
+        }
+    }
+    for idd in temp:
+        cf.bulk_data.append(op_dict)
+        cf.bulk_data.append(idd)
 
-    cf.bulk_data = df.toJSON().map(lambda x: '{"index":{"_index":"' + cf.INDEX_NAME + '","_type":"'+cf.TYPE_NAME+'"}}\n{'+json.dumps(x)+'}\n').reduce(lambda x,y : x+y)
-
+    # cf.bulk_data.first()
     ES_HOST = {"host" : "localhost", "port" : 9200}
     es = Elasticsearch(hosts = [ES_HOST])
     if es.indices.exists(cf.INDEX_NAME):

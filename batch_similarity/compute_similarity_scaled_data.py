@@ -64,7 +64,7 @@ if __name__ == '__main__':
     sc = SparkContext(conf=conf)
     sqlContext = SQLContext(sc)
     cf = ComputeSimilarity()
-    cf.hdfs_path = "hdfs://ec2-54-183-55-185.us-west-1.compute.amazonaws.com:9000/insight/artsy/engr_gene/a2000_g20.json"
+    cf.hdfs_path = "hdfs://ec2-54-183-55-185.us-west-1.compute.amazonaws.com:9000/insight/artsy/engr_gene/a5000_g20.json"
     cf.temp_file_path = "hdfs://ec2-54-183-55-185.us-west-1.compute.amazonaws.com:9000/insight/artsy/temp"
     print("Spark loading data: %s\n" % time.strftime('%Y%m%d%H%M%S'))
     df = sqlContext.read.json(cf.hdfs_path)

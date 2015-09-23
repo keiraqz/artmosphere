@@ -3,7 +3,9 @@ Created on Sep 21, 2015
 
 @author: Shanghai
 '''
-
+import avro.schema
+from avro.datafile import DataFileReader, DataFileWriter
+from avro.io import DatumReader, DatumWriter
 import pyspark_cassandra
 import pyspark_cassandra.streaming
 from pyspark_cassandra import CassandraSparkContext
@@ -62,10 +64,11 @@ if __name__ == '__main__':
     conf = SparkConf().setAppName("JSON Ingest")
     sc = SparkContext(conf=conf)
     sqlContext = SQLContext(sc)
-
+    schema = avro.schema.parse(open("/home/ubuntu/Artmo/populate_database/artwork_schema.avro").read())
     cf = LoadJson()
     df = sqlContext.read.json(cf.hdfs_path)
     # df_RDD = df.map(cf.get_map)
+
     df_RDD = df.map(lambda x: {"artwork_id": x.id,"title":x.title, "collecting_institution":x.collecting_institution, "created_at":x.created_at, "image_link":x._links.thumbnail.href,"sold":str(x.sold),"pined_count":random.gauss(100, 5)})
     # print df_RDD.first()
 
