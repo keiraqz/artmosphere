@@ -1,0 +1,96 @@
+BODY
+{
+	background-color: #BDD2D6;
+	color: #FFFFFF;
+}
+#thebox
+{
+	background-color: #FBFDFE;
+	color: #000000;
+	border: 28px solid #FBFDFE;
+	border-radius: 10px;
+}
+#button
+{
+	background-color: #0378B6;
+	color: #FFFFFF;
+	border: 1px solid #CBCECE;
+}
+#content
+{
+	background-color: #444546;
+	border: 4px solid #444546;
+	border-radius: 10px;
+	min-width: 1200px;
+	display: inline-block;
+}
+A
+{
+	color: #FFC400;
+}
+FIELDSET
+{
+	border-radius: 5px;
+}
+#search
+{
+	float: left;
+	width: 350px;
+}
+#resultbox
+{
+	height: 470px;
+}
+#searchbox
+{
+	height: 520px;
+}
+#create-new
+{
+	float: left;
+	padding-top: 6px;
+}
+#perform-search
+{
+	border-radius: 10px;
+	width: 300px;
+}
+.onentry
+{
+	padding: 9px;
+	border-bottom: 1px solid #2B2B2B;
+	margin: 0px;
+	line-height: 1.4;
+}
+#page-select
+{
+	float: right;
+}
+#result-list
+{
+	height: 400px;
+}
+#result-summary
+{
+	margin-left: 17px;
+	background-color: #C1E8EA;
+	text-align: center;
+}
+#onerecord
+{
+	height: 483px;
+}
+#therecord
+{
+	height: 460px;
+}
+#goback
+{
+	float: right;
+}
+#modelselection
+{
+	background-color: #6E92BD;
+	color: #FAFAFA;
+	border: 1px solid #000000;
+}

@@ -17,7 +17,7 @@ class LoadJson(object):
         self.INDEX_NAME = 'artsy'
         self.TYPE_NAME = 'artworks'
         self.ID_FIELD = 'id'
-        self.hdfs_path = "hdfs://ec2-54-183-55-185.us-west-1.compute.amazonaws.com:9000/insight/artsy/artworks/artwork_1.txt"
+        self.hdfs_path = "hdfs://ec2-54-183-55-185.us-west-1.compute.amazonaws.com:9000/insight/artsy/artworks"
 
 if __name__ == '__main__':
     conf = SparkConf().setAppName("ES Ingest")
@@ -28,14 +28,21 @@ if __name__ == '__main__':
     df = sqlContext.read.json(cf.hdfs_path)
 
     # print df.toJSON().first()
-    temp = df.map(lambda x: {"artwork_id": x.id,"title":x.title, "image_link":x._links.thumbnail.href,"collecting_institution":x.collecting_institution, "created_at":x.created_at, "sold":str(x.sold),"pined_count":random.gauss(100, 5)}).collect()
+    def mapping(x):
+        try:
+            return [{"artwork_id": x.id,"title":x.title, "collecting_institution":x.collecting_institution, "created_at":x.created_at,"image_link":x._links.thumbnail.href, "sold":str(x.sold),"pined_count":random.gauss(100, 5)}]
+        except:
+            return [{"artwork_id": x.id,"title":x.title, "collecting_institution":x.collecting_institution, "created_at":x.created_at,"image_link":"none", "sold":str(x.sold),"pined_count":random.gauss(100, 5)}]
+
+    df_RDD = df.flatMap(mapping).collect()
+
     op_dict = {
         "index": {
             "_index": cf.INDEX_NAME,
             "_type": cf.TYPE_NAME,
         }
     }
-    for idd in temp:
+    for idd in df_RDD:
         cf.bulk_data.append(op_dict)
         cf.bulk_data.append(idd)
 

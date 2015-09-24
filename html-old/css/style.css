@@ -1,0 +1,46 @@
+BODY
+{
+	background-color: #BDD2D6;
+	color: #FFFFFF;
+}
+#thebox
+{
+	background-color: #FBFDFE;
+	color: #000000;
+	border: 28px solid #FBFDFE;
+	border-radius: 10px;
+}
+#button
+{
+	background-color: #0378B6;
+	color: #FFFFFF;
+	border: 1px solid #CBCECE;
+}
+#table-advanced TR
+{
+	background-color: #C8E2E6;
+}
+#table-simple TR
+{
+	background-color: #C8E2E6;
+}
+#content
+{
+	background-color: #444546;
+	border: 4px solid #444546;
+	border-radius: 10px;
+	min-width: 1200px;
+	display: inline-block;
+}
+A
+{
+	color: #FFC400;
+}
+FIELDSET
+{
+	border-radius: 5px;
+}
+#backtosearch
+{
+	float: right;
+}

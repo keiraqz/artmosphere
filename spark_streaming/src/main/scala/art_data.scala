@@ -27,7 +27,7 @@ object UserDataStreaming {
     // Create context with 2 second batch interval
     val sparkConf = new SparkConf().setAppName("art_data").set("spark.cassandra.connection.host", "172.31.11.233")
     // val sc = new SparkContext(sparkConf)
-    val ssc = new StreamingContext(sparkConf, Seconds(30))
+    val ssc = new StreamingContext(sparkConf, Seconds(60))
 
     // Create direct kafka stream with brokers and topics
     val kafkaParams = Map[String, String]("metadata.broker.list" -> brokers)
@@ -50,15 +50,7 @@ object UserDataStreaming {
         val ticks_per_source_DF = ticksDF.groupBy("art_id").count().collect()
         var ticks_with_time = ticks_per_source_DF.map(x => (x(0),current_time,x(1)))
 
-        rdd.sparkContext.parallelize(ticks_with_time).saveToCassandra("art_pin_log", "artwork_count", SomeColumns("art_id","event_time", "pin_count")) //TODO
-                                // 
-
-                                // .agg("price" -> "avg", "volume" -> "sum")
-                                // .orderBy("pin_id")
-
-        // ticks_per_source_DF(0)
-        // ticks_with_time.show()
-
+        rdd.sparkContext.parallelize(ticks_with_time).saveToCassandra("art_pin_log", "artwork_count", SomeColumns("art_id","event_time", "pin_count"))
     }
 
     // Start the computation
