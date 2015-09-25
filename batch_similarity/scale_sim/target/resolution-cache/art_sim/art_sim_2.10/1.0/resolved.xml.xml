@@ -4,7 +4,7 @@
 		module="art_sim_2.10"
 		revision="1.0"
 		status="integration"
-		publication="20150924000237"
+		publication="20150925124455"
 	>
 		<description>
 		art_sim
@@ -36,9 +36,11 @@
 		<dependency org="org.scala-lang" name="scala-library" rev="2.10.4" conf="scala-tool->default,optional(default);compile->default(compile)"/>
 		<dependency org="org.apache.spark" name="spark-core_2.10" rev="1.3.0" conf="provided->default(compile)"/>
 		<dependency org="org.apache.spark" name="spark-sql_2.10" rev="1.3.0" conf="provided->default(compile)"/>
+		<dependency org="org.apache.spark" name="spark-mllib_2.10" rev="1.0.1" conf="compile->default(compile)"/>
 		<dependency org="org.apache.spark" name="spark-streaming_2.10" rev="1.3.0" conf="provided->default(compile)"/>
 		<dependency org="org.apache.spark" name="spark-streaming-kafka_2.10" rev="1.3.0" conf="compile->default(compile)"/>
 		<dependency org="com.datastax.spark" name="spark-cassandra-connector_2.10" rev="1.5.0-M1" conf="compile->default(compile)"/>
+		<dependency org="com.github.fommil.netlib" name="all" rev="1.1.2" conf="compile->default(compile)"/>
 		<dependency org="org.scalanlp" name="breeze_2.10" rev="0.10" conf="compile->default(compile)"/>
 		<dependency org="org.scalanlp" name="breeze-natives_2.10" rev="0.10" conf="compile->default(compile)"/>
 	</dependencies>

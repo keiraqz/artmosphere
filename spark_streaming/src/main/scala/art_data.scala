@@ -20,14 +20,14 @@ import org.joda.time.format.DateTimeFormat
 object UserDataStreaming {
   def main(args: Array[String]) {
 
-    val brokers = "ec2-54-183-55-185.us-west-1.compute.amazonaws.com:9092"
-    val topics = "user_activity"
+    val brokers = "ec2-52-8-247-28.us-west-1.compute.amazonaws.com:9092,ec2-54-183-69-4.us-west-1.compute.amazonaws.com:9092,ec2-52-8-244-245.us-west-1.compute.amazonaws.com:9092,ec2-54-183-55-185.us-west-1.compute.amazonaws.com:9092"
+    val topics = "pin_activity"
     val topicsSet = topics.split(",").toSet
 
     // Create context with 2 second batch interval
-    val sparkConf = new SparkConf().setAppName("art_data").set("spark.cassandra.connection.host", "172.31.11.233")
+    val sparkConf = new SparkConf().setAppName("art_data").set("spark.cassandra.connection.host", "172.31.11.232")
     // val sc = new SparkContext(sparkConf)
-    val ssc = new StreamingContext(sparkConf, Seconds(60))
+    val ssc = new StreamingContext(sparkConf, Seconds(30))
 
     // Create direct kafka stream with brokers and topics
     val kafkaParams = Map[String, String]("metadata.broker.list" -> brokers)
@@ -77,7 +77,7 @@ object SQLContextSingleton {
 
 object TimestampFormatter {
 
-  private val TimestampPattern = "yyyy-MM-dd HH:mm:ss"
+  private val TimestampPattern = "yyyy-MM-dd'T'HH:mm:ssZ"
 
   def format(date: Date): String =
     DateTimeFormat.forPattern(TimestampPattern).print(new DateTime(date.getTime))

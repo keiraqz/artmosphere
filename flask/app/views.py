@@ -3,6 +3,7 @@ from flask import jsonify
 from app import app
 from cassandra.cluster import Cluster
 from elasticsearch import Elasticsearch
+from flask import render_template
 import hashlib
 from struct import *
 import json
@@ -21,8 +22,10 @@ cs_session = cs_cluster.connect('art_pin_log')
 
 @app.route("/")
 @app.route("/index")  
-def hello(): 
-    return "What a wonderful life!"
+def index():
+   user = { 'nickname': 'Miguel' } # fake user
+   title = "Artmosphere"
+   return render_template("base.html", title = title, user = user)
 
 
 # given date, view art's pinned_count
@@ -39,7 +42,7 @@ def get_count(art_id):
 
 
 # given date, view art's pinned_count
-@app.route('/cs/<art_id>/<from_date>/<to_date>') #test: 515b683f94714cb2e3000131/2015-09-24 03:34:00+0000/2015-09-24 03:51:00+0000
+@app.route('/cs/<art_id>/<from_date>/<to_date>') #works: 515b683f94714cb2e3000131/2015-09-25T02:01:30+0000/2015-09-25T02:04:00+0000
 def get_timed_count(art_id, from_date, to_date):
         stmt = "SELECT art_id, pin_count,event_time FROM artwork_count WHERE art_id = %s AND event_time > %s AND event_time < %s"
         response = cs_session.execute(stmt, parameters=[art_id, from_date, to_date])
@@ -93,10 +96,6 @@ def return_all():
 		count += 1
 	return json.dumps(matched_pics, indent=2)
 
-@app.route('/api/testing')
-def index():
-   user = { 'nickname': 'Miguel' } # fake user
-   return render_template("index.html", title = 'Home', user = user)
 
 if __name__ == '__main__':
 	"Are we in the __main__ scope? Start test server."

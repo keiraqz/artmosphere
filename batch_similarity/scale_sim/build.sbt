@@ -7,9 +7,11 @@ scalaVersion := "2.10.4"
 libraryDependencies ++= Seq(
 "org.apache.spark" %% "spark-core" % "1.3.0" % "provided",
 "org.apache.spark" %% "spark-sql" % "1.3.0" % "provided",
+"org.apache.spark"  %% "spark-mllib" % "1.0.1",
 "org.apache.spark" % "spark-streaming_2.10" % "1.3.0" % "provided",
 "org.apache.spark" % "spark-streaming-kafka_2.10" % "1.3.0",
 "com.datastax.spark" %% "spark-cassandra-connector" % "1.5.0-M1",
+"com.github.fommil.netlib" % "all" % "1.1.2",
 "org.scalanlp" %% "breeze" % "0.10",
 "org.scalanlp" %% "breeze-natives" % "0.10"
 )
