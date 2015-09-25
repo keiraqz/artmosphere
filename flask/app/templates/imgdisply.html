@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block image %}
+<div class="container">
+      <div class="starter-template">
+        <div class="row" style="height:100vh;">
+                <div class="col-md-10 col-md-offset-1">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>Image</th>
+                          <th>Artwork Id</th>
+                          <th>Title</th>
+                          <th>Collecting Institution</th>
+                          <th>Pinned Count</th>
+                          
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {% for val in output %}
+                        <tr>
+                          <td><img src={{val.image_link}} ></td>
+                          <td>{{val.artwork_id}}</td>
+                          <td>{{val.title}}</td>
+                          <td>{{val.collecting_institution}}</td>
+                          <td>{{val.pinned_count}}</td>
+                        </tr>
+                        {% endfor %}
+                      </tbody>
+                    </table>
+                </div>
+        </div>
+      </div>
+
+    </div>
+
+{% endblock %}

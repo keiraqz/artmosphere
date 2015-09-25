@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block imagetrenddis %}
+<div class="container">
+      <div class="starter-template">
+        <div class="row" style="height:100vh;">
+                <div class="col-md-10 col-md-offset-1">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>Artwork Id</th>
+                          <th>Similar Art</th>                    
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {% for val in output_2 %}
+                        <tr>
+                          <td>{{val.art_id}}</td>
+                          <td>{{val.similary}}</td>
+                        </tr>
+                        {% endfor %}
+                      </tbody>
+                    </table>
+
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>Artwork Id</th>
+                          <th>Event Time</th>
+                          <th>Count</th>                         
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {% for val in output %}
+                        <tr>
+                          <td>{{val.art_id}}</td>
+                          <td>{{val.event_time}}</td>
+                          <td>{{val.pin_count}}</td>
+                        </tr>
+                        {% endfor %}
+                      </tbody>
+                    </table>
+                </div>
+        </div>
+      </div>
+
+    </div>
+<!-- <script>
+    $().ready(function() {
+      query_new_transactions();
+      refresh_statistics();
+      setInterval(refresh_statistics, 1000);
+    });
+</script> -->
+{% endblock %}

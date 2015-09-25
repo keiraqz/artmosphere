@@ -1,0 +1,18 @@
+{% extends "base.html" %} <!--this means that you are extending the base tempate -->
+{% block imgsearch %} <!-- this is the name of the block below -->
+        <div class="row" style="height:100vh;">
+                <div class="col-md-4 col-md-offset-4" style="margin-top:10vh;">
+                        <form action"keyword_post" method="POST">
+<!-- action is the html template that will return the result to this input query -->
+                                <div class="form-group text-center">
+                                        <label style="font-weight:300; font-size:36px;">Type a keyword</label>
+                                        <br /><br />
+                                        <input type="text" class="form-control" id="keywords" name="keywords" placeholder="sky,flowers">
+                                        <br /><br />
+                                        <button type="submit" value="Send" name="search-container" class="btn btn-default id-submit">Submit</button>
+                                </div>
+                        </form>
+                </div>
+        </div>
+
+{% endblock %}

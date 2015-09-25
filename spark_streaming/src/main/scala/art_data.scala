@@ -27,7 +27,7 @@ object UserDataStreaming {
     // Create context with 2 second batch interval
     val sparkConf = new SparkConf().setAppName("art_data").set("spark.cassandra.connection.host", "172.31.11.232")
     // val sc = new SparkContext(sparkConf)
-    val ssc = new StreamingContext(sparkConf, Seconds(30))
+    val ssc = new StreamingContext(sparkConf, Seconds(2))
 
     // Create direct kafka stream with brokers and topics
     val kafkaParams = Map[String, String]("metadata.broker.list" -> brokers)
