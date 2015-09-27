@@ -98,8 +98,8 @@ def get_count(art_id):
     response_list = []
     for val in response:
          response_list.append(val)
-    jsonresponse = [{"Art ID": x.art_id, "Event Time": x.event_time, "Count": x.pin_count} for x in response_list]
-    return jsonify(pin_total=jsonresponse)
+    jsonresponse = [{"art_id": x.art_id, "event_time": x.event_time, "pin_count": x.pin_count} for x in response_list]
+    return jsonify(output=jsonresponse)
 
 # given date, view art's pinned_count
 @app.route('/cs/<art_id>/<from_date>/<to_date>') #works: 515b683f94714cb2e3000131/2015-09-25T02:01:30+0000/2015-09-25T02:04:00+0000
