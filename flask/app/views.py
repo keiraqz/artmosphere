@@ -49,13 +49,23 @@ def img_similar_post():
 def img_trend():
    return render_template("imgtrend.html")
 
-# search keywords in image title
-@app.route('/trend', methods=['POST'])
-def img_trend_post():
-	req = request.form['artwork_id'] #test: 538f6428c9dc24d3d700052c
+# get image info
+@app.route('/trend/<req>', methods=['GET'])
+def img_trend_get(req):
+	# req = request.form['artwork_id'] #test: 538f6428c9dc24d3d700052c
 	art_id = req
-	if not req:
-		art_id = "538f6428c9dc24d3d700052c"	
+	if not art_id:
+		art_id = "538f6428c9dc24d3d700052c"
+
+	## Get art info
+	stmt_0 = "SELECT artwork_id,image_link, title, collecting_institution, pined_count, sold FROM artworks WHERE artwork_id = %s"
+	response_0 = cs_session.execute(stmt_0, parameters=[art_id])
+	response_list_0 = []
+	for val in response_0:
+		response_list_0.append(val)
+	jsonresponse_0 = [{"id":x.artwork_id , "title": x.title,"image_link":x.image_link ,"collecting_institution": x.collecting_institution, "pined_count": x.pined_count, "sold":x.sold} for x in response_list_0]
+
+	## Get the trend
 	current_time = gmtime()
 	to_date = strftime("%Y-%m-%d %H:%M:%S", current_time)
 	stmt = "SELECT art_id, pin_count, event_time FROM artwork_count WHERE art_id = %s AND event_time < %s ORDER BY event_time DESC"
@@ -69,12 +79,15 @@ def img_trend_post():
 	stmt_2 = "SELECT * FROM artwork_sim WHERE id_1 in (%s)"
 	response_2 = cs_session.execute(stmt_2, parameters=[art_id])
 	response_list_2 = []
-	for val in response_2:
-		response_list_2.append(val)
-	jsonresponse_2 = [{"art_id": x.id_1, "similary": x.id_2, "pin_count": x.sim_count} for x in response_list_2]
-
+	jsonresponse_2 = []
+	if response_2:
+		for val in response_2:
+			temp_stmt = "SELECT artwork_id,image_link FROM artworks WHERE artwork_id = %s"
+			temp_response = cs_session.execute(temp_stmt, parameters=[val.id_2])
+		# response_list_2.append({"similar_id":temp_response[0].artwork_id,"image_link":temp_response[0].image_link,"sim_count":val.sim_count})
+			jsonresponse_2.append({"art_id": temp_response[0].artwork_id, "image_link": temp_response[0].image_link, "pin_count": val.sim_count})
 	## End of similar Art
-	return render_template("imgtrenddisplay.html",output=jsonresponse,output_2=jsonresponse_2)
+	return render_template("imgtrenddisplay.html",output_0=jsonresponse_0, output=jsonresponse,output_2=jsonresponse_2)
 
 
 # given date, view art's pinned_count
@@ -109,6 +122,8 @@ def search():
 @app.route('/search', methods=['POST'])
 def img_name_post():
 	keywords = request.form['keywords']
+	if not keywords:
+		keywords = "water"
 	res = es.search(index = INDEX_NAME, q='title:'+keywords, body={"query": {"match_all": {}}}) 
 	pids = [ [ r['_source']['artwork_id'], r['_source']['title'], r['_source']['image_link'], r['_source']['collecting_institution'], int(r['_source']['pined_count']) ] for r in res['hits']['hits']]
 	pids.sort(reverse=True)

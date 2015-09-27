@@ -18,7 +18,7 @@
                       <tbody>
                         {% for val in output %}
                         <tr>
-                          <td><img src={{val.image_link}} ></td>
+                          <td><a href="http://ec2-54-183-55-185.us-west-1.compute.amazonaws.com:5000/trend/{{val.artwork_id}}"><img src={{val.image_link}} class="img-thumbnail"></a></td>
                           <td>{{val.artwork_id}}</td>
                           <td>{{val.title}}</td>
                           <td>{{val.collecting_institution}}</td>
