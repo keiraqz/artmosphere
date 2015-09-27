@@ -68,7 +68,7 @@ def img_trend_get(req):
 	## Get the trend
 	current_time = gmtime()
 	to_date = strftime("%Y-%m-%d %H:%M:%S", current_time)
-	stmt = "SELECT art_id, pin_count, event_time FROM artwork_count WHERE art_id = %s AND event_time < %s ORDER BY event_time DESC"
+	stmt = "SELECT art_id, pin_count, event_time FROM artwork_count WHERE art_id = %s AND event_time < %s ORDER BY event_time DESC LIMIT 5 ALLOW FILTERING"
 	response = cs_session.execute(stmt, parameters=[art_id, to_date])
 	response_list = []
 	for val in response:
@@ -93,30 +93,32 @@ def img_trend_get(req):
 # given date, view art's pinned_count
 @app.route('/cs/<art_id>') #test: 515b683f94714cb2e3000131
 def get_count(art_id):
-    stmt = "SELECT art_id, pin_count,event_time FROM artwork_count WHERE art_id = %s"
-    response = cs_session.execute(stmt, parameters=[art_id])
-    response_list = []
-    for val in response:
-         response_list.append(val)
-    jsonresponse = [{"art_id": x.art_id, "event_time": x.event_time, "pin_count": x.pin_count} for x in response_list]
-    return jsonify(output=jsonresponse)
+	current_time = gmtime()
+	to_date = strftime("%Y-%m-%d %H:%M:%S", current_time)
+	stmt = "SELECT art_id, pin_count,event_time FROM artwork_count WHERE art_id = %s AND event_time < %s ORDER BY event_time DESC LIMIT 5 ALLOW FILTERING"
+	response = cs_session.execute(stmt, parameters=[art_id,to_date])
+	response_list = []
+	for val in response:
+		response_list.append(val)
+	jsonresponse = [{"art_id": x.art_id, "event_time": x.event_time, "pin_count": x.pin_count} for x in response_list]
+	return jsonify(output=jsonresponse)
 
 # given date, view art's pinned_count
 @app.route('/cs/<art_id>/<from_date>/<to_date>') #works: 515b683f94714cb2e3000131/2015-09-25T02:01:30+0000/2015-09-25T02:04:00+0000
 def get_timed_count(art_id, from_date, to_date):
-    stmt = "SELECT art_id, pin_count,event_time FROM artwork_count WHERE art_id = %s AND event_time > %s AND event_time < %s"
-    response = cs_session.execute(stmt, parameters=[art_id, from_date, to_date])
-    response_list = []
-    for val in response:
-         response_list.append(val)
-    jsonresponse = [{"Art ID": x.art_id, "Event Time": x.event_time, "Count": x.pin_count} for x in response_list]
-    return jsonify(art_id=jsonresponse)
+	stmt = "SELECT art_id, pin_count,event_time FROM artwork_count WHERE art_id = %s AND event_time > %s AND event_time < %s"
+	response = cs_session.execute(stmt, parameters=[art_id, from_date, to_date])
+	response_list = []
+	for val in response:
+		response_list.append(val)
+	jsonresponse = [{"Art ID": x.art_id, "Event Time": x.event_time, "Count": x.pin_count} for x in response_list]
+	return jsonify(art_id=jsonresponse)
 
 
 
 @app.route("/search")
 def search():
-   return render_template("imgsearch.html")
+	return render_template("imgsearch.html")
 
 # search keywords in image title
 @app.route('/search', methods=['POST'])

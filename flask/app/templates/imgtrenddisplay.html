@@ -45,7 +45,7 @@
              <div id="highchart" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
           </div>
           </div>
-          <div class="container">
+          <!-- <div class="container">
           <div class="row">
                 <table class="table">
                   <thead>
@@ -67,7 +67,7 @@
                 </table>
           </div><!--/row-->
           </div>
-          </div>
+          </div> -->
       </div><!--/.col-xs-12.col-sm-9-->
 
         {% if output_2 %}
@@ -95,14 +95,17 @@
 
         // $.each(data.output, function(event_time, pin_count) {
             var x =  (new Date()).getTime(), 
-            // x = event_time,
-                y = parseInt(data.output[0].pin_count); 
+            // var x = data.output[0].event_time,
+                y = parseInt(data.output[0].pin_count);
+            if (y==null) {
+              y = 0
+            }
             var chart = $('#highchart').highcharts();
             var series = chart.series[0];
             series.addPoint([x, y], true, true);
         // });
       }
-      setTimeout(query_new_trend,1000);
+      setTimeout(query_new_trend,3000);
     });
   }
 
@@ -188,7 +191,7 @@ $(function () {
                 data: (function () {
                     var data = [], time = (new Date()).getTime(), i;
                     for (i = -19; i <= 0; i += 1) {
-                        data.push({ x: time + i * 1000, y: 0 });
+                        data.push({ x: time + i * 3000, y: 0 });
                     }
                     return data;
                 }())

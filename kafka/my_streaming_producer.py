@@ -36,7 +36,7 @@ class Producer(object):
 			art_field = random.choice(self.artwork_id)
 			str_fmt = "{};{};{};{};{}"
 			message_info = str_fmt.format(source_symbol,time_field,user_field,"pin",art_field)
-			print message_info
+			# print message_info
 			self.producer.send_messages('pin_activity', source_symbol, message_info)
 			msg_cnt += 1
 

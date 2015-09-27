@@ -1,1 +1,33 @@
-[0m[[0mdebug[0m] [0mJar uptodate: /home/ubuntu/Artmo/spark_streaming/target/scala-2.10/artsy_data_2.10-1.0.jar[0m
+[0m[[0minfo[0m] [0mPackaging /home/ubuntu/Artmo/spark_streaming/target/scala-2.10/artsy_data_2.10-1.0.jar ...[0m
+[0m[[0mdebug[0m] [0mInput file mappings:[0m
+[0m[[0mdebug[0m] [0m	UserDataStreaming$$anonfun$main$1$$anonfun$2.class[0m
+[0m[[0mdebug[0m] [0m	  /home/ubuntu/Artmo/spark_streaming/target/scala-2.10/classes/UserDataStreaming$$anonfun$main$1$$anonfun$2.class[0m
+[0m[[0mdebug[0m] [0m	SQLContextSingleton$.class[0m
+[0m[[0mdebug[0m] [0m	  /home/ubuntu/Artmo/spark_streaming/target/scala-2.10/classes/SQLContextSingleton$.class[0m
+[0m[[0mdebug[0m] [0m	UserDataStreaming$$anonfun$main$1$$typecreator2$1.class[0m
+[0m[[0mdebug[0m] [0m	  /home/ubuntu/Artmo/spark_streaming/target/scala-2.10/classes/UserDataStreaming$$anonfun$main$1$$typecreator2$1.class[0m
+[0m[[0mdebug[0m] [0m	UserDataStreaming$$anonfun$main$1.class[0m
+[0m[[0mdebug[0m] [0m	  /home/ubuntu/Artmo/spark_streaming/target/scala-2.10/classes/UserDataStreaming$$anonfun$main$1.class[0m
+[0m[[0mdebug[0m] [0m	UserDataStreaming.class[0m
+[0m[[0mdebug[0m] [0m	  /home/ubuntu/Artmo/spark_streaming/target/scala-2.10/classes/UserDataStreaming.class[0m
+[0m[[0mdebug[0m] [0m	UserDataStreaming$$anonfun$main$1$$typecreator1$1.class[0m
+[0m[[0mdebug[0m] [0m	  /home/ubuntu/Artmo/spark_streaming/target/scala-2.10/classes/UserDataStreaming$$anonfun$main$1$$typecreator1$1.class[0m
+[0m[[0mdebug[0m] [0m	TimestampFormatter.class[0m
+[0m[[0mdebug[0m] [0m	  /home/ubuntu/Artmo/spark_streaming/target/scala-2.10/classes/TimestampFormatter.class[0m
+[0m[[0mdebug[0m] [0m	TimestampFormatter$.class[0m
+[0m[[0mdebug[0m] [0m	  /home/ubuntu/Artmo/spark_streaming/target/scala-2.10/classes/TimestampFormatter$.class[0m
+[0m[[0mdebug[0m] [0m	UserDataStreaming$$anonfun$main$1$$typecreator3$1.class[0m
+[0m[[0mdebug[0m] [0m	  /home/ubuntu/Artmo/spark_streaming/target/scala-2.10/classes/UserDataStreaming$$anonfun$main$1$$typecreator3$1.class[0m
+[0m[[0mdebug[0m] [0m	UserDataStreaming$$anonfun$main$1$$anonfun$1.class[0m
+[0m[[0mdebug[0m] [0m	  /home/ubuntu/Artmo/spark_streaming/target/scala-2.10/classes/UserDataStreaming$$anonfun$main$1$$anonfun$1.class[0m
+[0m[[0mdebug[0m] [0m	Tick.class[0m
+[0m[[0mdebug[0m] [0m	  /home/ubuntu/Artmo/spark_streaming/target/scala-2.10/classes/Tick.class[0m
+[0m[[0mdebug[0m] [0m	UserDataStreaming$.class[0m
+[0m[[0mdebug[0m] [0m	  /home/ubuntu/Artmo/spark_streaming/target/scala-2.10/classes/UserDataStreaming$.class[0m
+[0m[[0mdebug[0m] [0m	Tick$.class[0m
+[0m[[0mdebug[0m] [0m	  /home/ubuntu/Artmo/spark_streaming/target/scala-2.10/classes/Tick$.class[0m
+[0m[[0mdebug[0m] [0m	UserDataStreaming$$anonfun$main$1$$anonfun$3.class[0m
+[0m[[0mdebug[0m] [0m	  /home/ubuntu/Artmo/spark_streaming/target/scala-2.10/classes/UserDataStreaming$$anonfun$main$1$$anonfun$3.class[0m
+[0m[[0mdebug[0m] [0m	SQLContextSingleton.class[0m
+[0m[[0mdebug[0m] [0m	  /home/ubuntu/Artmo/spark_streaming/target/scala-2.10/classes/SQLContextSingleton.class[0m
+[0m[[0minfo[0m] [0mDone packaging.[0m
