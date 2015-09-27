@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block collection %}
+<div class="container">
+      <div class="starter-template">
+        <div class="row">
+          {% for val in output %}
+          <div class="col-xs-6 col-lg-4" style="height:310px">
+            <!-- <h2>{{val.title}}</h2> -->
+            <p align="center"><a href="http://ec2-54-183-55-185.us-west-1.compute.amazonaws.com:5000/trend/{{val.artwork_id}}"><img src={{val.image_link}} class="img-thumbnail" style="height:250px"></a> </p>
+            <p align="center"><b>Title: </b>{{val.title}}</p>
+            <!-- <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p> -->
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+{% endblock %}

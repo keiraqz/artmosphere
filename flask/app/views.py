@@ -84,10 +84,18 @@ def img_trend_get(req):
 		for val in response_2:
 			temp_stmt = "SELECT artwork_id,image_link FROM artworks WHERE artwork_id = %s"
 			temp_response = cs_session.execute(temp_stmt, parameters=[val.id_2])
-		# response_list_2.append({"similar_id":temp_response[0].artwork_id,"image_link":temp_response[0].image_link,"sim_count":val.sim_count})
 			jsonresponse_2.append({"art_id": temp_response[0].artwork_id, "image_link": temp_response[0].image_link, "pin_count": val.sim_count})
 	## End of similar Art
-	return render_template("imgtrenddisplay.html",output_0=jsonresponse_0, output=jsonresponse,output_2=jsonresponse_2)
+
+	## Get some art
+	stmt_3 = "SELECT artwork_id,image_link,pined_count FROM artworks LIMIT 5 ALLOW FILTERING"
+	response_3 = cs_session.execute(stmt_3)
+	jsonresponse_3 = []
+	if response_3:
+		for val in response_3:
+			jsonresponse_3.append({"art_id": val.artwork_id, "image_link": val.image_link, "pin_count": val.pined_count})
+
+	return render_template("imgtrenddisplay.html",output_0=jsonresponse_0, output=jsonresponse,output_2=jsonresponse_2,output_3=jsonresponse_3)
 
 
 # given date, view art's pinned_count
@@ -131,6 +139,18 @@ def img_name_post():
 	pids.sort(reverse=True)
 	jsonresponse = [{"artwork_id": p[0], "title": p[1], "collecting_institution": p[3], "pinned_count": int(p[4]), "image_link": p[2]} for p in pids]
 	return render_template("imgdisply.html",output=jsonresponse)
+
+# search keywords in image title
+@app.route('/collection')
+def collection_dis():
+	keywords = "sunrise"
+	res = es.search(index = INDEX_NAME, q='title:'+keywords, body={"query": {"match_all": {}}}) 
+	pids = [ [ r['_source']['artwork_id'], r['_source']['title'], r['_source']['image_link'], r['_source']['collecting_institution'], int(r['_source']['pined_count']) ] for r in res['hits']['hits']]
+	pids.sort(reverse=True)
+	jsonresponse = [{"artwork_id": p[0], "title": p[1], "collecting_institution": p[3], "pinned_count": int(p[4]), "image_link": p[2]} for p in pids]
+	return render_template("collection.html",output=jsonresponse)
+
+
 
 # given a keyword, return all matches
 @app.route('/es/title/<keywords>')

@@ -33,6 +33,7 @@
                       </tbody>
                     </table>
                     <p align="center"> <img src={{output_0[0].image_link}} class="img-thumbnail" ></p>
+                    <!-- <button type="submit" value="Send" name="like-container" class="btn btn-default id-submit"><img src="http://iconshow.me/media/images/ui/ios7-icons/png/512/heart_1.png" style="height:20px"></button> -->
                     </div>
                   <!-- </div> -->
                 <!-- </div> -->
@@ -76,6 +77,16 @@
             <p align="center"><b>Similar Artworks</b></p>
             <!-- <a href="#" class="list-group-item active">Link</a> -->
             {% for val in output_2 %}
+            <a href="http://ec2-54-183-55-185.us-west-1.compute.amazonaws.com:5000/trend/{{val.art_id}}" class="list-group-item" align="center"><img src={{val.image_link}} class="img-thumbnail" ></a>
+            {% endfor %}
+          </div>
+        </div><!--/.sidebar-offcanvas-->
+        {% else %}
+        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" style="position:fixed;right:0;top:0;bottom:0;overflow-y:scroll;padding-top:70px">
+          <div class="list-group">
+            <p align="center"><b>Newly Uploaded</b></p>
+            <!-- <a href="#" class="list-group-item active">Link</a> -->
+            {% for val in output_3 %}
             <a href="http://ec2-54-183-55-185.us-west-1.compute.amazonaws.com:5000/trend/{{val.art_id}}" class="list-group-item" align="center"><img src={{val.image_link}} class="img-thumbnail" ></a>
             {% endfor %}
           </div>

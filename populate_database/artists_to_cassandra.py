@@ -36,5 +36,5 @@ if __name__ == '__main__':
 
     cf = LoadJson()
     df = sqlContext.read.json(cf.hdfs_path)
-    df_RDD = df.map(lambda x: {"artist_id": x.id,"name":x.name})
+    df_RDD = df.map(lambda x: {"artist_id": x.id,"name":x.name,"location":x.location})
     df_RDD.saveToCassandra("art_pin_log","artists")
