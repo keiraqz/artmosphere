@@ -12,7 +12,7 @@ class Consumer(object):
                                        max_buffer_size=1310720000)
         self.temp_file_path = None
         self.temp_file = None
-        self.hadoop_path = "/insight/artsy/history"
+        self.hadoop_path = "/insight/artsy/geo"
         # self.cached_path = "/insight/pinterest/cache"
         self.topic = topic
         self.group = group
@@ -77,8 +77,8 @@ class Consumer(object):
 if __name__ == '__main__':
 
     print "\nConsuming messages..."
-    cons = Consumer(addr="ec2-52-8-247-28.us-west-1.compute.amazonaws.com:9092,ec2-54-183-69-4.us-west-1.compute.amazonaws.com:9092,ec2-52-8-244-245.us-west-1.compute.amazonaws.com:9092,ec2-54-183-55-185.us-west-1.compute.amazonaws.com:9092", group="hdfs", topic="post_activity")
-    cons.consume_topic("/mnt/my-data/kafka/kafka_messages")
+    cons = Consumer(addr="ec2-52-8-247-28.us-west-1.compute.amazonaws.com:9092,ec2-54-183-69-4.us-west-1.compute.amazonaws.com:9092,ec2-52-8-244-245.us-west-1.compute.amazonaws.com:9092,ec2-54-183-55-185.us-west-1.compute.amazonaws.com:9092", group="hdfs", topic="post_geo_activity")
+    cons.consume_topic("/mnt/my-data/kafka/kafka_messages_geo")
 
 
 
