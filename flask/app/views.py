@@ -23,9 +23,13 @@ cs_session = cs_cluster.connect('art_pin_log')
 @app.route("/")
 @app.route("/index")  
 def index():
-   user = { 'nickname': 'Miguel' } # fake user
    title = "Artmosphere"
-   return render_template("home.html", title = title, user = user)
+   return render_template("home.html", title = title)
+
+@app.route("/profile")  
+def profile():
+   title = "Artmosphere"
+   return render_template("home.html", title = title)
 
 
 
