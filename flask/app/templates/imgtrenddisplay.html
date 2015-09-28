@@ -122,7 +122,12 @@
 
 $(function () {
     // Get the CSV and create the chart
-    
+    $(document).ready(function () {
+        Highcharts.setOptions({
+            global: {
+                useUTC: false
+            }
+        });
 
         $('#highchart').highcharts({
             chart: {
@@ -202,7 +207,7 @@ $(function () {
             }]
         });
 
-  
+  });
 });
 
 

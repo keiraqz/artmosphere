@@ -14,6 +14,32 @@ footer {
   padding: 30px 0;
 }
 
+
+/* FOR HIGHMAP
+-------------------------------------------------- */
+
+#container_map {
+  height: 500px; 
+  width: 100%; 
+  margin: 0 auto; 
+}
+
+.highcharts-tooltip>span {
+  padding: 10px;
+  white-space: normal !important;
+  width: 200px;
+}
+
+.loading {
+  margin-top: 10em;
+  text-align: center;
+  color: gray;
+}
+
+.f32 .flag {
+  vertical-align: middle !important;
+}
+
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 

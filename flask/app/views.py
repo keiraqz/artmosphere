@@ -19,7 +19,7 @@ cs_cluster = Cluster(['172.31.11.233','172.31.11.231','172.31.11.232'])
 cs_session = cs_cluster.connect('art_pin_log')
 	
 
-# APIs offered by flask
+# Change tabs
 @app.route("/")
 @app.route("/index")  
 def index():
@@ -31,6 +31,30 @@ def profile():
    title = "Artmosphere"
    return render_template("home.html", title = title)
 
+@app.route("/map")  
+def get_map():
+   title = "Artmosphere"
+   return render_template("map.html", title = title)
+
+
+# find similar artworks 
+@app.route('/map_get', methods=['GET'])
+def get_map_data():
+	current_time = ""
+	if not current_time:
+		timestamp = "2015-09-28" # for testing
+	else:
+		timestamp = current_time
+		
+	stmt = "SELECT * FROM art_geo_count WHERE event_time = %s"
+		# event_time | code | count | location
+	response = cs_session.execute(stmt, parameters=[timestamp])
+	response_list = []
+	for val in response:
+		response_list.append(val)
+	jsonresponse = [{"code": x.code, "name": x.location, "value": x.count} for x in response_list]
+	# return render_template("map.html",output=jsonresponse)
+	return jsonify(output=jsonresponse)
 
 
 # find similar artworks
@@ -40,7 +64,7 @@ def img_similar_post():
 	art_id = ""
 	if not req:
 		art_id = "538f6428c9dc24d3d700052c"		
-	stmt_2 = "SELECT * FROM artwork_sim WHERE WHERE id_1 in %s"
+	stmt_2 = "SELECT * FROM artwork_sim WHERE id_1 in %s"
 	response_2 = cs_session.execute(stmt_2, parameters=[art_id])
 	response_list_2 = []
 	for val in response_2:
@@ -127,7 +151,6 @@ def get_timed_count(art_id, from_date, to_date):
 	return jsonify(art_id=jsonresponse)
 
 
-
 @app.route("/search")
 def search():
 	return render_template("imgsearch.html")
@@ -153,8 +176,6 @@ def collection_dis():
 	pids.sort(reverse=True)
 	jsonresponse = [{"artwork_id": p[0], "title": p[1], "collecting_institution": p[3], "pinned_count": int(p[4]), "image_link": p[2]} for p in pids]
 	return render_template("collection.html",output=jsonresponse)
-
-
 
 # given a keyword, return all matches
 @app.route('/es/title/<keywords>')
@@ -193,7 +214,6 @@ def return_all():
 			"pinned_count": int(p[4]),
 			"Image_link": p[2]
 		}
-
 		count += 1
 	return json.dumps(matched_pics, indent=2)
 

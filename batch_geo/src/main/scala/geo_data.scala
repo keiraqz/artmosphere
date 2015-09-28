@@ -11,7 +11,7 @@ import org.apache.cassandra.serializers.TimestampSerializer
 import java.util.Date
 import org.joda.time.DateTime
 import org.joda.time.format.DateTimeFormat
-// import datetime
+
 
 object GeoData {
   def main(args: Array[String]) {
@@ -32,10 +32,6 @@ object GeoData {
     val ticks_per_source_DF = ticksDF.groupBy("code").count().collect()
     var ticks_with_time = ticks_per_source_DF.map(x => (current_time,x(0),x(1)))
     sc.parallelize(ticks_with_time).saveToCassandra("art_pin_log", "art_geo_count", SomeColumns("event_time","code","count"))
-
-    // // Start the computation
-    // ssc.start()
-    // ssc.awaitTermination()
   }
 }
 
@@ -56,7 +52,7 @@ object SQLContextSingleton {
 
 object TimestampFormatter {
 
-  private val TimestampPattern = "yyyy-MM-dd'T'HH:mm:ssZ"
+  private val TimestampPattern = "yyyy-MM-dd"
 
   def format(date: Date): String =
     DateTimeFormat.forPattern(TimestampPattern).print(new DateTime(date.getTime))
