@@ -29,7 +29,7 @@ def index():
 @app.route("/profile")  
 def profile():
    title = "Artmosphere"
-   return render_template("home.html", title = title)
+   return render_template("profile.html", title = title)
 
 @app.route("/map")  
 def get_map():
