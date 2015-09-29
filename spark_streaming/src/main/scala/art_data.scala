@@ -20,7 +20,7 @@ import org.joda.time.format.DateTimeFormat
 object UserDataStreaming {
   def main(args: Array[String]) {
 
-    val brokers = "ec2-52-8-247-28.us-west-1.compute.amazonaws.com:9092,ec2-54-183-69-4.us-west-1.compute.amazonaws.com:9092,ec2-52-8-244-245.us-west-1.compute.amazonaws.com:9092,ec2-54-183-55-185.us-west-1.compute.amazonaws.com:9092"
+    val brokers = "ec2-52-8-247-28.us-west-1.compute.amazonaws.com:9092,ec2-54-183-69-4.us-west-1.compute.amazonaws.com:9092,ec2-52-8-244-245.us-west-1.compute.amazonaws.com:9092,ec2-54-215-136-187.us-west-1.compute.amazonaws.com:9092"
     val topics = "pin_activity"
     val topicsSet = topics.split(",").toSet
 
