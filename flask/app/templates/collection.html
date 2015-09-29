@@ -2,22 +2,39 @@
 {% block collection %}
 <div class="jumbotron" style="height:110px;padding-top:5px">
   <div class="container" style="height:90px">
-    <h2>Collection: Sunrise</h2>
-    <p>Another new day.</p>
+    <h2>Collections</h2>
   </div>
 </div>
+
 <div class="container">
-      <div class="starter-template">
-        <div class="row">
-          {% for val in output %}
-          <div class="col-xs-6 col-lg-4" style="height:310px">
-            <!-- <h2>{{val.title}}</h2> -->
-            <p align="center"><a href="http://ec2-54-183-55-185.us-west-1.compute.amazonaws.com:5000/trend/{{val.artwork_id}}"><img src={{val.image_link}} class="img-thumbnail" style="height:250px"></a> </p>
-            <p align="center"><b>Title: </b>{{val.title}}</p>
-            <!-- <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p> -->
+  <div class="starter-template">
+      <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#home">Sunrise</a></li>
+        <li><a data-toggle="tab" href="#menu1">Sunset</a></li>
+      </ul>
+      <hr>
+      <div class="tab-content">
+        <div id="home" class="tab-pane fade in active">
+            <div class="row">
+            {% for val in output %}
+            <div class="col-xs-6 col-lg-4" style="height:310px">
+              <p align="center"><a href="http://ec2-54-183-55-185.us-west-1.compute.amazonaws.com:5000/trend/{{val.artwork_id}}"><img src={{val.image_link}} class="img-thumbnail" style="height:250px"></a> </p>
+              <p align="center"><b>Title: </b>{{val.title}}</p>
+            </div>
+            {% endfor %}
           </div>
-          {% endfor %}
+        </div>
+        <div id="menu1" class="tab-pane fade">
+            <div class="row">
+            {% for val in output_2 %}
+            <div class="col-xs-6 col-lg-4" style="height:310px">
+              <p align="center"><a href="http://ec2-54-183-55-185.us-west-1.compute.amazonaws.com:5000/trend/{{val.artwork_id}}"><img src={{val.image_link}} class="img-thumbnail" style="height:250px"></a> </p>
+              <p align="center"><b>Title: </b>{{val.title}}</p>
+            </div>
+            {% endfor %}
+          </div>
         </div>
       </div>
-    </div>
+  </div>
+</div>
 {% endblock %}

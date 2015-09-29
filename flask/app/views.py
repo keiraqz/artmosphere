@@ -175,7 +175,13 @@ def collection_dis():
 	pids = [ [ r['_source']['artwork_id'], r['_source']['title'], r['_source']['image_link'], r['_source']['collecting_institution'], int(r['_source']['pined_count']) ] for r in res['hits']['hits']]
 	pids.sort(reverse=True)
 	jsonresponse = [{"artwork_id": p[0], "title": p[1], "collecting_institution": p[3], "pinned_count": int(p[4]), "image_link": p[2]} for p in pids]
-	return render_template("collection.html",output=jsonresponse)
+
+	keywords_2 = "sunset"
+	res_2 = es.search(index = INDEX_NAME, q='title:'+keywords_2, body={"query": {"match_all": {}}}) 
+	pids_2 = [ [ r['_source']['artwork_id'], r['_source']['title'], r['_source']['image_link'], r['_source']['collecting_institution'], int(r['_source']['pined_count']) ] for r in res_2['hits']['hits']]
+	pids_2.sort(reverse=True)
+	jsonresponse_2 = [{"artwork_id": p[0], "title": p[1], "collecting_institution": p[3], "pinned_count": int(p[4]), "image_link": p[2]} for p in pids_2]
+	return render_template("collection.html",output=jsonresponse,output_2=jsonresponse_2)
 
 # given a keyword, return all matches
 @app.route('/es/title/<keywords>')
