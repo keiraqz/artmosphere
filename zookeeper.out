@@ -1,0 +1,156 @@
+2015-09-29 19:54:46,735 [myid:] - INFO  [main:QuorumPeerConfig@103] - Reading configuration from: /usr/local/zookeeper/bin/../conf/zoo.cfg
+2015-09-29 19:54:46,745 [myid:] - WARN  [main:QuorumPeerConfig@296] - Non-optimial configuration, consider an odd number of servers.
+2015-09-29 19:54:46,745 [myid:] - INFO  [main:QuorumPeerConfig@340] - Defaulting to majority quorums
+2015-09-29 19:54:46,748 [myid:1] - INFO  [main:DatadirCleanupManager@78] - autopurge.snapRetainCount set to 3
+2015-09-29 19:54:46,748 [myid:1] - INFO  [main:DatadirCleanupManager@79] - autopurge.purgeInterval set to 1
+2015-09-29 19:54:46,749 [myid:1] - INFO  [PurgeTask:DatadirCleanupManager$PurgeTask@138] - Purge task started.
+2015-09-29 19:54:46,764 [myid:1] - INFO  [main:QuorumPeerMain@127] - Starting quorum peer
+2015-09-29 19:54:46,777 [myid:1] - INFO  [PurgeTask:DatadirCleanupManager$PurgeTask@144] - Purge task completed.
+2015-09-29 19:54:46,782 [myid:1] - INFO  [main:NIOServerCnxnFactory@94] - binding to port 0.0.0.0/0.0.0.0:2181
+2015-09-29 19:54:46,795 [myid:1] - INFO  [main:QuorumPeer@959] - tickTime set to 2000
+2015-09-29 19:54:46,795 [myid:1] - INFO  [main:QuorumPeer@979] - minSessionTimeout set to -1
+2015-09-29 19:54:46,795 [myid:1] - INFO  [main:QuorumPeer@990] - maxSessionTimeout set to -1
+2015-09-29 19:54:46,795 [myid:1] - INFO  [main:QuorumPeer@1005] - initLimit set to 10
+2015-09-29 19:54:46,808 [myid:1] - INFO  [main:FileSnap@83] - Reading snapshot /mnt/my-data/zookeeper/version-2/snapshot.610000005c
+2015-09-29 19:54:46,893 [myid:1] - INFO  [Thread-2:QuorumCnxManager$Listener@504] - My election bind port: ec2-54-215-136-187.us-west-1.compute.amazonaws.com/172.31.11.230:3888
+2015-09-29 19:54:46,902 [myid:1] - INFO  [QuorumPeer[myid=1]/0:0:0:0:0:0:0:0:2181:QuorumPeer@714] - LOOKING
+2015-09-29 19:54:46,906 [myid:1] - INFO  [QuorumPeer[myid=1]/0:0:0:0:0:0:0:0:2181:FastLeaderElection@815] - New election. My id =  1, proposed zxid=0x6200000012
+2015-09-29 19:54:46,907 [myid:1] - INFO  [WorkerReceiver[myid=1]:FastLeaderElection@597] - Notification: 1 (message format version), 1 (n.leader), 0x6200000012 (n.zxid), 0x1 (n.round), LOOKING (n.state), 1 (n.sid), 0x62 (n.peerEpoch) LOOKING (my state)
+2015-09-29 19:54:46,910 [myid:1] - WARN  [WorkerSender[myid=1]:QuorumCnxManager@382] - Cannot open channel to 2 at election address ec2-54-183-69-4.us-west-1.compute.amazonaws.com/172.31.11.233:3888
+java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:368)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.toSend(QuorumCnxManager.java:341)
+	at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.process(FastLeaderElection.java:449)
+	at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.run(FastLeaderElection.java:430)
+	at java.lang.Thread.run(Thread.java:745)
+2015-09-29 19:54:46,912 [myid:1] - WARN  [WorkerSender[myid=1]:QuorumCnxManager@382] - Cannot open channel to 3 at election address ec2-52-8-244-245.us-west-1.compute.amazonaws.com/172.31.11.231:3888
+java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:368)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.toSend(QuorumCnxManager.java:341)
+	at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.process(FastLeaderElection.java:449)
+	at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.run(FastLeaderElection.java:430)
+	at java.lang.Thread.run(Thread.java:745)
+2015-09-29 19:54:46,913 [myid:1] - WARN  [WorkerSender[myid=1]:QuorumCnxManager@382] - Cannot open channel to 4 at election address ec2-52-8-247-28.us-west-1.compute.amazonaws.com/172.31.11.232:3888
+java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:368)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.toSend(QuorumCnxManager.java:341)
+	at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.process(FastLeaderElection.java:449)
+	at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.run(FastLeaderElection.java:430)
+	at java.lang.Thread.run(Thread.java:745)
+2015-09-29 19:54:47,095 [myid:1] - INFO  [ec2-54-215-136-187.us-west-1.compute.amazonaws.com/172.31.11.230:3888:QuorumCnxManager$Listener@511] - Received connection request /172.31.11.231:58137
+2015-09-29 19:54:47,099 [myid:1] - INFO  [WorkerReceiver[myid=1]:FastLeaderElection@597] - Notification: 1 (message format version), 3 (n.leader), 0x6200000012 (n.zxid), 0x1 (n.round), LOOKING (n.state), 3 (n.sid), 0x62 (n.peerEpoch) LOOKING (my state)
+2015-09-29 19:54:47,099 [myid:1] - INFO  [WorkerReceiver[myid=1]:FastLeaderElection@597] - Notification: 1 (message format version), 3 (n.leader), 0x6200000012 (n.zxid), 0x1 (n.round), LOOKING (n.state), 1 (n.sid), 0x62 (n.peerEpoch) LOOKING (my state)
+2015-09-29 19:54:47,100 [myid:1] - WARN  [WorkerSender[myid=1]:QuorumCnxManager@382] - Cannot open channel to 2 at election address ec2-54-183-69-4.us-west-1.compute.amazonaws.com/172.31.11.233:3888
+java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:368)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.toSend(QuorumCnxManager.java:341)
+	at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.process(FastLeaderElection.java:449)
+	at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.run(FastLeaderElection.java:430)
+	at java.lang.Thread.run(Thread.java:745)
+2015-09-29 19:54:47,101 [myid:1] - WARN  [WorkerSender[myid=1]:QuorumCnxManager@382] - Cannot open channel to 4 at election address ec2-52-8-247-28.us-west-1.compute.amazonaws.com/172.31.11.232:3888
+java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:368)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.toSend(QuorumCnxManager.java:341)
+	at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.process(FastLeaderElection.java:449)
+	at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.run(FastLeaderElection.java:430)
+	at java.lang.Thread.run(Thread.java:745)
+2015-09-29 19:54:47,144 [myid:1] - INFO  [ec2-54-215-136-187.us-west-1.compute.amazonaws.com/172.31.11.230:3888:QuorumCnxManager$Listener@511] - Received connection request /172.31.11.232:48729
+2015-09-29 19:54:47,147 [myid:1] - INFO  [WorkerReceiver[myid=1]:FastLeaderElection@597] - Notification: 1 (message format version), 4 (n.leader), 0x6200000012 (n.zxid), 0x1 (n.round), LOOKING (n.state), 4 (n.sid), 0x62 (n.peerEpoch) LOOKING (my state)
+2015-09-29 19:54:47,147 [myid:1] - INFO  [WorkerReceiver[myid=1]:FastLeaderElection@597] - Notification: 1 (message format version), 4 (n.leader), 0x6200000012 (n.zxid), 0x1 (n.round), LOOKING (n.state), 1 (n.sid), 0x62 (n.peerEpoch) LOOKING (my state)
+2015-09-29 19:54:47,148 [myid:1] - WARN  [WorkerSender[myid=1]:QuorumCnxManager@382] - Cannot open channel to 2 at election address ec2-54-183-69-4.us-west-1.compute.amazonaws.com/172.31.11.233:3888
+java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:368)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.toSend(QuorumCnxManager.java:341)
+	at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.process(FastLeaderElection.java:449)
+	at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.run(FastLeaderElection.java:430)
+	at java.lang.Thread.run(Thread.java:745)
+2015-09-29 19:54:47,153 [myid:1] - INFO  [WorkerReceiver[myid=1]:FastLeaderElection@597] - Notification: 1 (message format version), 4 (n.leader), 0x6200000012 (n.zxid), 0x1 (n.round), LOOKING (n.state), 3 (n.sid), 0x62 (n.peerEpoch) LOOKING (my state)
+2015-09-29 19:54:47,353 [myid:1] - INFO  [QuorumPeer[myid=1]/0:0:0:0:0:0:0:0:2181:QuorumPeer@784] - FOLLOWING
+2015-09-29 19:54:47,358 [myid:1] - INFO  [QuorumPeer[myid=1]/0:0:0:0:0:0:0:0:2181:Learner@86] - TCP NoDelay set to: true
+2015-09-29 19:54:47,366 [myid:1] - INFO  [QuorumPeer[myid=1]/0:0:0:0:0:0:0:0:2181:Environment@100] - Server environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2015-09-29 19:54:47,366 [myid:1] - INFO  [QuorumPeer[myid=1]/0:0:0:0:0:0:0:0:2181:Environment@100] - Server environment:host.name=ip-172-31-11-230.us-west-1.compute.internal
+2015-09-29 19:54:47,366 [myid:1] - INFO  [QuorumPeer[myid=1]/0:0:0:0:0:0:0:0:2181:Environment@100] - Server environment:java.version=1.7.0_79
+2015-09-29 19:54:47,367 [myid:1] - INFO  [QuorumPeer[myid=1]/0:0:0:0:0:0:0:0:2181:Environment@100] - Server environment:java.vendor=Oracle Corporation
+2015-09-29 19:54:47,367 [myid:1] - INFO  [QuorumPeer[myid=1]/0:0:0:0:0:0:0:0:2181:Environment@100] - Server environment:java.home=/usr/lib/jvm/java-7-openjdk-amd64/jre
+2015-09-29 19:54:47,367 [myid:1] - INFO  [QuorumPeer[myid=1]/0:0:0:0:0:0:0:0:2181:Environment@100] - Server environment:java.class.path=/usr/local/zookeeper/bin/../build/classes:/usr/local/zookeeper/bin/../build/lib/*.jar:/usr/local/zookeeper/bin/../lib/slf4j-log4j12-1.6.1.jar:/usr/local/zookeeper/bin/../lib/slf4j-api-1.6.1.jar:/usr/local/zookeeper/bin/../lib/netty-3.7.0.Final.jar:/usr/local/zookeeper/bin/../lib/log4j-1.2.16.jar:/usr/local/zookeeper/bin/../lib/jline-0.9.94.jar:/usr/local/zookeeper/bin/../zookeeper-3.4.6.jar:/usr/local/zookeeper/bin/../src/java/lib/*.jar:/usr/local/zookeeper/bin/../conf:
+2015-09-29 19:54:47,367 [myid:1] - INFO  [QuorumPeer[myid=1]/0:0:0:0:0:0:0:0:2181:Environment@100] - Server environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+2015-09-29 19:54:47,367 [myid:1] - INFO  [QuorumPeer[myid=1]/0:0:0:0:0:0:0:0:2181:Environment@100] - Server environment:java.io.tmpdir=/tmp
+2015-09-29 19:54:47,367 [myid:1] - INFO  [QuorumPeer[myid=1]/0:0:0:0:0:0:0:0:2181:Environment@100] - Server environment:java.compiler=<NA>
+2015-09-29 19:54:47,367 [myid:1] - INFO  [QuorumPeer[myid=1]/0:0:0:0:0:0:0:0:2181:Environment@100] - Server environment:os.name=Linux
+2015-09-29 19:54:47,367 [myid:1] - INFO  [QuorumPeer[myid=1]/0:0:0:0:0:0:0:0:2181:Environment@100] - Server environment:os.arch=amd64
+2015-09-29 19:54:47,367 [myid:1] - INFO  [QuorumPeer[myid=1]/0:0:0:0:0:0:0:0:2181:Environment@100] - Server environment:os.version=3.13.0-48-generic
+2015-09-29 19:54:47,367 [myid:1] - INFO  [QuorumPeer[myid=1]/0:0:0:0:0:0:0:0:2181:Environment@100] - Server environment:user.name=root
+2015-09-29 19:54:47,367 [myid:1] - INFO  [QuorumPeer[myid=1]/0:0:0:0:0:0:0:0:2181:Environment@100] - Server environment:user.home=/root
+2015-09-29 19:54:47,367 [myid:1] - INFO  [QuorumPeer[myid=1]/0:0:0:0:0:0:0:0:2181:Environment@100] - Server environment:user.dir=/home/ubuntu/Artmo
+2015-09-29 19:54:47,368 [myid:1] - INFO  [QuorumPeer[myid=1]/0:0:0:0:0:0:0:0:2181:ZooKeeperServer@162] - Created server with tickTime 2000 minSessionTimeout 4000 maxSessionTimeout 40000 datadir /mnt/my-data/zookeeper/version-2 snapdir /mnt/my-data/zookeeper/version-2
+2015-09-29 19:54:47,369 [myid:1] - INFO  [QuorumPeer[myid=1]/0:0:0:0:0:0:0:0:2181:Follower@63] - FOLLOWING - LEADER ELECTION TOOK - 463
+2015-09-29 19:54:47,384 [myid:1] - INFO  [QuorumPeer[myid=1]/0:0:0:0:0:0:0:0:2181:Learner@323] - Getting a diff from the leader 0x6200000012
+2015-09-29 19:54:47,387 [myid:1] - INFO  [QuorumPeer[myid=1]/0:0:0:0:0:0:0:0:2181:FileTxnSnapLog@240] - Snapshotting: 0x6200000012 to /mnt/my-data/zookeeper/version-2/snapshot.6200000012
+2015-09-29 19:54:48,555 [myid:1] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /172.31.11.232:51601
+2015-09-29 19:54:48,559 [myid:1] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@861] - Client attempting to renew session 0x150170c327e0000 at /172.31.11.232:51601
+2015-09-29 19:54:48,560 [myid:1] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:Learner@108] - Revalidating client: 0x150170c327e0000
+2015-09-29 19:54:48,563 [myid:1] - INFO  [QuorumPeer[myid=1]/0:0:0:0:0:0:0:0:2181:ZooKeeperServer@617] - Established session 0x150170c327e0000 with negotiated timeout 6000 for client /172.31.11.232:51601
+2015-09-29 19:54:52,035 [myid:1] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /127.0.0.1:38641
+2015-09-29 19:54:52,035 [myid:1] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@827] - Processing srvr command from /127.0.0.1:38641
+2015-09-29 19:54:52,037 [myid:1] - INFO  [Thread-3:NIOServerCnxn@1007] - Closed socket connection for client /127.0.0.1:38641 (no session established for client)
+2015-09-29 19:54:52,274 [myid:1] - INFO  [ec2-54-215-136-187.us-west-1.compute.amazonaws.com/172.31.11.230:3888:QuorumCnxManager$Listener@511] - Received connection request /172.31.11.233:43230
+2015-09-29 19:54:52,277 [myid:1] - INFO  [WorkerReceiver[myid=1]:FastLeaderElection@597] - Notification: 1 (message format version), 2 (n.leader), 0x6200000012 (n.zxid), 0x1 (n.round), LOOKING (n.state), 2 (n.sid), 0x62 (n.peerEpoch) FOLLOWING (my state)
+2015-09-29 19:54:54,622 [myid:1] - INFO  [WorkerReceiver[myid=1]:FastLeaderElection@597] - Notification: 1 (message format version), 2 (n.leader), 0x6200000012 (n.zxid), 0x1 (n.round), LOOKING (n.state), 2 (n.sid), 0x62 (n.peerEpoch) FOLLOWING (my state)
+2015-09-29 19:54:55,582 [myid:1] - INFO  [WorkerReceiver[myid=1]:FastLeaderElection@597] - Notification: 1 (message format version), 4 (n.leader), 0x6200000012 (n.zxid), 0x1 (n.round), LOOKING (n.state), 2 (n.sid), 0x62 (n.peerEpoch) FOLLOWING (my state)
+2015-09-29 19:54:59,562 [myid:1] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /127.0.0.1:38643
+2015-09-29 19:54:59,563 [myid:1] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@827] - Processing srvr command from /127.0.0.1:38643
+2015-09-29 19:54:59,563 [myid:1] - INFO  [Thread-4:NIOServerCnxn@1007] - Closed socket connection for client /127.0.0.1:38643 (no session established for client)
+2015-09-29 20:00:24,927 [myid:1] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /172.31.11.230:43203
+2015-09-29 20:00:24,930 [myid:1] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@868] - Client attempting to establish new session at /172.31.11.230:43203
+2015-09-29 20:00:24,931 [myid:1] - WARN  [QuorumPeer[myid=1]/0:0:0:0:0:0:0:0:2181:Follower@118] - Got zxid 0x6300000001 expected 0x1
+2015-09-29 20:00:24,932 [myid:1] - INFO  [SyncThread:1:FileTxnLog@199] - Creating new log file: log.6300000001
+2015-09-29 20:00:24,950 [myid:1] - INFO  [CommitProcessor:1:ZooKeeperServer@617] - Established session 0x1501aabf0da0000 with negotiated timeout 6000 for client /172.31.11.230:43203
+2015-09-29 20:01:48,432 [myid:1] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /172.31.11.233:37445
+2015-09-29 20:01:48,435 [myid:1] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@868] - Client attempting to establish new session at /172.31.11.233:37445
+2015-09-29 20:01:48,437 [myid:1] - INFO  [CommitProcessor:1:ZooKeeperServer@617] - Established session 0x1501aabf0da0001 with negotiated timeout 6000 for client /172.31.11.233:37445
+2015-09-29 20:02:17,206 [myid:1] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@357] - caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x150170c327e0000, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:745)
+2015-09-29 20:02:17,207 [myid:1] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /172.31.11.232:51601 which had sessionid 0x150170c327e0000
+2015-09-29 20:02:24,241 [myid:1] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /172.31.11.232:51612
+2015-09-29 20:02:24,245 [myid:1] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@868] - Client attempting to establish new session at /172.31.11.232:51612
+2015-09-29 20:02:24,247 [myid:1] - INFO  [CommitProcessor:1:ZooKeeperServer@617] - Established session 0x1501aabf0da0002 with negotiated timeout 6000 for client /172.31.11.232:51612
+2015-09-29 20:12:15,718 [myid:1] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /172.31.11.230:43203 which had sessionid 0x1501aabf0da0000
