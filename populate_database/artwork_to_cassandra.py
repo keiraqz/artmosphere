@@ -25,7 +25,7 @@ import random
 class LoadJson(object):
     def __init__(self):
         '''save artwork information to Cassandra'''
-        self.hdfs_path = "hdfs://ec2-54-183-55-185.us-west-1.compute.amazonaws.com:9000/insight/artsy/artworks"
+        self.hdfs_path = "hdfs://ec2-54-215-136-187.us-west-1.compute.amazonaws.com:9000/insight/artsy/artworks"
 
 if __name__ == '__main__':
     conf = SparkConf().setAppName("JSON Ingest")
