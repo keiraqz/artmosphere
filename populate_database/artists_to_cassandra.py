@@ -20,7 +20,7 @@ import sys
 class LoadJson(object):
     def __init__(self):
         '''Save artist information to cassandra'''
-        self.hdfs_path = "hdfs://ec2-54-183-55-185.us-west-1.compute.amazonaws.com:9000/insight/artsy/artists"
+        self.hdfs_path = "hdfs://ec2-54-215-136-187.us-west-1.compute.amazonaws.com:9000/insight/artsy/artists"
 
 
 if __name__ == '__main__':
