@@ -37,7 +37,6 @@ object UserDataStreaming {
 
         val sqlContext = SQLContextSingleton.getInstance(rdd.sparkContext)
         import sqlContext.implicits._
-        // val current_time = format.format(new java.util.Date())
         val current_time = TimestampFormatter.format(new Date())
 
         val lines = rdd.map(_._2)
