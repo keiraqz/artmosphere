@@ -13,19 +13,13 @@ class Consumer(object):
         self.temp_file_path = None
         self.temp_file = None
         self.hadoop_path = "/insight/artsy/geo"
-        # self.cached_path = "/insight/pinterest/cache"
         self.topic = topic
         self.group = group
         self.block_cnt = 0
 
     def consume_topic(self, output_dir):
-        """Consumes a stream of messages from the "messages" topic.
+        """Consumes a stream of messages from the "post_geo_activity" topic.
         Code template from https://github.com/ajmssc/bitcoin-inspector.git
-        Args:
-            output_dir: string representing the directory to store the 20MB
-                before transferring to HDFS
-        Returns:
-            None
         """
         timestamp = time.strftime('%Y%m%d%H%M%S')
         
@@ -35,10 +29,8 @@ class Consumer(object):
 
         while True:
             try:
-                # get 5 messages at a time, non blocking
+                # get 1000 messages at a time, non blocking
                 messages = self.consumer.get_messages(count=1000, block=False)
-                # OffsetAndMessage(offset=43, message=Message(magic=0,
-                # attributes=0, key=None, value='some message'))
                 for message in messages:
                     self.temp_file.write(message.message.value + "\n")
 
@@ -61,21 +53,14 @@ class Consumer(object):
 
         print "Block {}: Flushing data file to HDFS => {}".format(str(self.block_cnt),hadoop_fullpath)
         self.block_cnt += 1
-
-        # place blocked messages into history and cached folders on hdfs
-        # os.system("sudo -u hdfs hdfs dfs -put %s %s" % (self.temp_file_path,
-        #                                                 hadoop_fullpath))
-        os.system("hdfs dfs -put %s %s" % (self.temp_file_path, hadoop_fullpath))        
-        # os.system("sudo -u hdfs hdfs dfs -put %s %s" % (self.temp_file_path,
-        #                                                 cached_fullpath))
-        os.remove(self.temp_file_path)
+        os.system("hdfs dfs -put %s %s" % (self.temp_file_path, hadoop_fullpath)) # save from local to hdfs
+        os.remove(self.temp_file_path) # remove temp local file
         timestamp = time.strftime('%Y%m%d%H%M%S')
         self.temp_file_path = "%s/kafka_%s_%s_%s.dat" % (output_dir,self.topic,self.group,timestamp)
         self.temp_file = open(self.temp_file_path, "w")
 
 
 if __name__ == '__main__':
-
     print "\nConsuming messages..."
     cons = Consumer(addr="ec2-52-8-247-28.us-west-1.compute.amazonaws.com:9092,ec2-54-183-69-4.us-west-1.compute.amazonaws.com:9092,ec2-52-8-244-245.us-west-1.compute.amazonaws.com:9092,ec2-54-183-55-185.us-west-1.compute.amazonaws.com:9092", group="hdfs", topic="post_geo_activity")
     cons.consume_topic("/mnt/my-data/kafka/kafka_messages_geo")

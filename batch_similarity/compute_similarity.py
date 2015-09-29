@@ -1,7 +1,7 @@
 '''
 Created on Sep 22, 2015
 
-@author: Shanghai
+@author: Keira Zhou
 '''
 
 import pyspark_cassandra
@@ -51,7 +51,7 @@ class ComputeSimilarity(object):
 
     def save_to_cassandra(self,RDD_1_save):
         ''' save to Cassandra '''
-        RDD_1_save.saveToCassandra("art_pin_log","artwork_sim")
+        RDD_1_save.saveToCassandra("art_pin_log","artwork_sim_fake")
 
     def save_to_hdfs(self,RDD_1_save):
         ''' save to HDFS '''

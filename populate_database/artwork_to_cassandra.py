@@ -1,7 +1,6 @@
 '''
-Created on Sep 21, 2015
-
-@author: Shanghai
+Created on Sep 23, 2015
+@author: Keira Zhou
 '''
 import avro.schema
 from avro.datafile import DataFileReader, DataFileWriter
@@ -25,6 +24,7 @@ import random
 
 class LoadJson(object):
     def __init__(self):
+        '''save artwork information to Cassandra'''
         self.hdfs_path = "hdfs://ec2-54-183-55-185.us-west-1.compute.amazonaws.com:9000/insight/artsy/artworks"
 
 if __name__ == '__main__':

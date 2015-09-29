@@ -1,13 +1,11 @@
 '''
 Created on Sep 21, 2015
-
-@author: Shanghai
+@author: Keira Zhou
 '''
 
 import pyspark_cassandra
 import pyspark_cassandra.streaming
 from pyspark_cassandra import CassandraSparkContext
-
 from pyspark import SparkContext, SparkConf
 from pyspark.sql import SQLContext
 from pyspark.streaming import StreamingContext
@@ -21,10 +19,7 @@ import sys
 
 class LoadJson(object):
     def __init__(self):
-        # self.bulk_data = []
-        # self.INDEX_NAME = 'artsy'
-        # self.TYPE_NAME = 'artworks'
-        # self.ID_FIELD = 'id'
+        '''Save artist information to cassandra'''
         self.hdfs_path = "hdfs://ec2-54-183-55-185.us-west-1.compute.amazonaws.com:9000/insight/artsy/artists"
 
 
