@@ -18,7 +18,7 @@ object GeoData {
 
     val sparkConf = new SparkConf().setAppName("geo_data").set("spark.cassandra.connection.host", "172.31.11.232")
     val sc = new SparkContext(sparkConf)
-    val path = "hdfs://ec2-54-183-55-185.us-west-1.compute.amazonaws.com:9000/insight/artsy/geo*"
+    val path = "hdfs://ec2-54-215-136-187.us-west-1.compute.amazonaws.com:9000/insight/artsy/geo*"
     val distFile = sc.textFile(path)
     val format = new java.text.SimpleDateFormat("yyyy-mm-dd")
     val sqlContext = SQLContextSingleton.getInstance(sc)
