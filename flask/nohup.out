@@ -1,0 +1,1426 @@
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+74.71.185.128 - - [30/Sep/2015 01:25:43] "GET /trend/532880e30bb6d6075200010d HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:25:43] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:25:43] "GET /static/css/starter-template.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:25:43] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:25:43] "GET /static/js/offcanvas.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:25:44] "GET /cs/532880e30bb6d6075200010d HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:25:45] "GET / HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:25:47] "GET /map HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:25:48] "GET /map_get HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:33:30] "GET /collection HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:33:33] "GET /trend/532880e30bb6d6075200010d HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:33:33] "GET /cs/532880e30bb6d6075200010d HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:33:36] "GET /cs/532880e30bb6d6075200010d HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:33:40] "GET /cs/532880e30bb6d6075200010d HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:33:43] "GET /cs/532880e30bb6d6075200010d HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:33:46] "GET /cs/532880e30bb6d6075200010d HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:33:49] "GET /cs/532880e30bb6d6075200010d HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:33:53] "GET /cs/532880e30bb6d6075200010d HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:33:56] "GET /cs/532880e30bb6d6075200010d HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:33:59] "GET /cs/532880e30bb6d6075200010d HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:34:02] "GET /cs/532880e30bb6d6075200010d HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:34:06] "GET /cs/532880e30bb6d6075200010d HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:34:09] "GET /cs/532880e30bb6d6075200010d HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:34:12] "GET /cs/532880e30bb6d6075200010d HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:34:15] "GET /cs/532880e30bb6d6075200010d HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:34:19] "GET /cs/532880e30bb6d6075200010d HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:34:22] "GET /cs/532880e30bb6d6075200010d HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:34:25] "GET /cs/532880e30bb6d6075200010d HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:34:28] "GET /cs/532880e30bb6d6075200010d HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:34:31] "GET /profile HTTP/1.1" 200 -
+ * Detected change in '/home/ubuntu/Artmo/flask/app/__init__.py', reloading
+ * Restarting with stat
+ * Detected change in '/home/ubuntu/Artmo/flask/app/views.py', reloading
+ * Restarting with stat
+74.71.185.128 - - [30/Sep/2015 01:37:54] "GET /profile HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:37:55] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:37:55] "GET /static/css/starter-template.css HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:37:55] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:37:55] "GET /static/js/offcanvas.js HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:37:55] "GET /static/img/me.JPG HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:37:56] "GET /static/img/GitHub.png HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:37:56] "GET /static/img/In.png HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:37:56] "GET /static/img/bill_poster.png HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:37:57] "GET /static/img/acl_poster.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:37:57] "GET /static/img/cloud.png HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:37:58] "GET /static/img/bg.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:37:59] "GET /static/img/aboutME.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:37:59] "GET /static/img/skydiving.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:37:59] "GET /static/img/spain.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:38:00] "GET /static/img/doggies.jpg HTTP/1.1" 200 -
+ * Detected change in '/home/ubuntu/Artmo/flask/app/__init__.py', reloading
+ * Restarting with stat
+ * Detected change in '/home/ubuntu/Artmo/flask/app/views.py', reloading
+ * Restarting with stat
+74.71.185.128 - - [30/Sep/2015 01:39:32] "GET /profile HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:39:32] "GET /static/css/starter-template.css HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:39:32] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:39:32] "GET /static/js/offcanvas.js HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:39:32] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:39:32] "GET /static/img/me.JPG HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:39:38] "GET /static/img/GitHub.png HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:39:38] "GET /static/img/In.png HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:39:38] "GET /static/img/bill_poster.png HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:39:40] "GET /static/img/aboutME.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:39:43] "GET /static/img/bg.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:39:43] "GET /static/img/acl_poster.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:39:44] "GET /static/img/cloud.png HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:39:46] "GET /static/img/skydiving.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:39:46] "GET /static/img/spain.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:39:46] "GET /static/img/doggies.jpg HTTP/1.1" 200 -
+ * Detected change in '/home/ubuntu/Artmo/flask/app/__init__.py', reloading
+ * Restarting with stat
+74.71.185.128 - - [30/Sep/2015 01:41:33] "GET /profile HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:41:34] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:41:34] "GET /static/css/starter-template.css HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:41:34] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:41:34] "GET /static/js/offcanvas.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:41:34] "GET /static/img/me.JPG HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:41:34] "GET /static/img/GitHub.png HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:41:35] "GET /static/img/In.png HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:41:35] "GET /static/img/skydiving.jpg HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:41:35] "GET /static/img/bill_poster.png HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:41:35] "GET /static/img/acl_poster.jpg HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:41:35] "GET /static/img/cloud.png HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:41:35] "GET /static/img/aboutME.jpg HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:41:35] "GET /static/img/bg.jpg HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:41:35] "GET /static/img/spain.jpg HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:41:35] "GET /static/img/doggies.jpg HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:41:41] "GET /profile HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:41:41] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:41:41] "GET /static/css/starter-template.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:41:41] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:41:41] "GET /static/js/offcanvas.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:41:41] "GET /static/img/me.JPG HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:41:41] "GET /static/img/GitHub.png HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:41:41] "GET /static/img/In.png HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:41:41] "GET /static/img/skydiving.jpg HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:41:41] "GET /static/img/bill_poster.png HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:41:43] "GET /static/img/acl_poster.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:41:44] "GET /static/img/cloud.png HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:41:46] "GET /static/img/aboutME.jpg HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 651, in __init__
+    self.finish()
+  File "/usr/lib/python2.7/SocketServer.py", line 710, in finish
+    self.wfile.close()
+  File "/usr/lib/python2.7/socket.py", line 279, in close
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+74.71.185.128 - - [30/Sep/2015 01:41:46] "GET /static/img/bg.jpg HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 651, in __init__
+    self.finish()
+  File "/usr/lib/python2.7/SocketServer.py", line 710, in finish
+    self.wfile.close()
+  File "/usr/lib/python2.7/socket.py", line 279, in close
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+74.71.185.128 - - [30/Sep/2015 01:41:46] "GET /static/img/spain.jpg HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:41:46] "GET /static/img/doggies.jpg HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 651, in __init__
+    self.finish()
+  File "/usr/lib/python2.7/SocketServer.py", line 710, in finish
+    self.wfile.close()
+  File "/usr/lib/python2.7/socket.py", line 279, in close
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+74.71.185.128 - - [30/Sep/2015 01:41:47] "GET /profile HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:41:47] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:41:47] "GET /static/css/starter-template.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:41:47] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:41:47] "GET /static/js/offcanvas.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:41:47] "GET /static/img/me.JPG HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:41:51] "GET /static/img/GitHub.png HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:41:51] "GET /static/img/In.png HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:41:51] "GET /static/img/skydiving.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:41:51] "GET /static/img/bill_poster.png HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:41:53] "GET /static/img/acl_poster.jpg HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:41:53] "GET /static/img/cloud.png HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:41:54] "GET /static/img/aboutME.jpg HTTP/1.1" 200 -
+ * Detected change in '/home/ubuntu/Artmo/flask/app/views.py', reloading
+----------------------------------------
+Exception happened during processing of request from ('74.71.185.128', 53712)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('74.71.185.128', 53711)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('74.71.185.128', 53713)
+----------------------------------------
+ * Restarting with stat
+74.71.185.128 - - [30/Sep/2015 01:41:58] "GET /profile HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:41:58] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:41:58] "GET /static/css/starter-template.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:41:58] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:41:58] "GET /static/js/offcanvas.js HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:41:58] "GET /static/img/me.JPG HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:42:01] "GET /static/img/GitHub.png HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:42:01] "GET /static/img/In.png HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:42:01] "GET /static/img/bill_poster.png HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:42:01] "GET /static/img/skydiving.jpg HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:42:01] "GET /static/img/acl_poster.jpg HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:42:01] "GET /static/img/bg.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:42:01] "GET /static/img/aboutME.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:42:04] "GET /static/img/cloud.png HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:42:04] "GET /static/img/spain.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:42:04] "GET /static/img/doggies.jpg HTTP/1.1" 200 -
+ * Detected change in '/home/ubuntu/Artmo/flask/app/__init__.py', reloading
+ * Restarting with stat
+74.71.185.128 - - [30/Sep/2015 01:43:22] "GET /profile HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:43:23] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:43:23] "GET /static/css/starter-template.css HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:43:23] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:43:23] "GET /static/js/offcanvas.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:43:23] "GET /static/img/me.JPG HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:43:23] "GET /static/img/GitHub.png HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:43:23] "GET /static/img/In.png HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:43:24] "GET /static/img/aboutME.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:43:26] "GET /static/img/bill_poster.png HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:43:29] "GET /static/img/bg.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:43:29] "GET /static/img/skydiving.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:43:29] "GET /static/img/acl_poster.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:43:30] "GET /static/img/cloud.png HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:43:31] "GET /static/img/spain.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:43:32] "GET /static/img/doggies.jpg HTTP/1.1" 200 -
+ * Detected change in '/home/ubuntu/Artmo/flask/app/views.py', reloading
+ * Restarting with stat
+74.71.185.128 - - [30/Sep/2015 01:43:36] "GET /profile HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:43:36] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:43:36] "GET /static/css/starter-template.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:43:36] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:43:36] "GET /static/js/offcanvas.js HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:43:36] "GET /static/img/me.JPG HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:43:40] "GET /static/img/GitHub.png HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:43:40] "GET /static/img/acl_poster.jpg HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:43:40] "GET /static/img/In.png HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:43:40] "GET /static/img/bill_poster.png HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:43:40] "GET /static/img/cloud.png HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:43:40] "GET /static/img/aboutME.jpg HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:43:40] "GET /static/img/bg.jpg HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:43:40] "GET /static/img/skydiving.jpg HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:43:40] "GET /static/img/spain.jpg HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:43:40] "GET /static/img/doggies.jpg HTTP/1.1" 304 -
+ * Detected change in '/home/ubuntu/Artmo/flask/app/__init__.py', reloading
+ * Restarting with stat
+ * Detected change in '/home/ubuntu/Artmo/flask/app/views.py', reloading
+ * Restarting with stat
+ * Detected change in '/home/ubuntu/Artmo/flask/app/__init__.py', reloading
+ * Restarting with stat
+ * Detected change in '/home/ubuntu/Artmo/flask/app/views.py', reloading
+ * Restarting with stat
+ * Detected change in '/home/ubuntu/Artmo/flask/run.py', reloading
+ * Restarting with stat
+74.71.185.128 - - [30/Sep/2015 01:52:30] "GET /profile HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:52:30] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:52:30] "GET /static/css/starter-template.css HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:52:30] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:52:30] "GET /static/img/me.JPG HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:52:33] "GET /static/js/offcanvas.js HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:52:33] "GET /static/img/GitHub.png HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:52:33] "GET /static/img/In.png HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:52:33] "GET /static/img/bill_poster.png HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:52:36] "GET /static/img/acl_poster.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:52:37] "GET /static/img/cloud.png HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:52:39] "GET /static/img/aboutME.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:52:42] "GET /static/img/bg.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:52:42] "GET /static/img/skydiving.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:52:42] "GET /static/img/spain.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:52:42] "GET /static/img/doggies.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:52:44] "GET /map HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:52:48] "GET /collection HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:52:50] "GET /trend/516df8f5b31e2bd65e000d0c HTTP/1.1" 200 -
+ * Detected change in '/home/ubuntu/Artmo/flask/app/__init__.py', reloading
+ * Restarting with stat
+74.71.185.128 - - [30/Sep/2015 01:53:57] "GET /trend/516df8f5b31e2bd65e000d0c HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:53:57] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:53:57] "GET /static/css/starter-template.css HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:53:57] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:53:57] "GET /static/js/offcanvas.js HTTP/1.1" 304 -
+ * Detected change in '/home/ubuntu/Artmo/flask/app/views.py', reloading
+ * Restarting with stat
+74.71.185.128 - - [30/Sep/2015 01:54:32] "GET /trend/516df8f5b31e2bd65e000d0c HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:54:32] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:54:32] "GET /static/css/starter-template.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:54:32] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:54:32] "GET /static/js/offcanvas.js HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:54:44] "GET /profile HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:54:45] "GET /static/img/doggies.jpg HTTP/1.1" 200 -
+ * Detected change in '/home/ubuntu/Artmo/flask/app/__init__.py', reloading
+ * Restarting with stat
+74.71.185.128 - - [30/Sep/2015 01:57:25] "GET /profile HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:57:26] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:57:26] "GET /static/css/starter-template.css HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:57:26] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:57:26] "GET /static/js/offcanvas.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:57:26] "GET /static/img/me.JPG HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:57:28] "GET /static/img/GitHub.png HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:57:28] "GET /static/img/skydiving.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:57:28] "GET /static/img/In.png HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:57:28] "GET /static/img/spain.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:57:28] "GET /static/img/bill_poster.png HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:57:30] "GET /static/img/acl_poster.jpg HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 651, in __init__
+    self.finish()
+  File "/usr/lib/python2.7/SocketServer.py", line 710, in finish
+    self.wfile.close()
+  File "/usr/lib/python2.7/socket.py", line 279, in close
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+74.71.185.128 - - [30/Sep/2015 01:57:31] "GET /static/img/cloud.png HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 651, in __init__
+    self.finish()
+  File "/usr/lib/python2.7/SocketServer.py", line 710, in finish
+    self.wfile.close()
+  File "/usr/lib/python2.7/socket.py", line 279, in close
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+74.71.185.128 - - [30/Sep/2015 01:57:31] "GET /static/img/aboutME.jpg HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 651, in __init__
+    self.finish()
+  File "/usr/lib/python2.7/SocketServer.py", line 710, in finish
+    self.wfile.close()
+  File "/usr/lib/python2.7/socket.py", line 279, in close
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+74.71.185.128 - - [30/Sep/2015 01:57:32] "GET /static/img/bg.jpg HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 651, in __init__
+    self.finish()
+  File "/usr/lib/python2.7/SocketServer.py", line 710, in finish
+    self.wfile.close()
+  File "/usr/lib/python2.7/socket.py", line 279, in close
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+74.71.185.128 - - [30/Sep/2015 01:57:32] "GET /static/img/doggies.jpg HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:57:32] "GET /profile HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:57:32] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:57:32] "GET /static/css/starter-template.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:57:33] "GET /profile HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:57:33] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:57:34] "GET /static/css/starter-template.css HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:57:34] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:57:34] "GET /static/js/offcanvas.js HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:57:34] "GET /static/img/me.JPG HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:57:37] "GET /static/img/bill_poster.png HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:57:40] "GET /static/img/cloud.png HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:57:42] "GET /static/img/acl_poster.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:57:43] "GET /static/img/GitHub.png HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:57:43] "GET /static/img/In.png HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:57:43] "GET /static/img/aboutME.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:57:44] "GET /static/img/bg.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:57:45] "GET /static/img/skydiving.jpg HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:57:45] "GET /static/img/spain.jpg HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:57:45] "GET /static/img/doggies.jpg HTTP/1.1" 200 -
+ * Detected change in '/home/ubuntu/Artmo/flask/app/views.py', reloading
+----------------------------------------
+Exception happened during processing of request from ('74.71.185.128', 54240)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('74.71.185.128', 54241)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('74.71.185.128', 54242)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('74.71.185.128', 54243)
+----------------------------------------
+ * Restarting with stat
+ * Detected change in '/home/ubuntu/Artmo/flask/run.py', reloading
+ * Restarting with stat
+74.71.185.128 - - [30/Sep/2015 01:57:55] "GET /profile HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:57:58] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:58:03] "GET /static/css/starter-template.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:58:03] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:58:03] "GET /static/js/offcanvas.js HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:58:03] "GET /static/img/me.JPG HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 651, in __init__
+    self.finish()
+  File "/usr/lib/python2.7/SocketServer.py", line 710, in finish
+    self.wfile.close()
+  File "/usr/lib/python2.7/socket.py", line 279, in close
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+74.71.185.128 - - [30/Sep/2015 01:58:05] "GET /static/img/GitHub.png HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:58:05] "GET /profile HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:58:05] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:58:05] "GET /static/css/starter-template.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:58:05] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:58:05] "GET /static/img/me.JPG HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:58:08] "GET /static/js/offcanvas.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:58:08] "GET /static/img/GitHub.png HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:58:08] "GET /static/img/In.png HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:58:16] "GET /profile HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 01:58:16] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:58:16] "GET /static/css/starter-template.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:58:16] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:58:16] "GET /static/js/offcanvas.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:58:16] "GET /static/img/me.JPG HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:58:17] "GET /static/img/GitHub.png HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 01:58:17] "GET /static/img/In.png HTTP/1.1" 304 -
+ * Detected change in '/home/ubuntu/Artmo/flask/app/__init__.py', reloading
+----------------------------------------
+Exception happened during processing of request from ('74.71.185.128', 54273)
+----------------------------------------
+ * Restarting with stat
+ * Detected change in '/home/ubuntu/Artmo/flask/app/views.py', reloading
+ * Restarting with stat
+74.71.185.128 - - [30/Sep/2015 02:00:30] "GET /profile HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:00:30] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:00:31] "GET /static/css/starter-template.css HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:00:31] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:00:31] "GET /static/js/offcanvas.js HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:00:31] "GET /static/img/me.JPG HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:00:34] "GET /static/img/GitHub.png HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:00:34] "GET /static/img/In.png HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:00:34] "GET /static/img/bill_poster.png HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:00:37] "GET /static/img/acl_poster.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:00:39] "GET /static/img/cloud.png HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:00:40] "GET /static/img/aboutME.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:00:43] "GET /static/img/bg.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:00:44] "GET /static/img/skydiving.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:00:44] "GET /static/img/spain.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:00:44] "GET /static/img/doggies.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:01:13] "GET /collection HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:01:15] "GET /trend/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+ * Detected change in '/home/ubuntu/Artmo/flask/app/__init__.py', reloading
+ * Restarting with stat
+74.71.185.128 - - [30/Sep/2015 02:02:27] "GET /trend/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:02:27] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:02:28] "GET /static/css/starter-template.css HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:02:28] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:02:28] "GET /static/js/offcanvas.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:02:32] "GET /trend/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:02:32] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:02:32] "GET /static/css/starter-template.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:02:32] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:02:32] "GET /static/js/offcanvas.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:02:45] "GET /trend/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:02:45] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:02:45] "GET /static/css/starter-template.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:02:45] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:02:45] "GET /static/js/offcanvas.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:02:47] "GET /trend/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:02:48] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:02:48] "GET /static/css/starter-template.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:02:48] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:02:48] "GET /static/js/offcanvas.js HTTP/1.1" 304 -
+ * Detected change in '/home/ubuntu/Artmo/flask/app/views.py', reloading
+ * Restarting with stat
+74.71.185.128 - - [30/Sep/2015 02:02:54] "GET /trend/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:02:55] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:02:55] "GET /static/css/starter-template.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:02:55] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:02:55] "GET /static/js/offcanvas.js HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:03:00] "GET /trend/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:03:00] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:03:00] "GET /static/css/starter-template.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:03:00] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:03:00] "GET /static/js/offcanvas.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:03:02] "GET /map HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:06:39] "GET /map HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:06:40] "GET /static/css/starter-template.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:06:40] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:06:40] "GET /map HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:06:41] "GET /static/js/offcanvas.js HTTP/1.1" 304 -
+ * Detected change in '/home/ubuntu/Artmo/flask/app/__init__.py', reloading
+ * Restarting with stat
+74.71.185.128 - - [30/Sep/2015 02:07:06] "GET /map HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:07:07] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:07:10] "GET /static/css/starter-template.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:07:14] "GET /static/js/offcanvas.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:07:20] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+ * Detected change in '/home/ubuntu/Artmo/flask/app/views.py', reloading
+ * Restarting with stat
+ * Detected change in '/home/ubuntu/Artmo/flask/run.py', reloading
+ * Restarting with stat
+ * Detected change in '/home/ubuntu/Artmo/flask/app/__init__.py', reloading
+ * Restarting with stat
+ * Detected change in '/home/ubuntu/Artmo/flask/app/views.py', reloading
+ * Restarting with stat
+74.71.185.128 - - [30/Sep/2015 02:11:06] "GET /map HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:11:06] "GET /static/css/starter-template.css HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:11:06] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:11:07] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:11:07] "GET /static/js/offcanvas.js HTTP/1.1" 200 -
+ * Detected change in '/home/ubuntu/Artmo/flask/app/__init__.py', reloading
+ * Restarting with stat
+ * Detected change in '/home/ubuntu/Artmo/flask/app/views.py', reloading
+ * Restarting with stat
+74.71.185.128 - - [30/Sep/2015 02:12:31] "GET /map HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:12:32] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:12:32] "GET /static/css/starter-template.css HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:12:32] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:12:32] "GET /static/js/offcanvas.js HTTP/1.1" 200 -
+ * Detected change in '/home/ubuntu/Artmo/flask/app/__init__.py', reloading
+ * Restarting with stat
+ * Detected change in '/home/ubuntu/Artmo/flask/app/views.py', reloading
+ * Restarting with stat
+ * Detected change in '/home/ubuntu/Artmo/flask/run.py', reloading
+ * Restarting with stat
+74.71.185.128 - - [30/Sep/2015 02:15:33] "GET /map HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:15:33] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:15:34] "GET /static/css/starter-template.css HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:15:34] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:15:34] "GET /static/js/offcanvas.js HTTP/1.1" 200 -
+ * Detected change in '/home/ubuntu/Artmo/flask/app/__init__.py', reloading
+ * Restarting with stat
+74.71.185.128 - - [30/Sep/2015 02:19:22] "GET /map HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:19:22] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:19:23] "GET /static/css/starter-template.css HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:19:23] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:19:23] "GET /static/js/offcanvas.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:19:29] "GET /map HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:19:29] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:19:30] "GET /static/css/starter-template.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:19:30] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:19:30] "GET /static/js/offcanvas.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:19:33] "GET /map HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:19:33] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:19:33] "GET /static/css/starter-template.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:19:33] "GET /static/js/offcanvas.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:19:33] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+ * Detected change in '/home/ubuntu/Artmo/flask/app/views.py', reloading
+ * Restarting with stat
+74.71.185.128 - - [30/Sep/2015 02:19:42] "GET /map HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:19:42] "GET /static/css/starter-template.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:19:42] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:19:42] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:19:42] "GET /static/js/offcanvas.js HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:19:43] "GET /map_get HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:19:45] "GET /map HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:19:46] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:19:46] "GET /static/css/starter-template.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:19:46] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:19:46] "GET /static/js/offcanvas.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:19:47] "GET /map_get HTTP/1.1" 200 -
+ * Detected change in '/home/ubuntu/Artmo/flask/app/__init__.py', reloading
+ * Restarting with stat
+74.71.185.128 - - [30/Sep/2015 02:22:53] "GET /map HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:22:53] "GET /map HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:22:53] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:22:53] "GET /static/css/starter-template.css HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:22:53] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:22:53] "GET /static/js/offcanvas.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:22:55] "GET /map_get HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:22:57] "GET /map HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:22:57] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:22:57] "GET /static/css/starter-template.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:22:57] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:22:57] "GET /static/js/offcanvas.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:22:58] "GET /map_get HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:23:00] "GET /map HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:23:00] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:23:00] "GET /static/css/starter-template.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:23:00] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:23:00] "GET /static/js/offcanvas.js HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:23:01] "GET /map_get HTTP/1.1" 200 -
+ * Detected change in '/home/ubuntu/Artmo/flask/app/views.py', reloading
+ * Restarting with stat
+74.71.185.128 - - [30/Sep/2015 02:23:04] "GET /map HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:23:04] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:23:11] "GET /static/css/starter-template.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:23:12] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:23:12] "GET /static/js/offcanvas.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:23:12] "GET /map HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:23:12] "GET /static/css/starter-template.css HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:23:12] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:23:12] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:23:12] "GET /static/js/offcanvas.js HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:23:13] "GET /map_get HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:23:18] "GET /map HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:23:18] "GET /map_get HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:23:18] "GET /collection HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:23:20] "GET /trend/516df8f5b31e2bd65e000d0c HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:23:21] "GET /cs/516df8f5b31e2bd65e000d0c HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:23:24] "GET /cs/516df8f5b31e2bd65e000d0c HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:23:27] "GET /cs/516df8f5b31e2bd65e000d0c HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:23:28] "GET /trend/515d5e11b5907b33b10042dd HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:23:28] "GET /cs/515d5e11b5907b33b10042dd HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:23:32] "GET /cs/515d5e11b5907b33b10042dd HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:23:32] "GET /profile HTTP/1.1" 200 -
+ * Detected change in '/home/ubuntu/Artmo/flask/app/__init__.py', reloading
+ * Restarting with stat
+ * Detected change in '/home/ubuntu/Artmo/flask/app/views.py', reloading
+ * Restarting with stat
+ * Detected change in '/home/ubuntu/Artmo/flask/run.py', reloading
+ * Restarting with stat
+74.71.185.128 - - [30/Sep/2015 02:39:23] "GET /profile HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:39:23] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:39:23] "GET /static/css/starter-template.css HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:39:23] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:39:23] "GET /static/img/me.JPG HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:39:27] "GET /static/js/offcanvas.js HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:39:27] "GET /static/img/GitHub.png HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:39:27] "GET /static/img/In.png HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:39:27] "GET /static/img/bill_poster.png HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:39:30] "GET /static/img/acl_poster.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:39:31] "GET /static/img/spain.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:39:31] "GET /static/img/cloud.png HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:39:34] "GET /static/img/aboutME.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:39:36] "GET /static/img/bg.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:39:37] "GET /static/img/skydiving.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:39:37] "GET /static/img/doggies.jpg HTTP/1.1" 200 -
+ * Detected change in '/home/ubuntu/Artmo/flask/app/__init__.py', reloading
+ * Restarting with stat
+74.71.185.128 - - [30/Sep/2015 02:45:04] "GET /profile HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:45:04] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:45:04] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:45:04] "GET /static/css/starter-template.css HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:45:04] "GET /static/js/offcanvas.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:45:04] "GET /static/img/me.JPG HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:45:04] "GET /static/img/GitHub.png HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:45:05] "GET /static/img/In.png HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:45:05] "GET /static/img/bill_poster.png HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:45:05] "GET /static/img/doggies.jpg HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:45:05] "GET /static/img/acl_poster.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:45:06] "GET /static/img/spain.jpg HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:45:06] "GET /static/img/aboutME.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:45:09] "GET /static/img/cloud.png HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:45:09] "GET /static/img/bg.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:45:09] "GET /static/img/skydiving.jpg HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:45:19] "GET /profile HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:45:19] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:45:20] "GET /static/css/starter-template.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:45:20] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:45:20] "GET /static/js/offcanvas.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:45:20] "GET /static/img/me.JPG HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:45:23] "GET /static/img/GitHub.png HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:45:23] "GET /static/img/In.png HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:45:23] "GET /static/img/bill_poster.png HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 651, in __init__
+    self.finish()
+  File "/usr/lib/python2.7/SocketServer.py", line 710, in finish
+    self.wfile.close()
+  File "/usr/lib/python2.7/socket.py", line 279, in close
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+74.71.185.128 - - [30/Sep/2015 02:45:25] "GET /static/img/spain.jpg HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 651, in __init__
+    self.finish()
+  File "/usr/lib/python2.7/SocketServer.py", line 710, in finish
+    self.wfile.close()
+  File "/usr/lib/python2.7/socket.py", line 279, in close
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+74.71.185.128 - - [30/Sep/2015 02:45:26] "GET /static/img/doggies.jpg HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 651, in __init__
+    self.finish()
+  File "/usr/lib/python2.7/SocketServer.py", line 710, in finish
+    self.wfile.close()
+  File "/usr/lib/python2.7/socket.py", line 279, in close
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+74.71.185.128 - - [30/Sep/2015 02:45:26] "GET /static/img/acl_poster.jpg HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 651, in __init__
+    self.finish()
+  File "/usr/lib/python2.7/SocketServer.py", line 710, in finish
+    self.wfile.close()
+  File "/usr/lib/python2.7/socket.py", line 279, in close
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+74.71.185.128 - - [30/Sep/2015 02:45:26] "GET /static/img/cloud.png HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 651, in __init__
+    self.finish()
+  File "/usr/lib/python2.7/SocketServer.py", line 710, in finish
+    self.wfile.close()
+  File "/usr/lib/python2.7/socket.py", line 279, in close
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+74.71.185.128 - - [30/Sep/2015 02:45:26] "GET /static/img/aboutME.jpg HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:45:26] "GET /profile HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:45:26] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:45:27] "GET /static/css/starter-template.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:45:27] "GET /static/js/offcanvas.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:45:27] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:45:27] "GET /static/img/me.JPG HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 651, in __init__
+    self.finish()
+  File "/usr/lib/python2.7/SocketServer.py", line 710, in finish
+    self.wfile.close()
+  File "/usr/lib/python2.7/socket.py", line 279, in close
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+74.71.185.128 - - [30/Sep/2015 02:45:30] "GET /static/img/GitHub.png HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:45:30] "GET /static/img/In.png HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:45:30] "GET /static/img/acl_poster.jpg HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 651, in __init__
+    self.finish()
+  File "/usr/lib/python2.7/SocketServer.py", line 710, in finish
+    self.wfile.close()
+  File "/usr/lib/python2.7/socket.py", line 279, in close
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+74.71.185.128 - - [30/Sep/2015 02:45:31] "GET /static/img/bill_poster.png HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 651, in __init__
+    self.finish()
+  File "/usr/lib/python2.7/SocketServer.py", line 710, in finish
+    self.wfile.close()
+  File "/usr/lib/python2.7/socket.py", line 279, in close
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+74.71.185.128 - - [30/Sep/2015 02:45:31] "GET /static/img/cloud.png HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 651, in __init__
+    self.finish()
+  File "/usr/lib/python2.7/SocketServer.py", line 710, in finish
+    self.wfile.close()
+  File "/usr/lib/python2.7/socket.py", line 279, in close
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+74.71.185.128 - - [30/Sep/2015 02:45:31] "GET /profile HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:45:31] "GET /static/img/me.JPG HTTP/1.1" 200 -
+ * Detected change in '/home/ubuntu/Artmo/flask/app/views.py', reloading
+----------------------------------------
+Exception happened during processing of request from ('74.71.185.128', 54818)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('74.71.185.128', 54820)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('74.71.185.128', 54819)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('74.71.185.128', 54822)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('74.71.185.128', 54821)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('74.71.185.128', 54829)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('74.71.185.128', 54834)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('74.71.185.128', 54833)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('74.71.185.128', 54835)
+----------------------------------------
+ * Restarting with stat
+74.71.185.128 - - [30/Sep/2015 02:45:32] "GET /static/img/bg.jpg HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:45:32] "GET /static/img/skydiving.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:45:32] "GET /static/img/spain.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:45:32] "GET /static/img/doggies.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:45:34] "GET /profile HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:45:34] "GET /static/img/me.JPG HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:45:37] "GET /static/css/starter-template.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:45:37] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:45:37] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:45:37] "GET /static/js/offcanvas.js HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:45:37] "GET /static/img/GitHub.png HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:45:37] "GET /static/img/In.png HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:45:37] "GET /static/img/acl_poster.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:45:38] "GET /static/img/bill_poster.png HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:45:40] "GET /static/img/cloud.png HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:45:41] "GET /static/img/aboutME.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:45:43] "GET /static/img/bg.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:45:43] "GET /static/img/skydiving.jpg HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:45:43] "GET /static/img/spain.jpg HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:45:43] "GET /static/img/doggies.jpg HTTP/1.1" 200 -
+ * Detected change in '/home/ubuntu/Artmo/flask/app/__init__.py', reloading
+ * Restarting with stat
+ * Detected change in '/home/ubuntu/Artmo/flask/app/views.py', reloading
+ * Restarting with stat
+74.71.185.128 - - [30/Sep/2015 02:55:59] "GET /profile HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:56:00] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:56:00] "GET /static/css/starter-template.css HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:56:00] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:56:00] "GET /static/js/offcanvas.js HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:56:00] "GET /static/img/me.JPG HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:56:04] "GET /static/img/GitHub.png HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:56:04] "GET /static/img/In.png HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:56:04] "GET /static/img/aboutME.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:56:08] "GET /static/img/bill_poster.png HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:56:11] "GET /static/img/acl_poster.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:56:12] "GET /static/img/bg.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:56:12] "GET /static/img/cloud.png HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:56:13] "GET /static/img/skydiving.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:56:13] "GET /static/img/spain.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:56:13] "GET /static/img/doggies.jpg HTTP/1.1" 200 -
+ * Detected change in '/home/ubuntu/Artmo/flask/app/__init__.py', reloading
+ * Restarting with stat
+74.71.185.128 - - [30/Sep/2015 02:58:53] "GET /profile HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:58:54] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:58:55] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:58:55] "GET /static/js/offcanvas.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:58:55] "GET /static/img/me.JPG HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:58:55] "GET /static/css/starter-template.css HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:58:56] "GET /static/img/GitHub.png HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:58:57] "GET /static/img/In.png HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:58:57] "GET /static/img/bill_poster.png HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:58:57] "GET /static/img/acl_poster.jpg HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:58:57] "GET /static/img/cloud.png HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:58:57] "GET /static/img/bg.jpg HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:58:57] "GET /static/img/aboutME.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:59:02] "GET /static/img/skydiving.jpg HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:59:02] "GET /static/img/spain.jpg HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:59:02] "GET /static/img/doggies.jpg HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:59:15] "GET /profile HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:59:15] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:59:16] "GET /static/css/starter-template.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:59:16] "GET /static/js/offcanvas.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:59:16] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:59:16] "GET /static/img/me.JPG HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:59:16] "GET /static/img/GitHub.png HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:59:16] "GET /static/img/In.png HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:59:16] "GET /static/img/bill_poster.png HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 651, in __init__
+    self.finish()
+  File "/usr/lib/python2.7/SocketServer.py", line 710, in finish
+    self.wfile.close()
+  File "/usr/lib/python2.7/socket.py", line 279, in close
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+74.71.185.128 - - [30/Sep/2015 02:59:19] "GET /static/img/acl_poster.jpg HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 651, in __init__
+    self.finish()
+  File "/usr/lib/python2.7/SocketServer.py", line 710, in finish
+    self.wfile.close()
+  File "/usr/lib/python2.7/socket.py", line 279, in close
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+74.71.185.128 - - [30/Sep/2015 02:59:19] "GET /static/img/cloud.png HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 651, in __init__
+    self.finish()
+  File "/usr/lib/python2.7/SocketServer.py", line 710, in finish
+    self.wfile.close()
+  File "/usr/lib/python2.7/socket.py", line 279, in close
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+74.71.185.128 - - [30/Sep/2015 02:59:20] "GET /static/img/aboutME.jpg HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 651, in __init__
+    self.finish()
+  File "/usr/lib/python2.7/SocketServer.py", line 710, in finish
+    self.wfile.close()
+  File "/usr/lib/python2.7/socket.py", line 279, in close
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+74.71.185.128 - - [30/Sep/2015 02:59:20] "GET /static/img/bg.jpg HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 651, in __init__
+    self.finish()
+  File "/usr/lib/python2.7/SocketServer.py", line 710, in finish
+    self.wfile.close()
+  File "/usr/lib/python2.7/socket.py", line 279, in close
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+74.71.185.128 - - [30/Sep/2015 02:59:20] "GET /static/img/skydiving.jpg HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:59:30] "GET /profile HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:59:30] "GET /profile HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:59:30] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:59:30] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:59:30] "GET /static/js/offcanvas.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:59:30] "GET /static/css/starter-template.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:59:30] "GET /static/img/me.JPG HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:59:31] "GET /static/img/GitHub.png HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:59:31] "GET /static/img/In.png HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:59:31] "GET /static/img/cloud.png HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:59:34] "GET /static/img/bill_poster.png HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:59:39] "GET /static/img/acl_poster.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:59:40] "GET /static/img/aboutME.jpg HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 651, in __init__
+    self.finish()
+  File "/usr/lib/python2.7/SocketServer.py", line 710, in finish
+    self.wfile.close()
+  File "/usr/lib/python2.7/socket.py", line 279, in close
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+74.71.185.128 - - [30/Sep/2015 02:59:40] "GET /static/img/bg.jpg HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 651, in __init__
+    self.finish()
+  File "/usr/lib/python2.7/SocketServer.py", line 710, in finish
+    self.wfile.close()
+  File "/usr/lib/python2.7/socket.py", line 279, in close
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+74.71.185.128 - - [30/Sep/2015 02:59:41] "GET /static/img/skydiving.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:59:41] "GET /static/img/spain.jpg HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:59:41] "GET /static/img/doggies.jpg HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 651, in __init__
+    self.finish()
+  File "/usr/lib/python2.7/SocketServer.py", line 710, in finish
+    self.wfile.close()
+  File "/usr/lib/python2.7/socket.py", line 279, in close
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+74.71.185.128 - - [30/Sep/2015 02:59:41] "GET /profile HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:59:41] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:59:41] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:59:41] "GET /static/css/starter-template.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:59:41] "GET /static/js/offcanvas.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:59:41] "GET /static/img/me.JPG HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:59:45] "GET /static/img/GitHub.png HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:59:45] "GET /static/img/In.png HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:59:45] "GET /static/img/acl_poster.jpg HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 651, in __init__
+    self.finish()
+  File "/usr/lib/python2.7/SocketServer.py", line 710, in finish
+    self.wfile.close()
+  File "/usr/lib/python2.7/socket.py", line 279, in close
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+74.71.185.128 - - [30/Sep/2015 02:59:46] "GET /static/img/bill_poster.png HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:59:46] "GET /static/img/cloud.png HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:59:46] "GET /profile HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:59:46] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:59:48] "GET /profile HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:59:49] "GET /static/css/starter-template.css HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:59:49] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:59:49] "GET /static/img/me.JPG HTTP/1.1" 200 -
+ * Detected change in '/home/ubuntu/Artmo/flask/app/views.py', reloading
+----------------------------------------
+Exception happened during processing of request from ('74.71.185.128', 55012)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('74.71.185.128', 55010)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('74.71.185.128', 55013)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('74.71.185.128', 55014)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('74.71.185.128', 55015)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('74.71.185.128', 55030)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('74.71.185.128', 55029)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('74.71.185.128', 55034)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('74.71.185.128', 55045)
+----------------------------------------
+ * Restarting with stat
+74.71.185.128 - - [30/Sep/2015 02:59:51] "GET /static/img/spain.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:59:51] "GET /static/img/doggies.jpg HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 651, in __init__
+    self.finish()
+  File "/usr/lib/python2.7/SocketServer.py", line 710, in finish
+    self.wfile.close()
+  File "/usr/lib/python2.7/socket.py", line 279, in close
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+74.71.185.128 - - [30/Sep/2015 02:59:53] "GET /profile HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:59:53] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:59:53] "GET /static/css/starter-template.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 02:59:53] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:59:53] "GET /static/js/offcanvas.js HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:59:53] "GET /static/img/me.JPG HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:59:58] "GET /static/img/GitHub.png HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:59:58] "GET /static/img/In.png HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 02:59:58] "GET /static/img/bill_poster.png HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:00:02] "GET /static/img/acl_poster.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:00:03] "GET /static/img/cloud.png HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:00:04] "GET /static/img/aboutME.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:00:07] "GET /static/img/bg.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:00:07] "GET /static/img/skydiving.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:00:07] "GET /static/img/spain.jpg HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 03:00:07] "GET /static/img/doggies.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:00:36] "GET /map HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:00:36] "GET /map_get HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:00:42] "GET /collection HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:00:44] "GET /trend/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:00:44] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:00:47] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:00:50] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:00:52] "GET /collection HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:03:42] "GET /profile HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:11:47] "GET /collection HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:11:49] "GET /trend/516df8f5b31e2bd65e000d0c HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:11:50] "GET /cs/516df8f5b31e2bd65e000d0c HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:11:53] "GET /cs/516df8f5b31e2bd65e000d0c HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:11:56] "GET /cs/516df8f5b31e2bd65e000d0c HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:11:59] "GET /cs/516df8f5b31e2bd65e000d0c HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:12:03] "GET /cs/516df8f5b31e2bd65e000d0c HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:12:06] "GET /cs/516df8f5b31e2bd65e000d0c HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:12:09] "GET /cs/516df8f5b31e2bd65e000d0c HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:12:12] "GET /cs/516df8f5b31e2bd65e000d0c HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:12:16] "GET /cs/516df8f5b31e2bd65e000d0c HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:12:19] "GET /cs/516df8f5b31e2bd65e000d0c HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:12:22] "GET /cs/516df8f5b31e2bd65e000d0c HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:12:25] "GET /cs/516df8f5b31e2bd65e000d0c HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:12:29] "GET /cs/516df8f5b31e2bd65e000d0c HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:12:32] "GET /cs/516df8f5b31e2bd65e000d0c HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:12:35] "GET /cs/516df8f5b31e2bd65e000d0c HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:12:38] "GET /cs/516df8f5b31e2bd65e000d0c HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:12:42] "GET /cs/516df8f5b31e2bd65e000d0c HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:12:45] "GET /cs/516df8f5b31e2bd65e000d0c HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:12:48] "GET /cs/516df8f5b31e2bd65e000d0c HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:12:48] "GET / HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:13:07] "GET /profile HTTP/1.1" 200 -
+ * Detected change in '/home/ubuntu/Artmo/flask/app/__init__.py', reloading
+----------------------------------------
+Exception happened during processing of request from ('74.71.185.128', 55066)
+----------------------------------------
+ * Restarting with stat
+ * Detected change in '/home/ubuntu/Artmo/flask/app/views.py', reloading
+ * Restarting with stat
+74.71.185.128 - - [30/Sep/2015 03:15:25] "GET /profile HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:15:25] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:15:25] "GET /static/css/starter-template.css HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:15:25] "GET /static/js/offcanvas.js HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:15:25] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:15:25] "GET /static/img/me.JPG HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:15:29] "GET /static/img/bg.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:15:29] "GET /static/img/GitHub.png HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:15:29] "GET /static/img/In.png HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:15:29] "GET /static/img/bill_poster.png HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:15:33] "GET /static/img/acl_poster.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:15:34] "GET /static/img/cloud.png HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:15:36] "GET /static/img/aboutME.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:15:39] "GET /static/img/skydiving.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:15:39] "GET /static/img/spain.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:15:39] "GET /static/img/doggies.jpg HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:16:23] "GET /collection HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:16:34] "GET /trend/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:16:34] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:16:38] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:16:41] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:16:44] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:16:47] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:16:51] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:16:54] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:16:57] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:17:00] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:17:04] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:17:07] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:17:10] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:17:14] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:17:17] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:17:20] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:17:23] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:17:27] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:17:30] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:17:33] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:17:36] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:17:40] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:17:43] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:17:46] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:17:49] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:17:53] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:17:56] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:17:59] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:18:02] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:18:06] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:18:09] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:18:12] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:18:15] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:18:20] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:18:23] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:18:27] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:18:31] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:18:35] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:18:42] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:18:45] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:18:50] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:18:57] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:19:00] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:19:05] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:19:09] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:19:14] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:19:17] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:19:21] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:19:26] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:19:34] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:19:38] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:19:42] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:19:48] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:19:52] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:19:56] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:20:09] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:20:23] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:20:28] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:20:32] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:20:39] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:20:45] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:20:50] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:20:53] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:20:57] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:21:06] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:21:12] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:21:24] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:21:30] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:21:33] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:21:38] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:21:46] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:21:50] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+ * Detected change in '/home/ubuntu/Artmo/flask/app/__init__.py', reloading
+ * Restarting with stat
+ * Detected change in '/home/ubuntu/Artmo/flask/app/views.py', reloading
+ * Restarting with stat
+74.71.185.128 - - [30/Sep/2015 03:22:18] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:22:19] "GET /trend/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:22:19] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:22:20] "GET /static/css/starter-template.css HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:22:20] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:22:20] "GET /static/js/offcanvas.js HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:22:21] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:22:24] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:22:27] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:22:31] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:22:34] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:22:39] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:22:43] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:22:47] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:22:50] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:22:55] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:22:58] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:23:02] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:23:07] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:23:11] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:23:16] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:23:20] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:23:23] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:23:28] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:23:32] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:23:36] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:23:39] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:23:43] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:23:48] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:23:53] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:23:56] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:24:01] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:24:04] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:24:09] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:24:13] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:24:16] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:24:29] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:24:45] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:24:49] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:24:53] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:24:57] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:25:00] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:25:05] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:25:10] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:25:16] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:25:20] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:25:27] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:25:30] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:25:34] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:25:38] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:25:42] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:25:46] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:25:50] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+ * Detected change in '/home/ubuntu/Artmo/flask/app/__init__.py', reloading
+ * Restarting with stat
+74.71.185.128 - - [30/Sep/2015 03:25:58] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:26:15] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:26:20] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:26:28] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:26:29] "GET /trend/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:26:29] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:26:29] "GET /static/css/starter-template.css HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:26:29] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 03:26:29] "GET /static/js/offcanvas.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 03:26:31] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:26:33] "GET /trend/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:26:34] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 03:26:34] "GET /static/css/starter-template.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 03:26:34] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 03:26:34] "GET /static/js/offcanvas.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 03:26:34] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:26:37] "GET /trend/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:26:37] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 03:26:37] "GET /static/css/starter-template.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 03:26:37] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 03:26:37] "GET /static/js/offcanvas.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 03:26:37] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:26:41] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+ * Detected change in '/home/ubuntu/Artmo/flask/app/views.py', reloading
+ * Restarting with stat
+74.71.185.128 - - [30/Sep/2015 03:26:43] "GET /trend/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:26:44] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 03:26:44] "GET /static/css/starter-template.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 03:26:44] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:26:44] "GET /static/js/offcanvas.js HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:26:44] "GET /static/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:26:45] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:26:47] "GET /trend/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:26:47] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 03:26:48] "GET /static/css/starter-template.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 03:26:48] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 03:26:48] "GET /static/js/offcanvas.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 03:26:48] "GET /static/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 03:26:48] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:26:52] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:26:55] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:26:58] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:27:03] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:27:06] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:27:10] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:27:14] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:27:19] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:27:22] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:27:26] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+ * Detected change in '/home/ubuntu/Artmo/flask/app/__init__.py', reloading
+ * Restarting with stat
+ * Detected change in '/home/ubuntu/Artmo/flask/app/views.py', reloading
+ * Restarting with stat
+74.71.185.128 - - [30/Sep/2015 03:29:01] "GET /trend/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:29:02] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:29:02] "GET /static/css/starter-template.css HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:29:02] "GET /static/js/offcanvas.js HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:29:02] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:29:04] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:29:07] "GET /cs/516dedf4b31e2bd65e000831 HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:29:09] "GET /map HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 03:29:12] "GET /map_get HTTP/1.1" 200 -
+117.21.173.36 - - [30/Sep/2015 06:54:10] "GET /manager/html HTTP/1.1" 404 -
+117.21.173.36 - - [30/Sep/2015 06:54:37] "GET /manager/html HTTP/1.1" 404 -
+169.50.3.171 - - [30/Sep/2015 07:20:10] "GET /xmlrpc.php HTTP/1.1" 404 -
+185.25.151.159 - - [30/Sep/2015 09:09:20] "GET http://testp4.pospr.waw.pl/testproxy.php HTTP/1.1" 404 -
+74.71.185.128 - - [30/Sep/2015 11:22:49] "GET /map HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 11:22:49] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 11:22:50] "GET /static/css/starter-template.css HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 11:22:50] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 11:22:50] "GET /static/js/offcanvas.js HTTP/1.1" 304 -
+74.71.185.128 - - [30/Sep/2015 11:22:54] "GET /map_get HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 11:22:59] "GET /collection HTTP/1.1" 200 -
+74.71.185.128 - - [30/Sep/2015 11:23:00] "GET /profile HTTP/1.1" 200 -

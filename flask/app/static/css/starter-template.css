@@ -15,6 +15,19 @@ footer {
 }
 
 
+#img_container {
+    position:relative;
+    display:inline-block;
+    text-align:center;
+}
+
+.img_button {
+    position:absolute;
+    bottom:10px;
+    right:10px;
+    width:30px;
+    height:30px;
+}
 /* FOR HIGHMAP
 -------------------------------------------------- */
 

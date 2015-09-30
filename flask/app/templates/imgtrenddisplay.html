@@ -32,7 +32,7 @@
                         </tr>
                       </tbody>
                     </table>
-                    <p align="center"> <img src={{output_0[0].image_link}} class="img-thumbnail" ></p>
+                    <p align="center"> <img src={{output_0[0].image_link}} class="img-thumbnail fancybox" ></p>
                     <!-- <button type="submit" value="Send" name="like-container" class="btn btn-default id-submit"><img src="http://iconshow.me/media/images/ui/ios7-icons/png/512/heart_1.png" style="height:20px"></button> -->
                     </div>
                   <!-- </div> -->
@@ -98,20 +98,20 @@
 
 <script>
   function query_new_trend() {
-    $.ajax({ url: '/cs/{{output_0[0].id}}'}).done(function(data) {
+    jQuery.ajax({ url: '/cs/{{output_0[0].id}}'}).done(function(data) {
       console.log(data);
        if (data.output.length > 0) {
         // latest_event_time = parseInt(data.output[0].event_time) + 1;
 
 
-        // $.each(data.output, function(event_time, pin_count) {
+        // jQuery.each(data.output, function(event_time, pin_count) {
             var x =  (new Date()).getTime(), 
             // var x = data.output[0].event_time,
                 y = parseInt(data.output[0].pin_count);
             if (y==null) {
               y = 0
             }
-            var chart = $('#highchart').highcharts();
+            var chart = jQuery('#highchart').highcharts();
             var series = chart.series[0];
             series.addPoint([x, y], true, true);
         // });
@@ -120,16 +120,16 @@
     });
   }
 
-$(function () {
+jQuery(function () {
     // Get the CSV and create the chart
-    $(document).ready(function () {
+    jQuery(document).ready(function () {
         Highcharts.setOptions({
             global: {
                 useUTC: false
             }
         });
 
-        $('#highchart').highcharts({
+        jQuery('#highchart').highcharts({
             chart: {
                 type: 'spline',
                 // animation: Highcharts.svg, // don't animate in old IE
@@ -313,7 +313,7 @@ Highcharts.theme = {
 // Apply the theme
 Highcharts.setOptions(Highcharts.theme);
 
-  $().ready(function() {
+  jQuery().ready(function() {
     query_new_trend();
     // refresh_statistics();
     // setInterval(refresh_statistics, 1000);

@@ -4,16 +4,16 @@
 
 <script>
   function query_map() {
-    $.ajax({method: 'get', url: '/map_get'}).done(function(data) {
+    jQuery.ajax({method: 'get', url: '/map_get'}).done(function(data) {
       map_data = []
-      $.each(data.output, function (i,data) {
+      jQuery.each(data.output, function (i,data) {
           map_data.push({
               code: data.code,
               value: parseInt(data.value/100000),
           });
       });
 
-  $('#container_map').highcharts('Map', { 
+  jQuery('#container_map').highcharts('Map', { 
       title: {
           text: 'Art in the World'
       },
@@ -176,7 +176,7 @@ Highcharts.theme = {
 Highcharts.setOptions(Highcharts.theme);
 
 
-$().ready(function() {
+jQuery().ready(function() {
     query_map();
 });
 
