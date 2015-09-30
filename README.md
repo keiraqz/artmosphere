@@ -1,2 +1,2 @@
-# artmosphere
+# Artmosphere
 
