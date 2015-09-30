@@ -31,6 +31,11 @@ def profile():
    title = "Artmosphere"
    return render_template("profile.html", title = title)
 
+@app.route("/slide")  
+def get_slide():
+   title = "Artmosphere"
+   return render_template("slide.html", title = title)
+
 @app.route("/map")  
 def get_map():
    title = "Artmosphere"
