@@ -1,18 +1,11 @@
 {% extends "base.html" %}
 {% block imagetrenddis %}
-<!-- <script src="http://www.highcharts.com/joomla/media/com_demo/js/highslide-full.min.js"></script>
-<script src="http://www.highcharts.com/joomla/media/com_demo/js/highslide.config.js" charset="utf-8"></script>
-<link rel="stylesheet" type="text/css" href="http://www.highcharts.com/joomla/media/com_demo/highslide.css" />
- -->
+
 <div class="row row-offcanvas">
         <div class="col-xs-12 col-sm-9"  style="position:fixed;left:0;top:0;bottom:0;overflow-y:scroll;padding-top: 70px">
-<!--           <p class="pull-right visible-xs">            
-          </p> -->
           <div class="jumbotron">
             <div class="container">
               <div class="starter-template">
-                <!-- <div class="row" style="height:100vh;"> -->
-                  <!-- <div class="col-md-10 col-md-offset-1"> -->
                     <div class="row"> 
                       <table class="table">
                       <thead>
@@ -25,7 +18,6 @@
                       </thead>
                       <tbody>
                         <tr>
-                          <!-- <td><img src={{output_0[0].image_link}} class="img-thumbnail" ></td> -->
                           <td>{{output_0[0].title}}</td>
                           <td>{{output_0[0].collecting_institution}}</td>
                           <td>{{output_0[0].pined_count}}</td>
@@ -33,10 +25,7 @@
                       </tbody>
                     </table>
                     <p align="center"> <img src={{output_0[0].image_link}} class="img-thumbnail fancybox" ></p>
-                    <!-- <button type="submit" value="Send" name="like-container" class="btn btn-default id-submit"><img src="http://iconshow.me/media/images/ui/ios7-icons/png/512/heart_1.png" style="height:20px"></button> -->
                     </div>
-                  <!-- </div> -->
-                <!-- </div> -->
               </div>
             </div>
             <hr>
@@ -46,27 +35,6 @@
              <div id="highchart" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
           </div>
           </div>
-          <!-- <div class="container">
-          <div class="row">
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th>Artwork Id</th>
-                      <th>Event Time</th>
-                      <th>Count</th>                         
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {% for val in output %}
-                    <tr>
-                      <td>{{val.art_id}}</td>
-                      <td>{{val.event_time}}</td>
-                      <td>{{val.pin_count}}</td>
-                    </tr>
-                    {% endfor %}
-                  </tbody>
-                </table>
-          </div><!--/row-->
           </div>
           </div> -->
       </div><!--/.col-xs-12.col-sm-9-->
@@ -101,12 +69,7 @@
     jQuery.ajax({ url: '/cs/{{output_0[0].id}}'}).done(function(data) {
       console.log(data);
        if (data.output.length > 0) {
-        // latest_event_time = parseInt(data.output[0].event_time) + 1;
-
-
-        // jQuery.each(data.output, function(event_time, pin_count) {
             var x =  (new Date()).getTime(), 
-            // var x = data.output[0].event_time,
                 y = parseInt(data.output[0].pin_count);
             if (y==null) {
               y = 0
@@ -132,18 +95,14 @@ jQuery(function () {
         jQuery('#highchart').highcharts({
             chart: {
                 type: 'spline',
-                // animation: Highcharts.svg, // don't animate in old IE
                 marginRight: 10,
                 events: {
                     load: function () {
                     }
                 }
             },
-            // data: {
-            //     csv: csv
-            // },
             title: {
-                text: 'Artwork Trend Analysis'
+                text: 'Real-time Collecting Action Count'
             },
             xAxis: {
               type: 'datetime'
@@ -196,7 +155,7 @@ jQuery(function () {
                 }
             },
             series: [{
-                name: 'Pined Count',
+                name: 'Collected Count',
                 data: (function () {
                     var data = [], time = (new Date()).getTime(), i;
                     for (i = -19; i <= 0; i += 1) {
@@ -315,8 +274,6 @@ Highcharts.setOptions(Highcharts.theme);
 
   jQuery().ready(function() {
     query_new_trend();
-    // refresh_statistics();
-    // setInterval(refresh_statistics, 1000);
   });
 </script>
 {% endblock %}
