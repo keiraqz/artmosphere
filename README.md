@@ -10,7 +10,7 @@ Website: www.artmosphere.nyc
 - <a href= "https://github.com/keiraqz/artmosphere/blob/master/README.md#data-processing">Data Processing</a>
 - <a href= "https://github.com/keiraqz/artmosphere/blob/master/README.md#live-demo">Live Demo</a>
 - <a href= "https://github.com/keiraqz/artmosphere/blob/master/README.md#presentation-deck">Presentation Deck</a>
-- <a href= "https://github.com/keiraqz/artmosphere/blob/master/README.md#instructions-to-run-this-pipeline">Instructions to Run this Pipeline</a>
+- <a href= "https://github.com/keiraqz/artmosphere/blob/master/README.md#instructions-to-run-this-pipeline">Installed Packages for the Pipeline</a>
 
 
 ##Introduction
@@ -46,10 +46,12 @@ A distributed AWS cluster of 4 EC2 machines is being used for this project. All 
   - Batch producer: <a href= "https://github.com/keiraqz/artmosphere/blob/master/kafka/hdfs\_producer.py">hdfs\_producer.py</a>
   - Batch consumer: <a href= "https://github.com/keiraqz/artmosphere/blob/master/kafka/hdfs\_consumer.py">hdfs\_consumer.py</a>
 
-- **Batch Processing (HDFS, Spark):** To perform batch processing job, Spark loads the data from HDFS and processed them in a distributed way.
-  - Batch processing: <a href= "https://github.com/keiraqz/artmosphere/tree/master/batch\_geo">batch_geo</a>
-  - To excute: run ```bash batch_geo_run.sh```
-
+- **Batch Processing (HDFS, Spark):** To perform batch processing job, Spark loads the data from HDFS and processed them in a distributed way. The two major batch processing steps for the project is to aggregate the artists upload locations and compute artwork-artwrok similarties. 
+  - Aggreate Locations: <a href= "https://github.com/keiraqz/artmosphere/tree/master/batch\_geo">batch\_geo</a>
+    - To excute: run ```bash batch_geo_run.sh```
+  - Compute Similarity: <a href= "https://github.com/keiraqz/artmosphere/tree/master/batch\_similarity">batch\_similarity</a>
+    - To excute: run ```bash batch_sim_run.sh```
+  
   The following graph shows the performance analysis of Spark for one the batch processing jobs - aggregating artists upload locations:
 
   <img src="https://github.com/keiraqz/artmosphere/blob/master/img/Spark.png" alt="alt text" width="600">
@@ -58,7 +60,7 @@ A distributed AWS cluster of 4 EC2 machines is being used for this project. All 
 
 - **Speed Layer (Spark Streaming):** Spark Streaming processes the data in micro batches. The job aggregates how many people collected a certain piece of art every 5 seconds and saves the result into a table in Cassandra. The information can be queried by artwork\_id and timestamp.
 
-- **Front-end (Flask):** The cab locations are rendered on Google Maps and updated at 2 sec interval via AJAX. Historical data is represented as bar and line charts. Realted files: <a href= "https://github.com/PreetikaKuls/Insight-MapMyCab/blob/master/flask/app/views.py">views.py</a>, <a href= "https://github.com/PreetikaKuls/Insight-MapMyCab/blob/master/flask/app/static/batch.js">batch.js</a>, <a href="https://github.com/PreetikaKuls/Insight-MapMyCab/blob/master/flask/app/static/map.js">map.js</a>.
+- **Front-end (Flask):** 
 
 
 ##Live Demo:
@@ -83,29 +85,7 @@ A Live Demo of the project is available here: www.artmosphere.nyc
 ##Presentation Deck
 The presentation slides are available <a href= "http://www.artmosphere.nyc/slide">here</a>.
 
-##Instructions to Run this Pipeline
-
-Install python packages:
+##Installed Packages for the Pipeline
 ```sudo pip install kafka-python happybase pyleus mrjob```
-
-Run the Kafka producer / consumer:
-```python kafka/producer.py```
-```python kafka/kafka_consumer.py```
-
-Run MrJob:
-```python mr_hourly_job.py -r hadoop --hadoop-bin /usr/bin/hadoop hdfs:///<input file path> -o <output file path>```
-
-Run Hive Scripts
-```hive -f <filename>```
-
-Build storm topology:
-```pyleus build cab_topology.yaml```
-
-Submit pyleus topology:
-```pyleus submit -n 54.153.51.200 cab_topology.jar```
-
-
-
-
 
 
