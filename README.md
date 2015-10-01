@@ -52,7 +52,7 @@ A distributed AWS cluster of 4 EC2 machines is being used for this project. All 
   - Compute Similarity: <a href= "https://github.com/keiraqz/artmosphere/tree/master/batch\_similarity">batch\_similarity</a>
     - To excute: run ```bash batch_sim_run.sh```
   
-  The following graph shows the performance analysis of Spark for one the batch processing jobs - aggregating artists upload locations:
+  The following graph shows the performance analysis of Spark for one the batch processing jobs - aggregating artists upload locations - up to 500GB:
 
   <img src="https://github.com/keiraqz/artmosphere/blob/master/img/Spark.png" alt="alt text" width="600">
 
