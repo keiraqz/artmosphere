@@ -10,7 +10,7 @@ Website: www.artmosphere.nyc
 - <a href= "https://github.com/keiraqz/artmosphere/blob/master/README.md#data-processing">Data Processing</a>
 - <a href= "https://github.com/keiraqz/artmosphere/blob/master/README.md#website">Website</a>
 - <a href= "https://github.com/keiraqz/artmosphere/blob/master/README.md#presentation-deck">Presentation Deck</a>
-- <a href= "https://github.com/keiraqz/artmosphere/blob/master/README.md#installed-packages-for-the-pipeline">Installed Packages for the Pipeline</a>
+- <a href= "https://github.com/keiraqz/artmosphere/blob/master/README.md#packages-used-for-the-pipeline">Packages Used for the Pipeline</a>
 
 
 ##Introduction
@@ -87,7 +87,7 @@ www.artmosphere.nyc
 ##Presentation Deck
 The presentation slides are available <a href= "http://www.artmosphere.nyc/slide">here</a>.
 
-##Installed Packages for the Pipeline
-```sudo pip install kafka-python happybase pyleus mrjob```
+##Packages Used for the Pipeline
+pyspark, pyspark-cassandra, elasticsearch-hadoop-2.1.0.Beta2.jar
 
 
