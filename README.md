@@ -65,8 +65,8 @@ A distributed AWS cluster of 4 EC2 machines is being used for this project. All 
 - **Front-end (Flask, Bootstrap, Highcharts):** The frond-end uses Flask as the framework and the website uses JavaScript and Twitter Bootstrap libriries. All the plots are achieved via Highcharts. To visit: www.artmosphere.nyc
 
 
-##Website:
-The website: www.artmosphere.nyc
+##Website
+www.artmosphere.nyc
 - The artwork information:
 
 <img src="https://github.com/keiraqz/artmosphere/blob/master/img/art_info.png" alt="alt text" width="600">
