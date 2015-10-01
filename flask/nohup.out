@@ -2013,3 +2013,375 @@ Exception happened during processing of request from ('104.247.55.102', 61519)
 104.247.55.102 - - [30/Sep/2015 18:29:54] "GET /map HTTP/1.1" 200 -
 104.247.55.102 - - [30/Sep/2015 18:29:54] "GET /map_get HTTP/1.1" 200 -
 104.247.55.102 - - [30/Sep/2015 18:29:56] "GET /collection HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 18:34:04] "GET / HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 18:54:05] "GET / HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 18:54:10] "GET / HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 20:05:28] "GET /profile HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 20:05:39] "GET /collection HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 20:05:41] "GET /map HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 20:05:41] "GET /map_get HTTP/1.1" 200 -
+94.102.49.54 - - [30/Sep/2015 22:57:37] "GET / HTTP/1.0" 200 -
+169.50.3.171 - - [30/Sep/2015 23:03:23] "GET /xmlrpc.php HTTP/1.1" 404 -
+ * Detected change in '/home/ubuntu/Artmo/flask/app/__init__.py', reloading
+ * Restarting with stat
+ * Detected change in '/home/ubuntu/Artmo/flask/app/views.py', reloading
+ * Restarting with stat
+104.247.55.102 - - [30/Sep/2015 23:18:11] "GET /map HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 23:18:11] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 23:18:11] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 23:18:11] "GET /static/js/offcanvas.js HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 23:18:11] "GET /static/css/starter-template.css HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 23:18:11] "GET /map_get HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 23:18:16] "GET / HTTP/1.1" 200 -
+ * Detected change in '/home/ubuntu/Artmo/flask/app/__init__.py', reloading
+ * Restarting with stat
+ * Detected change in '/home/ubuntu/Artmo/flask/app/views.py', reloading
+ * Restarting with stat
+104.247.55.102 - - [30/Sep/2015 23:20:15] "GET / HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 23:20:15] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 23:20:15] "GET /static/css/starter-template.css HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 23:20:16] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 23:20:16] "GET /static/js/offcanvas.js HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 23:20:16] "GET /static/img/bg.jpg HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 23:20:16] "GET /static/img/favicon-32x32.png HTTP/1.1" 200 -
+ * Detected change in '/home/ubuntu/Artmo/flask/app/__init__.py', reloading
+ * Restarting with stat
+ * Detected change in '/home/ubuntu/Artmo/flask/app/views.py', reloading
+ * Restarting with stat
+104.247.55.102 - - [30/Sep/2015 23:25:43] "GET / HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 23:25:43] "GET /static/css/starter-template.css HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 23:25:43] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 23:25:43] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 23:25:43] "GET /static/js/offcanvas.js HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 23:25:43] "GET /static/img/bg.jpg HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 23:25:44] "GET /static/img/favicon-16x16.png HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 23:25:44] "GET /static/img/am.gif HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 23:25:49] "GET / HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 23:25:49] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+104.247.55.102 - - [30/Sep/2015 23:25:49] "GET /static/css/starter-template.css HTTP/1.1" 304 -
+104.247.55.102 - - [30/Sep/2015 23:25:49] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+104.247.55.102 - - [30/Sep/2015 23:25:49] "GET /static/js/offcanvas.js HTTP/1.1" 304 -
+104.247.55.102 - - [30/Sep/2015 23:25:49] "GET /static/img/bg.jpg HTTP/1.1" 304 -
+104.247.55.102 - - [30/Sep/2015 23:25:50] "GET /static/img/favicon-16x16.png HTTP/1.1" 200 -
+ * Detected change in '/home/ubuntu/Artmo/flask/app/__init__.py', reloading
+ * Restarting with stat
+ * Detected change in '/home/ubuntu/Artmo/flask/app/views.py', reloading
+ * Restarting with stat
+104.247.55.102 - - [30/Sep/2015 23:36:54] "GET / HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 23:36:54] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 23:36:54] "GET /static/css/starter-template.css HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 23:36:54] "GET /static/js/offcanvas.js HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 23:36:54] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 23:36:55] "GET /static/img/bg.jpg HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 23:36:55] "GET /static/img/favicon-16x16.png HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 23:36:57] "GET / HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 23:36:57] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+104.247.55.102 - - [30/Sep/2015 23:36:57] "GET /static/css/starter-template.css HTTP/1.1" 304 -
+104.247.55.102 - - [30/Sep/2015 23:36:57] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+104.247.55.102 - - [30/Sep/2015 23:36:57] "GET /static/js/offcanvas.js HTTP/1.1" 304 -
+104.247.55.102 - - [30/Sep/2015 23:36:57] "GET /static/img/bg.jpg HTTP/1.1" 304 -
+104.247.55.102 - - [30/Sep/2015 23:36:57] "GET /static/img/favicon-16x16.png HTTP/1.1" 200 -
+ * Detected change in '/home/ubuntu/Artmo/flask/app/__init__.py', reloading
+ * Restarting with stat
+ * Detected change in '/home/ubuntu/Artmo/flask/app/views.py', reloading
+ * Restarting with stat
+104.247.55.102 - - [30/Sep/2015 23:38:08] "GET / HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 23:38:08] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 23:38:09] "GET /static/css/starter-template.css HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 23:38:09] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 23:38:09] "GET /static/js/offcanvas.js HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 23:38:09] "GET /static/img/bg.jpg HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 23:38:09] "GET /static/img/favicon-32x32.png HTTP/1.1" 200 -
+178.17.171.156 - - [30/Sep/2015 23:50:06] "GET / HTTP/1.1" 200 -
+ * Detected change in '/home/ubuntu/Artmo/flask/app/__init__.py', reloading
+ * Restarting with stat
+104.247.55.102 - - [30/Sep/2015 23:54:47] "GET / HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 23:54:48] "GET /static/css/starter-template.css HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 23:54:48] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 23:54:48] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 23:54:48] "GET /static/js/offcanvas.js HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 23:54:48] "GET /static/img/bg.jpg HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 23:54:49] "GET /static/img/favicon-32x32.png HTTP/1.1" 200 -
+ * Detected change in '/home/ubuntu/Artmo/flask/app/views.py', reloading
+ * Restarting with stat
+ * Detected change in '/home/ubuntu/Artmo/flask/app/__init__.py', reloading
+ * Restarting with stat
+104.247.55.102 - - [30/Sep/2015 23:55:37] "GET / HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 23:55:37] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 23:55:37] "GET /static/css/starter-template.css HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 23:55:37] "GET /static/js/offcanvas.js HTTP/1.1" 304 -
+104.247.55.102 - - [30/Sep/2015 23:55:37] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+104.247.55.102 - - [30/Sep/2015 23:55:37] "GET /static/img/bg.jpg HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 23:55:38] "GET /static/img/favicon-32x32.png HTTP/1.1" 200 -
+ * Detected change in '/home/ubuntu/Artmo/flask/app/views.py', reloading
+ * Restarting with stat
+ * Detected change in '/home/ubuntu/Artmo/flask/app/__init__.py', reloading
+ * Restarting with stat
+ * Detected change in '/home/ubuntu/Artmo/flask/app/views.py', reloading
+ * Restarting with stat
+104.247.55.102 - - [30/Sep/2015 23:56:58] "GET / HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 23:56:58] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 23:56:58] "GET /static/css/starter-template.css HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 23:56:58] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 23:56:58] "GET /static/js/offcanvas.js HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 23:56:58] "GET /static/img/bg.jpg HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 23:56:59] "GET /static/img/favicon.ico HTTP/1.1" 200 -
+ * Detected change in '/home/ubuntu/Artmo/flask/app/__init__.py', reloading
+ * Restarting with stat
+ * Detected change in '/home/ubuntu/Artmo/flask/app/views.py', reloading
+ * Restarting with stat
+104.247.55.102 - - [30/Sep/2015 23:59:06] "GET / HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 23:59:06] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 23:59:06] "GET /static/css/starter-template.css HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 23:59:06] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 23:59:06] "GET /static/js/offcanvas.js HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 23:59:06] "GET /static/img/logo.png HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 23:59:07] "GET /static/img/bg.jpg HTTP/1.1" 200 -
+104.247.55.102 - - [30/Sep/2015 23:59:07] "GET /static/img/favicon.ico HTTP/1.1" 200 -
+ * Detected change in '/home/ubuntu/Artmo/flask/app/__init__.py', reloading
+ * Restarting with stat
+ * Detected change in '/home/ubuntu/Artmo/flask/app/views.py', reloading
+ * Restarting with stat
+104.247.55.102 - - [01/Oct/2015 00:03:59] "GET / HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:04:00] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:04:00] "GET /static/css/starter-template.css HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:04:00] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:04:00] "GET /static/js/offcanvas.js HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:04:00] "GET /static/img/logo.png HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:04:00] "GET /static/img/bg.jpg HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:04:00] "GET /static/img/favicon.ico HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:04:10] "GET / HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:04:11] "GET /static/css/starter-template.css HTTP/1.1" 304 -
+104.247.55.102 - - [01/Oct/2015 00:04:11] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+104.247.55.102 - - [01/Oct/2015 00:04:11] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+104.247.55.102 - - [01/Oct/2015 00:04:11] "GET /static/img/logo.png HTTP/1.1" 304 -
+104.247.55.102 - - [01/Oct/2015 00:04:11] "GET /static/js/offcanvas.js HTTP/1.1" 304 -
+104.247.55.102 - - [01/Oct/2015 00:04:11] "GET /static/img/bg.jpg HTTP/1.1" 304 -
+104.247.55.102 - - [01/Oct/2015 00:04:11] "GET /static/img/favicon.ico HTTP/1.1" 200 -
+ * Detected change in '/home/ubuntu/Artmo/flask/app/__init__.py', reloading
+ * Restarting with stat
+ * Detected change in '/home/ubuntu/Artmo/flask/app/views.py', reloading
+ * Restarting with stat
+104.247.55.102 - - [01/Oct/2015 00:05:22] "GET / HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:05:23] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:05:23] "GET /static/css/starter-template.css HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:05:23] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:05:23] "GET /static/js/offcanvas.js HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:05:23] "GET /static/img/logo.png HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:05:23] "GET /static/img/bg.jpg HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:05:23] "GET /static/img/favicon.ico HTTP/1.1" 200 -
+ * Detected change in '/home/ubuntu/Artmo/flask/app/__init__.py', reloading
+ * Restarting with stat
+ * Detected change in '/home/ubuntu/Artmo/flask/app/views.py', reloading
+ * Restarting with stat
+104.247.55.102 - - [01/Oct/2015 00:07:25] "GET / HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:07:25] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:07:25] "GET /static/css/starter-template.css HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:07:25] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:07:25] "GET /static/js/offcanvas.js HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:07:25] "GET /static/img/logo.png HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:07:25] "GET /static/img/bg.jpg HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:07:26] "GET /static/img/favicon.ico HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:07:31] "GET / HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:07:31] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+104.247.55.102 - - [01/Oct/2015 00:07:31] "GET /static/css/starter-template.css HTTP/1.1" 304 -
+104.247.55.102 - - [01/Oct/2015 00:07:31] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+104.247.55.102 - - [01/Oct/2015 00:07:31] "GET /static/js/offcanvas.js HTTP/1.1" 304 -
+104.247.55.102 - - [01/Oct/2015 00:07:31] "GET /static/img/logo.png HTTP/1.1" 304 -
+104.247.55.102 - - [01/Oct/2015 00:07:32] "GET /static/img/bg.jpg HTTP/1.1" 304 -
+104.247.55.102 - - [01/Oct/2015 00:07:32] "GET /static/img/favicon.ico HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:07:36] "GET / HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:07:36] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+104.247.55.102 - - [01/Oct/2015 00:07:36] "GET /static/css/starter-template.css HTTP/1.1" 304 -
+104.247.55.102 - - [01/Oct/2015 00:07:36] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+104.247.55.102 - - [01/Oct/2015 00:07:36] "GET /static/img/logo.png HTTP/1.1" 304 -
+104.247.55.102 - - [01/Oct/2015 00:07:36] "GET /static/js/offcanvas.js HTTP/1.1" 304 -
+104.247.55.102 - - [01/Oct/2015 00:07:36] "GET /static/img/bg.jpg HTTP/1.1" 304 -
+104.247.55.102 - - [01/Oct/2015 00:07:36] "GET /static/img/favicon.ico HTTP/1.1" 200 -
+ * Detected change in '/home/ubuntu/Artmo/flask/app/__init__.py', reloading
+ * Restarting with stat
+ * Detected change in '/home/ubuntu/Artmo/flask/app/views.py', reloading
+ * Restarting with stat
+104.247.55.102 - - [01/Oct/2015 00:08:50] "GET / HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:08:51] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:08:51] "GET /static/css/starter-template.css HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:08:51] "GET /static/img/logo.png HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:08:51] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:08:51] "GET /static/js/offcanvas.js HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:08:51] "GET /static/img/bg.jpg HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:08:51] "GET /static/img/favicon.ico HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:09:38] "GET / HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:09:38] "GET /static/css/starter-template.css HTTP/1.1" 304 -
+104.247.55.102 - - [01/Oct/2015 00:09:38] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+104.247.55.102 - - [01/Oct/2015 00:09:38] "GET /static/js/offcanvas.js HTTP/1.1" 304 -
+104.247.55.102 - - [01/Oct/2015 00:09:38] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+104.247.55.102 - - [01/Oct/2015 00:09:38] "GET /static/img/logo.png HTTP/1.1" 304 -
+104.247.55.102 - - [01/Oct/2015 00:09:38] "GET /static/img/bg.jpg HTTP/1.1" 304 -
+104.247.55.102 - - [01/Oct/2015 00:09:38] "GET /static/img/favicon.ico HTTP/1.1" 200 -
+ * Detected change in '/home/ubuntu/Artmo/flask/app/__init__.py', reloading
+ * Restarting with stat
+ * Detected change in '/home/ubuntu/Artmo/flask/app/views.py', reloading
+ * Restarting with stat
+104.247.55.102 - - [01/Oct/2015 00:10:33] "GET / HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:10:33] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:10:34] "GET /static/css/starter-template.css HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:10:34] "GET /static/img/logo.png HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:10:34] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:10:34] "GET /static/js/offcanvas.js HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:10:34] "GET /static/img/bg.jpg HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:10:34] "GET /static/img/favicon.ico HTTP/1.1" 200 -
+ * Detected change in '/home/ubuntu/Artmo/flask/app/__init__.py', reloading
+ * Restarting with stat
+ * Detected change in '/home/ubuntu/Artmo/flask/app/views.py', reloading
+ * Restarting with stat
+104.247.55.102 - - [01/Oct/2015 00:11:03] "GET / HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:11:03] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:11:04] "GET /static/css/starter-template.css HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:11:04] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:11:04] "GET /static/js/offcanvas.js HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:11:04] "GET /static/img/logo.png HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:11:04] "GET /static/img/bg.jpg HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:11:05] "GET /static/img/favicon.ico HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:11:07] "GET / HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:11:07] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+104.247.55.102 - - [01/Oct/2015 00:11:07] "GET /static/css/starter-template.css HTTP/1.1" 304 -
+104.247.55.102 - - [01/Oct/2015 00:11:07] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+104.247.55.102 - - [01/Oct/2015 00:11:07] "GET /static/js/offcanvas.js HTTP/1.1" 304 -
+104.247.55.102 - - [01/Oct/2015 00:11:07] "GET /static/img/logo.png HTTP/1.1" 304 -
+104.247.55.102 - - [01/Oct/2015 00:11:07] "GET /static/img/bg.jpg HTTP/1.1" 304 -
+104.247.55.102 - - [01/Oct/2015 00:11:07] "GET /static/img/favicon.ico HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:11:08] "GET / HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:11:09] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+104.247.55.102 - - [01/Oct/2015 00:11:09] "GET /static/css/starter-template.css HTTP/1.1" 304 -
+104.247.55.102 - - [01/Oct/2015 00:11:09] "GET /static/img/logo.png HTTP/1.1" 304 -
+104.247.55.102 - - [01/Oct/2015 00:11:09] "GET /static/js/offcanvas.js HTTP/1.1" 304 -
+104.247.55.102 - - [01/Oct/2015 00:11:09] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+104.247.55.102 - - [01/Oct/2015 00:11:09] "GET /static/img/bg.jpg HTTP/1.1" 304 -
+104.247.55.102 - - [01/Oct/2015 00:11:09] "GET /static/img/favicon.ico HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:11:12] "GET / HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:11:13] "GET / HTTP/1.1" 200 -
+ * Detected change in '/home/ubuntu/Artmo/flask/app/__init__.py', reloading
+ * Restarting with stat
+ * Detected change in '/home/ubuntu/Artmo/flask/app/views.py', reloading
+ * Restarting with stat
+104.247.55.102 - - [01/Oct/2015 00:11:40] "GET / HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:11:41] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:11:41] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:11:41] "GET /static/css/starter-template.css HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:11:41] "GET /static/js/offcanvas.js HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:11:41] "GET /static/img/logo.png HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:11:41] "GET /static/img/bg.jpg HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:11:41] "GET /static/img/favicon.ico HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:11:43] "GET / HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:11:43] "GET /static/css/starter-template.css HTTP/1.1" 304 -
+104.247.55.102 - - [01/Oct/2015 00:11:43] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+104.247.55.102 - - [01/Oct/2015 00:11:43] "GET /static/js/offcanvas.js HTTP/1.1" 304 -
+104.247.55.102 - - [01/Oct/2015 00:11:43] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+104.247.55.102 - - [01/Oct/2015 00:11:43] "GET /static/img/logo.png HTTP/1.1" 304 -
+104.247.55.102 - - [01/Oct/2015 00:11:44] "GET /static/img/bg.jpg HTTP/1.1" 304 -
+104.247.55.102 - - [01/Oct/2015 00:11:44] "GET /static/img/favicon.ico HTTP/1.1" 200 -
+ * Detected change in '/home/ubuntu/Artmo/flask/app/__init__.py', reloading
+ * Restarting with stat
+ * Detected change in '/home/ubuntu/Artmo/flask/app/views.py', reloading
+ * Restarting with stat
+104.247.55.102 - - [01/Oct/2015 00:13:23] "GET / HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:13:23] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:13:23] "GET /static/img/logo.png HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:13:23] "GET /static/css/starter-template.css HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:13:23] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:13:23] "GET /static/js/offcanvas.js HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:13:23] "GET /static/img/bg.jpg HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:13:24] "GET /static/img/favicon.ico HTTP/1.1" 200 -
+ * Detected change in '/home/ubuntu/Artmo/flask/app/__init__.py', reloading
+ * Restarting with stat
+ * Detected change in '/home/ubuntu/Artmo/flask/app/views.py', reloading
+ * Restarting with stat
+104.247.55.102 - - [01/Oct/2015 00:15:13] "GET / HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:15:14] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:15:14] "GET /static/css/starter-template.css HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:15:14] "GET /static/js/offcanvas.js HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:15:14] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:15:14] "GET /static/img/logo.png HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:15:14] "GET /static/img/bg.jpg HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:15:14] "GET /static/img/favicon.ico HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:15:17] "GET / HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:15:17] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+104.247.55.102 - - [01/Oct/2015 00:15:17] "GET /static/img/logo.png HTTP/1.1" 304 -
+104.247.55.102 - - [01/Oct/2015 00:15:17] "GET /static/css/starter-template.css HTTP/1.1" 304 -
+104.247.55.102 - - [01/Oct/2015 00:15:17] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+104.247.55.102 - - [01/Oct/2015 00:15:17] "GET /static/js/offcanvas.js HTTP/1.1" 304 -
+104.247.55.102 - - [01/Oct/2015 00:15:17] "GET /static/img/bg.jpg HTTP/1.1" 304 -
+104.247.55.102 - - [01/Oct/2015 00:15:17] "GET /static/img/favicon.ico HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:15:19] "GET / HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:15:20] "GET / HTTP/1.1" 200 -
+ * Detected change in '/home/ubuntu/Artmo/flask/app/__init__.py', reloading
+ * Restarting with stat
+ * Detected change in '/home/ubuntu/Artmo/flask/app/views.py', reloading
+ * Restarting with stat
+104.247.55.102 - - [01/Oct/2015 00:16:43] "GET / HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:16:43] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:16:43] "GET /static/css/starter-template.css HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:16:43] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:16:43] "GET /static/img/logo.png HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:16:43] "GET /static/js/offcanvas.js HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:16:44] "GET /static/img/bg.jpg HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:16:44] "GET /static/img/favicon.ico HTTP/1.1" 200 -
+ * Detected change in '/home/ubuntu/Artmo/flask/app/__init__.py', reloading
+ * Restarting with stat
+ * Detected change in '/home/ubuntu/Artmo/flask/app/views.py', reloading
+ * Restarting with stat
+104.247.55.102 - - [01/Oct/2015 00:17:25] "GET / HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:17:25] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:17:25] "GET /static/img/logo.png HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:17:25] "GET /static/css/starter-template.css HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:17:25] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:17:25] "GET /static/js/offcanvas.js HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:17:26] "GET /static/img/bg.jpg HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:17:26] "GET /static/img/favicon.ico HTTP/1.1" 200 -
+ * Detected change in '/home/ubuntu/Artmo/flask/app/__init__.py', reloading
+ * Restarting with stat
+ * Detected change in '/home/ubuntu/Artmo/flask/app/views.py', reloading
+ * Restarting with stat
+104.247.55.102 - - [01/Oct/2015 00:18:22] "GET / HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:18:22] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:18:22] "GET /static/css/starter-template.css HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:18:22] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:18:22] "GET /static/js/offcanvas.js HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:18:22] "GET /static/img/logo.png HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:18:22] "GET /static/img/bg.jpg HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:18:23] "GET /static/img/favicon.ico HTTP/1.1" 200 -
+ * Detected change in '/home/ubuntu/Artmo/flask/app/__init__.py', reloading
+ * Restarting with stat
+ * Detected change in '/home/ubuntu/Artmo/flask/app/views.py', reloading
+ * Restarting with stat
+104.247.55.102 - - [01/Oct/2015 00:19:17] "GET / HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:19:17] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:19:17] "GET /static/css/starter-template.css HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:19:17] "GET /static/js/offcanvas.js HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:19:17] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:19:17] "GET /static/img/logo.png HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:19:17] "GET /static/img/bg.jpg HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:19:18] "GET /static/img/favicon.ico HTTP/1.1" 200 -
+ * Detected change in '/home/ubuntu/Artmo/flask/app/__init__.py', reloading
+ * Restarting with stat
+ * Detected change in '/home/ubuntu/Artmo/flask/app/views.py', reloading
+ * Restarting with stat
+104.247.55.102 - - [01/Oct/2015 00:19:45] "GET / HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:19:45] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:19:45] "GET /static/css/starter-template.css HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:19:45] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:19:45] "GET /static/js/offcanvas.js HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:19:45] "GET /static/img/logo.png HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:19:46] "GET /static/img/bg.jpg HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:19:46] "GET /static/img/favicon.ico HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:19:57] "GET /map HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:19:57] "GET /map_get HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:19:58] "GET /collection HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:20:00] "GET /profile HTTP/1.1" 200 -
+101.108.232.143 - - [01/Oct/2015 00:20:43] "GET /Ringing.at.your.dorbell! HTTP/1.0" 404 -
+101.108.232.143 - - [01/Oct/2015 00:20:44] "GET / HTTP/1.0" 200 -
+101.108.232.143 - - [01/Oct/2015 00:20:44] "GET / HTTP/1.0" 200 -
+101.108.232.143 - - [01/Oct/2015 00:20:45] "GET / HTTP/1.0" 200 -
+104.247.55.102 - - [01/Oct/2015 00:20:54] "GET / HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:20:58] "GET /collection HTTP/1.1" 200 -
+104.247.55.102 - - [01/Oct/2015 00:20:59] "GET /profile HTTP/1.1" 200 -
