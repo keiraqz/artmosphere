@@ -1,17 +1,18 @@
 #Artmosphere
+www.artmosphere.nyc
 <img src="https://github.com/keiraqz/artmosphere/blob/master/img/cover.png" alt="alt text" width="600" height="350">
 
 
-#Table of Contents
-- <a href= "https://github.com/keiraqz/artmosphere/blob/master/README.md#introduction">Introduction</a>
-- <a href= "https://github.com/keiraqz/artmosphere/blob/master/README.md#settings">Settings</a>
-- <a href= "https://github.com/keiraqz/artmosphere/blob/master/README.md#data-processing">Data Processing</a>
-- <a href= "https://github.com/keiraqz/artmosphere/blob/master/README.md#live-demo">Live Demo</a>
-- <a href= "https://github.com/keiraqz/artmosphere/blob/master/README.md#presentation-deck">Presentation Deck</a>
-- <a href= "https://github.com/keiraqz/artmosphere/blob/master/README.md#instructions-to-run-this-pipeline">Instructions to Run this Pipeline</a>
+##Table of Contents
+- <a href= "https://github.com/keiraqz/artmosphere/blob/master/README.md##introduction">Introduction</a>
+- <a href= "https://github.com/keiraqz/artmosphere/blob/master/README.md##settings">Settings</a>
+- <a href= "https://github.com/keiraqz/artmosphere/blob/master/README.md##data-processing">Data Processing</a>
+- <a href= "https://github.com/keiraqz/artmosphere/blob/master/README.md##live-demo">Live Demo</a>
+- <a href= "https://github.com/keiraqz/artmosphere/blob/master/README.md##presentation-deck">Presentation Deck</a>
+- <a href= "https://github.com/keiraqz/artmosphere/blob/master/README.md##instructions-to-run-this-pipeline">Instructions to Run this Pipeline</a>
 
 
-#Introduction
+##Introduction
 This is a data engineering project at <a href= "http://insightdataengineering.com/">Insight Data Engineering Fellow Program</a>. The project provides a platform for users to search for different artworks, see similar art pieces and real-time popularity of a given art piece. Users can also see where all the artworks have been uploaded across the world. The main goal of the program to learn different tools used in a data pipeline for processing large datasets in a distributed manner.
 
 
@@ -25,7 +26,7 @@ This is a data engineering project at <a href= "http://insightdataengineering.co
 - Website: <a href= "http://getbootstrap.com/">Bootstrap</a>, <a href= "http://www.highcharts.com/">Highcharts</a>
 
 
-#Settings
+##Settings
 **Dataset:**
 The dataset is a collection of 26,000 artworks and 45,000 artists collected from <a href= "https://www.artsy.net/">Artsy.net</a> in JSON format. In order to simulate real-time user activities, the project also used self-engineered data in two formats:
 - Collecting log: timestamp, user\_id, collected, artwork\_id
@@ -39,8 +40,8 @@ A distributed AWS cluster of 4 EC2 machines is being used for this project. All 
 #Data Processing
 <img src="https://github.com/keiraqz/artmosphere/blob/master/img/pipeline.png" alt="alt text" width="600" height="300">
 
-- **Data Ingestion (Kafka):** 
-- Related files: <a href= "https://github.com/keiraqz/artmosphere/blob/master/kafka/my\_streaming\_producer.py">my\_streaming\_producer.py</a>, <a href= "https://github.com/keiraqz/artmosphere/blob/master/kafka/hdfs\_consumer.py">hdfs_consumer.py</a>.
+- **Data Ingestion (Kafka):** The datasets for batch and real-time processing are ingested using Kafka. 
+  - Related files: <a href= "https://github.com/keiraqz/artmosphere/blob/master/kafka/my\_streaming\_producer.py">Streaming producer: my\_streaming\_producer.py</a>, <a href= "https://github.com/keiraqz/artmosphere/blob/master/kafka/hdfs\_consumer.py">hdfs_consumer.py</a>.
 
 - **Batch Processing (HDFS, Spark):** A kafka consumer stores the data into HDFS. 
 
