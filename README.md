@@ -8,7 +8,7 @@ Website: www.artmosphere.nyc
 - <a href= "https://github.com/keiraqz/artmosphere/blob/master/README.md#introduction">Introduction</a>
 - <a href= "https://github.com/keiraqz/artmosphere/blob/master/README.md#settings">Settings</a>
 - <a href= "https://github.com/keiraqz/artmosphere/blob/master/README.md#data-processing">Data Processing</a>
-- <a href= "https://github.com/keiraqz/artmosphere/blob/master/README.md#live-demo">Live Demo</a>
+- <a href= "https://github.com/keiraqz/artmosphere/blob/master/README.md#website">Website</a>
 - <a href= "https://github.com/keiraqz/artmosphere/blob/master/README.md#presentation-deck">Presentation Deck</a>
 - <a href= "https://github.com/keiraqz/artmosphere/blob/master/README.md#installed-packages-for-the-pipeline">Installed Packages for the Pipeline</a>
 
@@ -59,12 +59,14 @@ A distributed AWS cluster of 4 EC2 machines is being used for this project. All 
 - **Serving Layer (Elasticsearch, Cassandra):** The platform provides a search function that searches a given keyword within the artworks' title. In order to achieve this goal, the metadata of all artworks are stored into Elasticsearch. All artworks and artists are stored in Cassandra tables and can be retrieved by ids. The aggregated artists locations are also stored in Cassandra table, which can be queried by location\_code and timestamp.
 
 - **Speed Layer (Spark Streaming):** Spark Streaming processes the data in micro batches. The job aggregates how many people collected a certain piece of art every 5 seconds and saves the result into a table in Cassandra. The information can be queried by artwork\_id and timestamp.
+  - Streaming Processing: <a href= "https://github.com/keiraqz/artmosphere/tree/master/spark\_streaming</a>
+    - To excute: run ```bash log_streaming_run.sh```
 
-- **Front-end (Flask):** 
+- **Front-end (Flask, Bootstrap, Highcharts):** The frond-end uses Flask as the framework and the website uses JavaScript and Twitter Bootstrap libriries. All the plots are achieved via Highcharts. To visit: www.artmosphere.nyc
 
 
-##Live Demo:
-A Live Demo of the project is available here: www.artmosphere.nyc
+##Website:
+The website: www.artmosphere.nyc
 - The artwork information:
 
 <img src="https://github.com/keiraqz/artmosphere/blob/master/img/art_info.png" alt="alt text" width="600">
@@ -73,7 +75,7 @@ A Live Demo of the project is available here: www.artmosphere.nyc
 
 <img src="https://github.com/keiraqz/artmosphere/blob/master/img/similar.png" alt="alt text" width="200">
 
-- Plots show in real-time how many people have collected this piece of art within a 5-sec frame
+- Plots show in real-time how many people have collected this piece of art within a 5-sec frame:
 
 <img src="https://github.com/keiraqz/artmosphere/blob/master/img/trend.png" alt="alt text" width="300">
 <img src="https://github.com/keiraqz/artmosphere/blob/master/img/trend2.png" alt="alt text" width="300">
