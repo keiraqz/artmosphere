@@ -46,11 +46,13 @@ A distributed AWS cluster of 4 EC2 machines is being used for this project. All 
   - Batch producer: <a href= "https://github.com/keiraqz/artmosphere/blob/master/kafka/hdfs\_producer.py">hdfs\_producer.py</a>
   - Batch consumer: <a href= "https://github.com/keiraqz/artmosphere/blob/master/kafka/hdfs\_consumer.py">hdfs\_consumer.py</a>
 
-- **Batch Processing (HDFS, Spark):** To perform batch processing job, Spark loads the data from HDFS and processed them in a distributed way. The following graph shows the performance analysis of Spark for one the batch processing jobs - aggregating artists upload locations:
+- **Batch Processing (HDFS, Spark):** To perform batch processing job, Spark loads the data from HDFS and processed them in a distributed way.
   - Batch processing: <a href= "https://github.com/keiraqz/artmosphere/tree/master/batch\_geo">batch_geo</a>
   - To excute: run ```bash batch_geo_run.sh```
 
-<img src="https://github.com/keiraqz/artmosphere/blob/master/img/Spark.png" alt="alt text" width="600">
+  The following graph shows the performance analysis of Spark for one the batch processing jobs - aggregating artists upload locations:
+
+  <img src="https://github.com/keiraqz/artmosphere/blob/master/img/Spark.png" alt="alt text" width="600">
 
 - **Serving Layer (Elasticsearch, Cassandra):** The platform provides a search function that searches a given keyword within the artworks' title. In order to achieve this goal, the metadata of all artworks are stored into Elasticsearch. All artworks and artists are stored in Cassandra tables and can be retrieved by ids. The aggregated artists locations are also stored in Cassandra table, which can be queried by location\_code and timestamp.
 
