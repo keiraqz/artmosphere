@@ -10,7 +10,7 @@ Website: www.artmosphere.nyc
 - <a href= "https://github.com/keiraqz/artmosphere/blob/master/README.md#data-processing">Data Processing</a>
 - <a href= "https://github.com/keiraqz/artmosphere/blob/master/README.md#live-demo">Live Demo</a>
 - <a href= "https://github.com/keiraqz/artmosphere/blob/master/README.md#presentation-deck">Presentation Deck</a>
-- <a href= "https://github.com/keiraqz/artmosphere/blob/master/README.md#instructions-to-run-this-pipeline">Installed Packages for the Pipeline</a>
+- <a href= "https://github.com/keiraqz/artmosphere/blob/master/README.md#installed-packages-for-the-pipeline">Installed Packages for the Pipeline</a>
 
 
 ##Introduction
