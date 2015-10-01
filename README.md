@@ -59,7 +59,7 @@ A distributed AWS cluster of 4 EC2 machines is being used for this project. All 
 - **Serving Layer (Elasticsearch, Cassandra):** The platform provides a search function that searches a given keyword within the artworks' title. In order to achieve this goal, the metadata of all artworks are stored into Elasticsearch. All artworks and artists are stored in Cassandra tables and can be retrieved by ids. The aggregated artists locations are also stored in Cassandra table, which can be queried by location\_code and timestamp.
 
 - **Speed Layer (Spark Streaming):** Spark Streaming processes the data in micro batches. The job aggregates how many people collected a certain piece of art every 5 seconds and saves the result into a table in Cassandra. The information can be queried by artwork\_id and timestamp.
-  - Streaming Processing: <a href= "https://github.com/keiraqz/artmosphere/tree/master/spark\_streaming</a>
+  - Streaming Processing: <a href= "https://github.com/keiraqz/artmosphere/tree/master/spark\_streaming>spark_streaming</a>
     - To excute: run ```bash log_streaming_run.sh```
 
 - **Front-end (Flask, Bootstrap, Highcharts):** The frond-end uses Flask as the framework and the website uses JavaScript and Twitter Bootstrap libriries. All the plots are achieved via Highcharts. To visit: www.artmosphere.nyc
