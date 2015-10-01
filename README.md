@@ -1,15 +1,16 @@
 #Artmosphere
-www.artmosphere.nyc
+Website: www.artmosphere.nyc
+
 <img src="https://github.com/keiraqz/artmosphere/blob/master/img/cover.png" alt="alt text" width="600" height="350">
 
 
 ##Table of Contents
-- <a href= "https://github.com/keiraqz/artmosphere/blob/master/README.md##introduction">Introduction</a>
-- <a href= "https://github.com/keiraqz/artmosphere/blob/master/README.md##settings">Settings</a>
-- <a href= "https://github.com/keiraqz/artmosphere/blob/master/README.md##data-processing">Data Processing</a>
-- <a href= "https://github.com/keiraqz/artmosphere/blob/master/README.md##live-demo">Live Demo</a>
-- <a href= "https://github.com/keiraqz/artmosphere/blob/master/README.md##presentation-deck">Presentation Deck</a>
-- <a href= "https://github.com/keiraqz/artmosphere/blob/master/README.md##instructions-to-run-this-pipeline">Instructions to Run this Pipeline</a>
+- <a href= "https://github.com/keiraqz/artmosphere/blob/master/README.md#introduction">Introduction</a>
+- <a href= "https://github.com/keiraqz/artmosphere/blob/master/README.md#settings">Settings</a>
+- <a href= "https://github.com/keiraqz/artmosphere/blob/master/README.md#data-processing">Data Processing</a>
+- <a href= "https://github.com/keiraqz/artmosphere/blob/master/README.md#live-demo">Live Demo</a>
+- <a href= "https://github.com/keiraqz/artmosphere/blob/master/README.md#presentation-deck">Presentation Deck</a>
+- <a href= "https://github.com/keiraqz/artmosphere/blob/master/README.md#instructions-to-run-this-pipeline">Instructions to Run this Pipeline</a>
 
 
 ##Introduction
@@ -37,7 +38,7 @@ The dataset is a collection of 26,000 artworks and 45,000 artists collected from
 A distributed AWS cluster of 4 EC2 machines is being used for this project. All the components (ingestion, batch and real-time processing) are configured and run in distributed mode, with 1 master node and 3 slave nodes. The master node has 8GB of memory and 50GB of storage. The work nodes each has 8GB of memory and 1TB of storage.
 
 
-#Data Processing
+##Data Processing
 <img src="https://github.com/keiraqz/artmosphere/blob/master/img/pipeline.png" alt="alt text" width="600" height="300">
 
 - **Data Ingestion (Kafka):** The datasets for batch and real-time processing are ingested using Kafka. 
@@ -52,7 +53,7 @@ A distributed AWS cluster of 4 EC2 machines is being used for this project. All 
 - **Front-end (Flask):** The cab locations are rendered on Google Maps and updated at 2 sec interval via AJAX. Historical data is represented as bar and line charts. Realted files: <a href= "https://github.com/PreetikaKuls/Insight-MapMyCab/blob/master/flask/app/views.py">views.py</a>, <a href= "https://github.com/PreetikaKuls/Insight-MapMyCab/blob/master/flask/app/static/batch.js">batch.js</a>, <a href="https://github.com/PreetikaKuls/Insight-MapMyCab/blob/master/flask/app/static/map.js">map.js</a>.
 
 
-#Live Demo:
+##Live Demo:
 A Live Demo of the project is available here: www.artmosphere.nyc
 - The artwork information:
 
@@ -71,10 +72,10 @@ A Live Demo of the project is available here: www.artmosphere.nyc
 
 <img src="https://github.com/keiraqz/artmosphere/blob/master/img/map.png" alt="alt text" width="600">
 
-#Presentation Deck
+##Presentation Deck
 The presentation slides are available <a href= "http://www.artmosphere.nyc/slide">here</a>.
 
-#Instructions to Run this Pipeline
+##Instructions to Run this Pipeline
 
 Install python packages:
 ```sudo pip install kafka-python happybase pyleus mrjob```
