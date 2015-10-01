@@ -42,14 +42,14 @@ A distributed AWS cluster of 4 EC2 machines is being used for this project. All 
 <img src="https://github.com/keiraqz/artmosphere/blob/master/img/pipeline.png" alt="alt text" width="600" height="300">
 
 - **Data Ingestion (Kafka):** The datasets for batch and real-time processing are ingested using Kafka. For batch processing, the datasets are stored into HDFS. For real-time processing, the data is streamed into Spark Streaming.
-  - Streaming producer: <a href= "https://github.com/keiraqz/artmosphere/blob/master/kafka/my\_streaming\_producer.py">my\_streaming\_producer.py</a>
-  - Batch producer: <a href= "https://github.com/keiraqz/artmosphere/blob/master/kafka/hdfs\_producer.py">hdfs\_producer.py</a>
-  - Batch consumer: <a href= "https://github.com/keiraqz/artmosphere/blob/master/kafka/hdfs\_consumer.py">hdfs\_consumer.py</a>
+  - Streaming producer: <a href= "https://github.com/keiraqz/artmosphere/blob/master/kafka/my_streaming\_producer.py">my\_streaming\_producer.py</a>
+  - Batch producer: <a href= "https://github.com/keiraqz/artmosphere/blob/master/kafka/hdfs_producer.py">hdfs\_producer.py</a>
+  - Batch consumer: <a href= "https://github.com/keiraqz/artmosphere/blob/master/kafka/hdfs_consumer.py">hdfs\_consumer.py</a>
 
 - **Batch Processing (HDFS, Spark):** To perform batch processing job, Spark loads the data from HDFS and processed them in a distributed way. The two major batch processing steps for the project is to aggregate the artists upload locations and compute artwork-artwrok similarties. 
-  - Aggreate Locations: <a href= "https://github.com/keiraqz/artmosphere/tree/master/batch\_geo">batch\_geo</a>
+  - Aggreate Locations: <a href= "https://github.com/keiraqz/artmosphere/tree/master/batch_geo">batch\_geo</a>
     - To excute: run ```bash batch_geo_run.sh```
-  - Compute Similarity: <a href= "https://github.com/keiraqz/artmosphere/tree/master/batch\_similarity">batch\_similarity</a>
+  - Compute Similarity: <a href= "https://github.com/keiraqz/artmosphere/tree/master/batch_similarity">batch\_similarity</a>
     - To excute: run ```bash batch_sim_run.sh```
   
   The following graph shows the performance analysis of Spark for one the batch processing jobs - aggregating artists upload locations - up to 500GB:
