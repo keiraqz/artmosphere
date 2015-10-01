@@ -8,9 +8,20 @@
               <div class="starter-template">
                     <div class="row"> 
                     <div class="col-lg-8">
-                    <p align="center"> <img src={{output_0[0].image_link}} class="img-thumbnail fancybox" style="width:100%"></p>
+                    <p align="center"> <img src={{output_0[0].image_link}} class="img-thumbnail fancybox" style="width:80%;max-height:400px" ></p>
                     </div>
                     <div class="col-lg-4">
+                    <div class="btn-group" style="position:absolute;right:0">
+                        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color:#454545;border-color:#262626;color:white;">
+                          Collect <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                          <li><a href="#">New</a></li>
+                          <li><a href="#">Sunrise</a></li>
+                          <li><a href="#">Sunset</a></li>
+                        </ul>
+                      </div>
+                    <div style="padding-top: 130px;">
                       <table class="table">
                       <thead>
                         <tr>
@@ -27,14 +38,14 @@
                           <td><i><b><font size="3">{{output_0[0].title}}</font></b></i></td>
                         </tr> -->
                         <tr>
-                          <td><font size="2">{{output_0[0].collecting_institution}}</font></td>
+                          <td><font size="2"><b>Collecting Institution:</b> {{output_0[0].collecting_institution}}</font></td>
                         </tr>
                         <tr>
                           <td><font size="2"><b>Collected Count:</b> {{output_0[0].pined_count}}</font></td>
                         </tr>
-                        <tr><p align="right"><button type="button" class="btn btn-inverse">Collect</button></p></tr>
                       </tbody>
                     </table>
+                  </div>
                       <!-- <p align="right"><button type="button" class="btn btn-inverse">Collect</button></p> -->
                     </div>
                     </div>

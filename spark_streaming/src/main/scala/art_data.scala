@@ -20,13 +20,13 @@ import org.joda.time.format.DateTimeFormat
 object UserDataStreaming {
   def main(args: Array[String]) {
 
-    val brokers = "ec2-52-8-247-28.us-west-1.compute.amazonaws.com:9092,ec2-54-183-69-4.us-west-1.compute.amazonaws.com:9092,ec2-52-8-244-245.us-west-1.compute.amazonaws.com:9092,ec2-54-215-136-187.us-west-1.compute.amazonaws.com:9092"
+    val brokers = "52.8.247.28:9092,52.8.244.245:9092,54.183.69.4:9092,54.215.136.187:9092"
     val topics = "pin_activity"
     val topicsSet = topics.split(",").toSet
 
     // Create context with 2 second batch interval
     val sparkConf = new SparkConf().setAppName("art_data").set("spark.cassandra.connection.host", "172.31.11.232")
-    val ssc = new StreamingContext(sparkConf, Seconds(1))
+    val ssc = new StreamingContext(sparkConf, Seconds(5))
 
     // Create direct kafka stream with brokers and topics
     val kafkaParams = Map[String, String]("metadata.broker.list" -> brokers)
