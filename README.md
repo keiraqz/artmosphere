@@ -1,5 +1,5 @@
 #Artmosphere
-<img src="https://github.com/keiraqz/artmosphere/blob/master/img/cover.png" alt="alt text" width="600" height="300">
+<img src="https://github.com/keiraqz/artmosphere/blob/master/img/cover.png" alt="alt text" width="600" height="350">
 
 
 #Table of Contents
