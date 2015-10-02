@@ -101,7 +101,7 @@ def img_trend_get(req):
 	## Get the trend
 	current_time = gmtime()
 	to_date = strftime("%Y-%m-%d %H:%M:%S", current_time)
-	stmt = "SELECT art_id, pin_count, event_time FROM artwork_count WHERE art_id = %s AND event_time < %s ORDER BY event_time DESC LIMIT 5 ALLOW FILTERING"
+	stmt = "SELECT art_id, pin_count, event_time FROM artwork_count WHERE art_id = %s AND event_time < %s ORDER BY event_time DESC LIMIT 20 ALLOW FILTERING"
 	response = cs_session.execute(stmt, parameters=[art_id, to_date])
 	response_list = []
 	for val in response:

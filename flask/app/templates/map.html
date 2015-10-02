@@ -1,6 +1,18 @@
 {% extends "base.html" %}
 {% block map %}
-<div id="container_map"></div>
+<div class="col-lg-12">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">Where All the Artists Are Across the World</h2>
+      <p><br>Need to find an artists community? This map shows you where all the registered artists located aross the world.</p>
+    </div>
+    <div class="panel-body">
+      <div id="container_map"></div>
+    </div>
+  </div>
+</div>
+
+
 
 <script>
   function query_map() {
@@ -20,7 +32,7 @@
 
       legend: {
           title: {
-              text: 'Number of Art Uploaded (*100k)',
+              text: 'Number of Artists (*100k)',
               style: {
                   color: (Highcharts.theme && Highcharts.theme.textColor) || 'black'
               }
@@ -40,7 +52,7 @@
           shadow: false,
           useHTML: true,
           padding: 0,
-          pointFormat: '{point.code}: <b>{point.value}</b> uploads',
+          pointFormat: '{point.code}: <b>{point.value}</b> (*100k) artists registered',
           positioner: function () {
               return { x: 0, y: 250 };
           }
@@ -63,7 +75,7 @@
           data: map_data,
           mapData: Highcharts.maps['custom/world'],
           joinBy: ['iso-a2', 'code'],
-          name: 'Art Upload Activity',
+          name: 'Artists',
           states: {
               hover: {
                   color: '#7cc5d7'

@@ -8,19 +8,21 @@
               <div class="starter-template">
                     <div class="row"> 
                     <div class="col-lg-8">
-                    <p align="center"> <img src={{output_0[0].image_link}} class="img-thumbnail fancybox" style="width:80%;max-height:400px" ></p>
+                    <p align="center"> <img src={{output_0[0].image_link}} class="img-thumbnail fancybox" style="width:80%" ></p>
                     </div>
                     <div class="col-lg-4">
                     <div class="btn-group" style="position:absolute;right:0">
-                        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color:#454545;border-color:#262626;color:white;">
+                        <button type="button" class="btn btn-default" style="background-color:#4a293b;border-color:#262626;color:white;width:80px">Buy</button>
+                        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color:#222222;border-color:#262626;color:white;width:80px">
                           Collect <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-right">
-                          <li><a href="#">New</a></li>
-                          <li><a href="#">Sunrise</a></li>
-                          <li><a href="#">Sunset</a></li>
+                          <li><a href="" class="new_collection">New</a></li>
+                          <li role="separator" class="divider"></li>
+                          <li><a href="">Sunrise</a></li>
+                          <li><a href="">Sunset</a></li>
                         </ul>
-                      </div>
+                    </div>
                     <div style="padding-top: 130px;">
                       <table class="table">
                       <thead>
@@ -107,6 +109,10 @@
     });
   }
 
+// jQuery(".new_collection").click(function() {
+//   document.cookie+="{{output_0[0]}};";
+// });
+
 jQuery(function () {
     // Get the CSV and create the chart
     jQuery(document).ready(function () {
@@ -183,7 +189,7 @@ jQuery(function () {
                 data: (function () {
                     var data = [], time = (new Date()).getTime(), i;
                     for (i = -19; i <= 0; i += 1) {
-                        data.push({ x: time + i * 3000, y: 0 });
+                        data.push({ x: time + i * 3000, y: Math.floor((Math.random() * 5) + 1) });
                     }
                     return data;
                 }())
