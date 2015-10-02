@@ -1,5 +1,5 @@
 #Artmosphere
-Website: <a href="www.artmosphere.nyc"  target="_blank">www.artmosphere.nyc</a>
+Website: <a href="https://www.artmosphere.nyc"  target="_blank">www.artmosphere.nyc</a>
 
 <img src="https://github.com/keiraqz/artmosphere/blob/master/img/cover.png" alt="alt text" width="600" height="350">
 
@@ -42,7 +42,7 @@ A distributed AWS cluster of 4 EC2 machines is being used for this project. All 
 <img src="https://github.com/keiraqz/artmosphere/blob/master/img/pipeline.png" alt="alt text" width="600" height="300">
 
 - **Data Ingestion (Kafka):** The datasets for batch and real-time processing are ingested using Kafka. For batch processing, the datasets are stored into HDFS. For real-time processing, the data is streamed into Spark Streaming.
-  - Streaming producer: <a href= "https://github.com/keiraqz/artmosphere/blob/master/kafka/my_streaming_producer.py">my\_streaming\_producer.py</a>
+  - Streaming producer: <a href= "https://github.com/keiraqz/artmosphere/blob/master/kafka/my_streaming_producer.py" target="_blank">my\_streaming\_producer.py</a>
   - Batch producer: <a href= "https://github.com/keiraqz/artmosphere/blob/master/kafka/hdfs_producer.py" target="_blank">hdfs\_producer.py</a>
   - Batch consumer: <a href= "https://github.com/keiraqz/artmosphere/blob/master/kafka/hdfs_consumer.py" target="_blank">hdfs\_consumer.py</a>
 
@@ -62,11 +62,11 @@ A distributed AWS cluster of 4 EC2 machines is being used for this project. All 
   - Streaming Processing: <a href= "https://github.com/keiraqz/artmosphere/tree/master/spark_streaming" target="_blank">spark\_streaming</a>
     - To excute: run ```bash log_streaming_run.sh```
 
-- **Front-end (Flask, Bootstrap, Highcharts):** The frond-end uses Flask as the framework and the website uses JavaScript and Twitter Bootstrap libriries. All the plots are achieved via Highcharts. To visit: www.artmosphere.nyc
+- **Front-end (Flask, Bootstrap, Highcharts):** The frond-end uses Flask as the framework and the website uses JavaScript and Twitter Bootstrap libriries. All the plots are achieved via Highcharts. To visit: <a href="https://www.artmosphere.nyc"  target="_blank">www.artmosphere.nyc</a>
 
 
 ##Website
-<a href="www.artmosphere.nyc"  target="_blank">www.artmosphere.nyc</a>
+<a href="https://www.artmosphere.nyc"  target="_blank">www.artmosphere.nyc</a>
 - The artwork information:
 
 <img src="https://github.com/keiraqz/artmosphere/blob/master/img/art_info.png" alt="alt text" width="600">
