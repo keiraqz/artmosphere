@@ -1,5 +1,5 @@
 #Artmosphere
-Website: www.artmosphere.nyc
+Website: <a href="www.artmosphere.nyc"  target="_blank">www.artmosphere.nyc</a>
 
 <img src="https://github.com/keiraqz/artmosphere/blob/master/img/cover.png" alt="alt text" width="600" height="350">
 
@@ -66,7 +66,7 @@ A distributed AWS cluster of 4 EC2 machines is being used for this project. All 
 
 
 ##Website
-www.artmosphere.nyc
+<a href="www.artmosphere.nyc"  target="_blank">www.artmosphere.nyc</a>
 - The artwork information:
 
 <img src="https://github.com/keiraqz/artmosphere/blob/master/img/art_info.png" alt="alt text" width="600">
