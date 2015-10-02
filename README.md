@@ -1,5 +1,5 @@
 #Artmosphere
-Website: <a href="https://www.artmosphere.nyc"  target="_blank">www.artmosphere.nyc</a>
+Website: <a href="http://www.artmosphere.nyc"  target="_blank">www.artmosphere.nyc</a>
 
 <img src="https://github.com/keiraqz/artmosphere/blob/master/img/cover.png" alt="alt text" width="600" height="350">
 
@@ -62,11 +62,11 @@ A distributed AWS cluster of 4 EC2 machines is being used for this project. All 
   - Streaming Processing: <a href= "https://github.com/keiraqz/artmosphere/tree/master/spark_streaming" target="_blank">spark\_streaming</a>
     - To excute: run ```bash log_streaming_run.sh```
 
-- **Front-end (Flask, Bootstrap, Highcharts):** The frond-end uses Flask as the framework and the website uses JavaScript and Twitter Bootstrap libriries. All the plots are achieved via Highcharts. To visit: <a href="https://www.artmosphere.nyc"  target="_blank">www.artmosphere.nyc</a>
+- **Front-end (Flask, Bootstrap, Highcharts):** The frond-end uses Flask as the framework and the website uses JavaScript and Twitter Bootstrap libriries. All the plots are achieved via Highcharts. To visit: <a href="http://www.artmosphere.nyc"  target="_blank">www.artmosphere.nyc</a>
 
 
 ##Website
-<a href="https://www.artmosphere.nyc"  target="_blank">www.artmosphere.nyc</a>
+<a href="http://www.artmosphere.nyc"  target="_blank">www.artmosphere.nyc</a>
 - The artwork information:
 
 <img src="https://github.com/keiraqz/artmosphere/blob/master/img/art_info.png" alt="alt text" width="600">
