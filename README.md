@@ -1,9 +1,10 @@
 #Artmosphere
-Website: <a href="http://www.artmosphere.nyc"  target="_blank">www.artmosphere.nyc</a>
-
-Video Demo: <a href="https://youtu.be/skzZ7sosC8c"  target="_blank">Artmosphere</a>
 
 <img src="https://github.com/keiraqz/artmosphere/blob/master/img/cover.png" alt="alt text" width="600" height="350">
+
+Website: <a href="http://www.artmosphere.nyc"  target="_blank">www.artmosphere.nyc</a>
+
+Slides are available <a href= "http://www.slideshare.net/KeiraZhou2/artmosphere-demo" target="_blank">here</a>. Video demo is available <a href="https://youtu.be/skzZ7sosC8c"  target="_blank">here</a>.
 
 
 ##Table of Contents
@@ -87,7 +88,7 @@ A distributed AWS cluster of 4 EC2 machines is being used for this project. All 
 <img src="https://github.com/keiraqz/artmosphere/blob/master/img/map.png" alt="alt text" width="600">
 
 ##Presentation Deck
-The presentation slides are available <a href= "http://www.artmosphere.nyc/slide" target="_blank">here</a>.
+The presentation slides are available <a href= "http://www.slideshare.net/KeiraZhou2/artmosphere-demo" target="_blank">here</a>.
 
 The video demo of the website is available <a href="https://youtu.be/skzZ7sosC8c"  target="_blank">here</a>.
 
