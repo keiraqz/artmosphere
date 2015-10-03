@@ -88,6 +88,7 @@ A distributed AWS cluster of 4 EC2 machines is being used for this project. All 
 
 ##Presentation Deck
 The presentation slides are available <a href= "http://www.artmosphere.nyc/slide" target="_blank">here</a>.
+
 The video demo of the website is available <a href="https://youtu.be/skzZ7sosC8c"  target="_blank">here</a>.
 
 ##Packages Used for the Pipeline
