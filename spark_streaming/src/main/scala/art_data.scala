@@ -20,33 +20,39 @@ import org.joda.time.format.DateTimeFormat
 object UserDataStreaming {
   def main(args: Array[String]) {
 
-    val brokers = "52.8.247.28:9092,52.8.244.245:9092,54.183.69.4:9092,54.215.136.187:9092"
+    val brokers = "ec2-52-8-247-28.us-west-1.compute.amazonaws.com:9092,ec2-54-183-69-4.us-west-1.compute.amazonaws.com:9092,ec2-52-8-244-245.us-west-1.compute.amazonaws.com:9092,ec2-54-215-136-187.us-west-1.compute.amazonaws.com:9092"
     val topics = "pin_activity"
     val topicsSet = topics.split(",").toSet
 
     // Create context with 2 second batch interval
     val sparkConf = new SparkConf().setAppName("art_data").set("spark.cassandra.connection.host", "172.31.11.232")
-    val ssc = new StreamingContext(sparkConf, Seconds(5))
+    // val sc = new SparkContext(sparkConf)
+    val ssc = new StreamingContext(sparkConf, Seconds(3))
 
     // Create direct kafka stream with brokers and topics
     val kafkaParams = Map[String, String]("metadata.broker.list" -> brokers)
     val messages = KafkaUtils.createDirectStream[String, String, StringDecoder, StringDecoder](ssc, kafkaParams, topicsSet)
+    // val format = new java.text.SimpleDateFormat("yyyy-mm-dd HH:mm")
    
     // Get the lines and show results
     messages.foreachRDD { rdd =>
 
         val sqlContext = SQLContextSingleton.getInstance(rdd.sparkContext)
         import sqlContext.implicits._
+        // val current_time = format.format(new java.util.Date())
         val current_time = TimestampFormatter.format(new Date())
 
         val lines = rdd.map(_._2)
         val ticksDF = lines.map( x => {
                                   val tokens = x.split(";")
                                   Tick(tokens(0), tokens(2), tokens(3), tokens(4))}).toDF()
+        // val ticks_per_source_DF = ticksDF.map(x => (x,1)).reduceByKey(_ + _).collect()
         val ticks_per_source_DF = ticksDF.groupBy("art_id").count().collect()
         var ticks_with_time = ticks_per_source_DF.map(x => (x(0),current_time,x(1)))
 
-        rdd.sparkContext.parallelize(ticks_with_time).saveToCassandra("art_pin_log", "artwork_count", SomeColumns("art_id","event_time", "pin_count"))
+        rdd.sparkContext.parallelize(ticks_with_time).saveToCassandra("art_pin_log", "artwork_count", 
+                            SomeColumns("art_id","event_time", "pin_count"),
+                            writeConf = WriteConf(ttl = TTLOption.constant(30)))
     }
 
     // Start the computation
@@ -56,6 +62,7 @@ object UserDataStreaming {
 }
 
 case class Tick(source: String, usr_id: String, action: String, art_id: String)
+// case class Astamp(artwork: String, timestamp: String, count: Integer)
 
 /** Lazily instantiated singleton instance of SQLContext */
 object SQLContextSingleton {
