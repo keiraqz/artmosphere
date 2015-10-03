@@ -1,6 +1,6 @@
 #Artmosphere
 Website: <a href="http://www.artmosphere.nyc"  target="_blank">www.artmosphere.nyc</a>
-
+Video Demo: <a href="https://youtu.be/skzZ7sosC8c"  target="_blank">artmosphere.nyc video</a>
 <img src="https://github.com/keiraqz/artmosphere/blob/master/img/cover.png" alt="alt text" width="600" height="350">
 
 
@@ -86,6 +86,7 @@ A distributed AWS cluster of 4 EC2 machines is being used for this project. All 
 
 ##Presentation Deck
 The presentation slides are available <a href= "http://www.artmosphere.nyc/slide" target="_blank">here</a>.
+The video demo of the website is available <a href="https://youtu.be/skzZ7sosC8c"  target="_blank">here</a>.
 
 ##Packages Used for the Pipeline
 pyspark, pyspark-cassandra, elasticsearch-hadoop-2.1.0.Beta2.jar
