@@ -1,6 +1,8 @@
 #Artmosphere
 Website: <a href="http://www.artmosphere.nyc"  target="_blank">www.artmosphere.nyc</a>
-Video Demo: <a href="https://youtu.be/skzZ7sosC8c"  target="_blank">artmosphere.nyc video</a>
+
+Video Demo: <a href="https://youtu.be/skzZ7sosC8c"  target="_blank">Artmosphere</a>
+
 <img src="https://github.com/keiraqz/artmosphere/blob/master/img/cover.png" alt="alt text" width="600" height="350">
 
 
