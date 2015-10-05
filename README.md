@@ -52,7 +52,7 @@ A distributed AWS cluster of 4 EC2 machines is being used for this project. All 
 - **Batch Processing (HDFS, Spark):** To perform batch processing job, Spark loads the data from HDFS and processed them in a distributed way. The two major batch processing steps for the project is to aggregate the artists upload locations and compute artwork-artwrok similarties. 
   - Aggreate Locations: <a href= "https://github.com/keiraqz/artmosphere/tree/master/batch_geo" target="_blank">batch\_geo</a>
     - To excute: run ```bash batch_geo_run.sh```
-  - Compute Similarity: <a href= "https://github.com/keiraqz/artmosphere/tree/master/batch_similarity" target="_blank">batch\_similarity</a>
+  - Compute Similarity: <a href= "https://github.com/keiraqz/artmosphere/blob/master/batch_similarity/compute_similarity.py" target="_blank">compute\_similarity.py</a>
     - To excute: run ```bash batch_sim_run.sh```
   
   The following graph shows the performance analysis of Spark for one the batch processing jobs - aggregating artists upload locations - up to 500GB:
