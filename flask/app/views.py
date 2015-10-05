@@ -191,7 +191,7 @@ def collection_dis():
 # given a keyword, return all matches
 @app.route('/es/title/<keywords>')
 def return_name(keywords):
-	res = es.search(index = INDEX_NAME, q='title:'+keywords, body={"query": {"match_all": {}}}) 
+	res = es.search(index = INDEX_NAME, q={"match_phrase": {"title": keywords}}, body={"query": {"match_all": {}}}) 
 	pids = [ [ r['_source']['artwork_id'], r['_source']['title'], r['_source']['image_link'], r['_source']['collecting_institution'], int(r['_source']['pined_count']) ] for r in res['hits']['hits']]
 	pids.sort(reverse=True)
 	matched_pics = {}
