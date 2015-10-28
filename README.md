@@ -2,7 +2,7 @@
 
 <img src="https://github.com/keiraqz/artmosphere/blob/master/img/cover.png" alt="alt text" width="600" height="350">
 
-Website: <a href="http://www.artmosphere.nyc"  target="_blank">www.artmosphere.nyc</a>
+<!--Website: <a href="http://www.artmosphere.nyc"  target="_blank">www.artmosphere.nyc</a>-->
 
 Slides are available <a href= "http://www.slideshare.net/KeiraZhou2/artmosphere-demo" target="_blank">here</a>. Video demo is available <a href="https://youtu.be/skzZ7sosC8c"  target="_blank">here</a>.
 
@@ -69,7 +69,9 @@ A distributed AWS cluster of 4 EC2 machines is being used for this project. All 
 
 
 ##Website
-<a href="http://www.artmosphere.nyc"  target="_blank">www.artmosphere.nyc</a>
+* Note: Website is down at the termination of the Insight program. However, the video demo of the website is available <a href="https://youtu.be/skzZ7sosC8c"  target="_blank">here</a>.
+
+<!--<a href="http://www.artmosphere.nyc"  target="_blank">www.artmosphere.nyc</a>-->
 - The artwork information:
 
 <img src="https://github.com/keiraqz/artmosphere/blob/master/img/art_info.png" alt="alt text" width="600">
