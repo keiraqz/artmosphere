@@ -69,7 +69,7 @@ A distributed AWS cluster of 4 EC2 machines is being used for this project. All 
 
 
 ##Website
-* Note: Website is down at the termination of the Insight program. However, the video demo of the website is available <a href="https://youtu.be/skzZ7sosC8c"  target="_blank">here</a>.
+*Note: Website is down at the termination of the Insight program. However, the video demo of the website is available <a href="https://youtu.be/skzZ7sosC8c"  target="_blank">here</a>.*
 
 <!--<a href="http://www.artmosphere.nyc"  target="_blank">www.artmosphere.nyc</a>-->
 - The artwork information:
