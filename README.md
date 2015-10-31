@@ -4,7 +4,7 @@
 
 <!--Website: <a href="http://www.artmosphere.nyc"  target="_blank">www.artmosphere.nyc</a>-->
 
-Slides are available <a href= "http://www.slideshare.net/KeiraZhou2/artmosphere-demo" target="_blank">here</a>. Video demo is available <a href="https://youtu.be/skzZ7sosC8c"  target="_blank">here</a>.
+*Note: Website is down at the termination of the Insight program. However, the video demo of the website is available <a href="https://youtu.be/skzZ7sosC8c"  target="_blank">here</a>.Slides are available <a href= "http://www.slideshare.net/KeiraZhou2/artmosphere-demo" target="_blank">here</a>.*
 
 
 ##Table of Contents
