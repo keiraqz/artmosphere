@@ -6,7 +6,7 @@
 
 *Note: The original website is down at the termination of the Insight program. However, the video demo of the website is available <a href="https://youtu.be/skzZ7sosC8c"  target="_blank">here</a>. Slides are available <a href= "http://www.slideshare.net/KeiraZhou2/artmosphere-demo" target="_blank">here</a>.*
 
-Code for the web framework Flask can be found <a href="https://github.com/keiraqz/artmosphere/blob/master/flask/app/views.py"  target="_blank">here</a>. Front end web application can be found in <a href="https://github.com/keiraqz/artmosphere/tree/master/flask/app/templates"  target="_blank">this folder</a>. 
+Code for the web framework Flask can be found <a href="https://github.com/keiraqz/artmosphere/blob/master/flask/app/views.py"  target="_blank">here</a>. Code for front end web application can be found in <a href="https://github.com/keiraqz/artmosphere/tree/master/flask/app/templates"  target="_blank">this folder</a>. 
 
 
 ##Table of Contents
